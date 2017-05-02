@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2357004F1EB872370054A521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357004E1EB872370054A521 /* AppDelegate.swift */; };
+		235700511EB872370054A521 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700501EB872370054A521 /* HomepageViewController.swift */; };
+		235700541EB872370054A521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235700521EB872370054A521 /* Main.storyboard */; };
+		235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */; };
+		235700591EB872380054A521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235700581EB872380054A521 /* Assets.xcassets */; };
+		2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357005A1EB872380054A521 /* LaunchScreen.storyboard */; };
+		235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */; };
+		235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		235700631EB872380054A521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235700431EB872370054A521 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2357004A1EB872370054A521;
+			remoteInfo = "Sustainable Schools";
+		};
+		2357006E1EB872390054A521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 235700431EB872370054A521 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2357004A1EB872370054A521;
+			remoteInfo = "Sustainable Schools";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2357004B1EB872370054A521 /* Sustainable Schools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sustainable Schools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2357004E1EB872370054A521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		235700501EB872370054A521 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		235700531EB872370054A521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		235700561EB872380054A521 /* Sustainable_Schools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sustainable_Schools.xcdatamodel; sourceTree = "<group>"; };
+		235700581EB872380054A521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2357005B1EB872380054A521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2357005D1EB872380054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235700621EB872380054A521 /* Sustainable SchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainable_SchoolsTests.swift; sourceTree = "<group>"; };
+		235700681EB872380054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainable_SchoolsUITests.swift; sourceTree = "<group>"; };
+		235700731EB872390054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		235700481EB872370054A521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2357005F1EB872380054A521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2357006A1EB872390054A521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235700421EB872370054A521 = {
+			isa = PBXGroup;
+			children = (
+				2357004D1EB872370054A521 /* Sustainable Schools */,
+				235700651EB872380054A521 /* Sustainable SchoolsTests */,
+				235700701EB872390054A521 /* Sustainable SchoolsUITests */,
+				2357004C1EB872370054A521 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2357004C1EB872370054A521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2357004B1EB872370054A521 /* Sustainable Schools.app */,
+				235700621EB872380054A521 /* Sustainable SchoolsTests.xctest */,
+				2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2357004D1EB872370054A521 /* Sustainable Schools */ = {
+			isa = PBXGroup;
+			children = (
+				2357004E1EB872370054A521 /* AppDelegate.swift */,
+				235700501EB872370054A521 /* HomepageViewController.swift */,
+				235700521EB872370054A521 /* Main.storyboard */,
+				235700581EB872380054A521 /* Assets.xcassets */,
+				2357005A1EB872380054A521 /* LaunchScreen.storyboard */,
+				2357005D1EB872380054A521 /* Info.plist */,
+				235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */,
+			);
+			path = "Sustainable Schools";
+			sourceTree = "<group>";
+		};
+		235700651EB872380054A521 /* Sustainable SchoolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */,
+				235700681EB872380054A521 /* Info.plist */,
+			);
+			path = "Sustainable SchoolsTests";
+			sourceTree = "<group>";
+		};
+		235700701EB872390054A521 /* Sustainable SchoolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */,
+				235700731EB872390054A521 /* Info.plist */,
+			);
+			path = "Sustainable SchoolsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2357004A1EB872370054A521 /* Sustainable Schools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235700761EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable Schools" */;
+			buildPhases = (
+				235700471EB872370054A521 /* Sources */,
+				235700481EB872370054A521 /* Frameworks */,
+				235700491EB872370054A521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sustainable Schools";
+			productName = "Sustainable Schools";
+			productReference = 2357004B1EB872370054A521 /* Sustainable Schools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		235700611EB872380054A521 /* Sustainable SchoolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235700791EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable SchoolsTests" */;
+			buildPhases = (
+				2357005E1EB872380054A521 /* Sources */,
+				2357005F1EB872380054A521 /* Frameworks */,
+				235700601EB872380054A521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				235700641EB872380054A521 /* PBXTargetDependency */,
+			);
+			name = "Sustainable SchoolsTests";
+			productName = "Sustainable SchoolsTests";
+			productReference = 235700621EB872380054A521 /* Sustainable SchoolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2357006C1EB872390054A521 /* Sustainable SchoolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2357007C1EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable SchoolsUITests" */;
+			buildPhases = (
+				235700691EB872390054A521 /* Sources */,
+				2357006A1EB872390054A521 /* Frameworks */,
+				2357006B1EB872390054A521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2357006F1EB872390054A521 /* PBXTargetDependency */,
+			);
+			name = "Sustainable SchoolsUITests";
+			productName = "Sustainable SchoolsUITests";
+			productReference = 2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		235700431EB872370054A521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sophia Huynh";
+				TargetAttributes = {
+					2357004A1EB872370054A521 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					235700611EB872380054A521 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2357004A1EB872370054A521;
+					};
+					2357006C1EB872390054A521 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2357004A1EB872370054A521;
+					};
+				};
+			};
+			buildConfigurationList = 235700461EB872370054A521 /* Build configuration list for PBXProject "Sustainable Schools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 235700421EB872370054A521;
+			productRefGroup = 2357004C1EB872370054A521 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2357004A1EB872370054A521 /* Sustainable Schools */,
+				235700611EB872380054A521 /* Sustainable SchoolsTests */,
+				2357006C1EB872390054A521 /* Sustainable SchoolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235700491EB872370054A521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */,
+				235700591EB872380054A521 /* Assets.xcassets in Resources */,
+				235700541EB872370054A521 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235700601EB872380054A521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2357006B1EB872390054A521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		235700471EB872370054A521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */,
+				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
+				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2357005E1EB872380054A521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235700691EB872390054A521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		235700641EB872380054A521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2357004A1EB872370054A521 /* Sustainable Schools */;
+			targetProxy = 235700631EB872380054A521 /* PBXContainerItemProxy */;
+		};
+		2357006F1EB872390054A521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2357004A1EB872370054A521 /* Sustainable Schools */;
+			targetProxy = 2357006E1EB872390054A521 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		235700521EB872370054A521 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				235700531EB872370054A521 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2357005A1EB872380054A521 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2357005B1EB872380054A521 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		235700741EB872390054A521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		235700751EB872390054A521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		235700771EB872390054A521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Sustainable Schools/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-Schools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		235700781EB872390054A521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Sustainable Schools/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-Schools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2357007A1EB872390054A521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Sustainable SchoolsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-SchoolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sustainable Schools.app/Sustainable Schools";
+			};
+			name = Debug;
+		};
+		2357007B1EB872390054A521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Sustainable SchoolsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-SchoolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sustainable Schools.app/Sustainable Schools";
+			};
+			name = Release;
+		};
+		2357007D1EB872390054A521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Sustainable SchoolsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-SchoolsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Sustainable Schools";
+			};
+			name = Debug;
+		};
+		2357007E1EB872390054A521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Sustainable SchoolsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-SchoolsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Sustainable Schools";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235700461EB872370054A521 /* Build configuration list for PBXProject "Sustainable Schools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235700741EB872390054A521 /* Debug */,
+				235700751EB872390054A521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235700761EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable Schools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235700771EB872390054A521 /* Debug */,
+				235700781EB872390054A521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		235700791EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable SchoolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2357007A1EB872390054A521 /* Debug */,
+				2357007B1EB872390054A521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2357007C1EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable SchoolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2357007D1EB872390054A521 /* Debug */,
+				2357007E1EB872390054A521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				235700561EB872380054A521 /* Sustainable_Schools.xcdatamodel */,
+			);
+			currentVersion = 235700561EB872380054A521 /* Sustainable_Schools.xcdatamodel */;
+			path = Sustainable_Schools.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 235700431EB872370054A521 /* Project object */;
+}
