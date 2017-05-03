@@ -15,6 +15,8 @@
 		2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357005A1EB872380054A521 /* LaunchScreen.storyboard */; };
 		235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */; };
 		235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */; };
+		2900FE9588364B3730233DC3 /* libPods-Sustainable Schools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */; };
+		84F8FC821EBA404100C3343B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84F8FC811EBA404100C3343B /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainable_SchoolsUITests.swift; sourceTree = "<group>"; };
 		235700731EB872390054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F8FC811EBA404100C3343B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sustainable Schools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sustainable Schools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools.debug.xcconfig"; sourceTree = "<group>"; };
+		E914DA7E6463FF214E36603C /* Pods-Sustainable Schools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sustainable Schools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2900FE9588364B3730233DC3 /* libPods-Sustainable Schools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +86,13 @@
 		235700421EB872370054A521 = {
 			isa = PBXGroup;
 			children = (
+				84F8FC811EBA404100C3343B /* Podfile */,
 				2357004D1EB872370054A521 /* Sustainable Schools */,
 				235700651EB872380054A521 /* Sustainable SchoolsTests */,
 				235700701EB872390054A521 /* Sustainable SchoolsUITests */,
 				2357004C1EB872370054A521 /* Products */,
+				96AA4A570E3E0127C488CD66 /* Pods */,
+				319E8D3FB18B2FF00A32448F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +138,23 @@
 			path = "Sustainable SchoolsUITests";
 			sourceTree = "<group>";
 		};
+		319E8D3FB18B2FF00A32448F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96AA4A570E3E0127C488CD66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */,
+				E914DA7E6463FF214E36603C /* Pods-Sustainable Schools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 235700761EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable Schools" */;
 			buildPhases = (
+				DAA07D0642F447F9DB543D74 /* [CP] Check Pods Manifest.lock */,
 				235700471EB872370054A521 /* Sources */,
 				235700481EB872370054A521 /* Frameworks */,
 				235700491EB872370054A521 /* Resources */,
+				E160EDAA501BD72BA33F2E4D /* [CP] Embed Pods Frameworks */,
+				00A5CD12DDDFA3762EBD7E9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +267,7 @@
 			files = (
 				2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
+				84F8FC821EBA404100C3343B /* Podfile in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +287,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A5CD12DDDFA3762EBD7E9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA07D0642F447F9DB543D74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E160EDAA501BD72BA33F2E4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		235700471EB872370054A521 /* Sources */ = {
@@ -414,6 +493,7 @@
 		};
 		235700771EB872390054A521 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Sustainable Schools/Info.plist";
@@ -426,6 +506,7 @@
 		};
 		235700781EB872390054A521 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E914DA7E6463FF214E36603C /* Pods-Sustainable Schools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Sustainable Schools/Info.plist";
@@ -509,6 +590,7 @@
 				235700781EB872390054A521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		235700791EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable SchoolsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +599,7 @@
 				2357007B1EB872390054A521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2357007C1EB872390054A521 /* Build configuration list for PBXNativeTarget "Sustainable SchoolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +608,7 @@
 				2357007E1EB872390054A521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
