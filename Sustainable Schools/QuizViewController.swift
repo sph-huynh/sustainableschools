@@ -11,6 +11,10 @@ import UIKit
 class QuizViewController: UIViewController {
     
     let question = ["How many Sustainable Development Goals are there?", "What is Goal 1?", "What is Goal 3?"]
+    let answers = [[17, 19, 8, 4],["Producing less waste", "Using more solar", "Ensuring everybody has access to water", "End all forms of poverty everywhere"], ["Using clean and sustainable energy", "Building sustainable cities", "Using less energy", "Promoting gender equality"]]
+    
+    let currentQuestion = 0
+    let currentAnswer = 0
 
     @IBOutlet weak var answer1Button: UIButton!
     @IBOutlet weak var answer2Button: UIButton!
