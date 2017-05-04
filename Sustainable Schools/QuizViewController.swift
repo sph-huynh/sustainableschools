@@ -9,7 +9,14 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    
+    let question = ["How many Sustainable Development Goals are there?", "What is Goal 1?", "What is Goal 3?"]
 
+    @IBOutlet weak var answer1Button: UIButton!
+    @IBOutlet weak var answer2Button: UIButton!
+    @IBOutlet weak var answer3Button: UIButton!
+    @IBOutlet weak var answer4Button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
