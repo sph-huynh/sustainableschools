@@ -60,7 +60,7 @@
                                 <accessibility key="accessibilityConfiguration" identifier="quizButtonEnergy"/>
                                 <state key="normal" title="quizButtonEnergy"/>
                                 <connections>
-                                    <segue destination="tSg-vm-UmU" kind="show" id="MAA-Cg-aNr"/>
+                                    <segue destination="tSg-vm-UmU" kind="show" id="KLM-wY-hyB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtv-B6-eyT">
@@ -68,6 +68,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="quizButtonFood"/>
                                 <state key="normal" title="quizButtonFood"/>
+                                <connections>
+                                    <segue destination="tSg-vm-UmU" kind="show" id="GAC-Qi-lzx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,43 +96,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJY-gV-hCv">
-                                <rect key="frame" x="57" y="449" width="110" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BJY-gV-hCv">
+                                <rect key="frame" x="16" y="449" width="168" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Answer1Button"/>
                                 <state key="normal" title="Answer1Button"/>
+                                <connections>
+                                    <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="mIj-V9-GJY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-dF-voA">
-                                <rect key="frame" x="200" y="534" width="118" height="30"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="naB-K8-PXi">
+                                <rect key="frame" x="16" y="533" width="168" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Answer4Button"/>
-                                <state key="normal" title="Answer4Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKF-1M-zc6">
-                                <rect key="frame" x="200" y="449" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Answer2Button"/>
-                                <state key="normal" title="Answer2Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naB-K8-PXi">
-                                <rect key="frame" x="57" y="534" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Answer3Button"/>
                                 <state key="normal" title="Answer3Button"/>
+                                <connections>
+                                    <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="9wt-fh-Yvw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-dF-voA">
+                                <rect key="frame" x="192" y="533" width="168" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Answer4Button"/>
+                                <connections>
+                                    <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="aD9-55-Lsa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X0-g5-xhd">
+                                <rect key="frame" x="16" y="337" width="343" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="questionLabel"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zKF-1M-zc6">
+                                <rect key="frame" x="192" y="449" width="168" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Answer2Button"/>
+                                <connections>
+                                    <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="ijm-Lv-UOr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="answer1Button" destination="BJY-gV-hCv" id="lyS-gv-M0h"/>
-                        <outlet property="answer2Button" destination="zKF-1M-zc6" id="chh-aT-H4K"/>
-                        <outlet property="answer3Button" destination="naB-K8-PXi" id="oj8-vt-lc7"/>
-                        <outlet property="answer4Button" destination="F2g-dF-voA" id="yWu-k6-Dgl"/>
+                        <outlet property="questionLabel" destination="5X0-g5-xhd" id="Aw4-dh-tQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-M6-Snr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2333.5999999999999" y="128.18590704647679"/>
+            <point key="canvasLocation" x="2333.5" y="127.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qui-X1-Yhm">
@@ -185,4 +201,7 @@
             <point key="canvasLocation" x="20" y="124"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KLM-wY-hyB"/>
+    </inferredMetricsTieBreakers>
 </document>

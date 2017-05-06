@@ -18,6 +18,7 @@
 		2900FE9588364B3730233DC3 /* libPods-Sustainable Schools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */; };
 		845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D40781EBB0DBC00BC15AD /* QuizViewController.swift */; };
 		845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */; };
+		845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */; };
 		84F8FC821EBA404100C3343B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84F8FC811EBA404100C3343B /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		235700731EB872390054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845D40781EBB0DBC00BC15AD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsHomeViewController.swift; sourceTree = "<group>"; };
+		845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Sustainable Schools/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84F8FC811EBA404100C3343B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sustainable Schools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sustainable Schools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		235700421EB872370054A521 = {
 			isa = PBXGroup;
 			children = (
+				845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */,
 				84F8FC811EBA404100C3343B /* Podfile */,
 				2357004D1EB872370054A521 /* Sustainable Schools */,
 				235700651EB872380054A521 /* Sustainable SchoolsTests */,
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */,
 				2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
