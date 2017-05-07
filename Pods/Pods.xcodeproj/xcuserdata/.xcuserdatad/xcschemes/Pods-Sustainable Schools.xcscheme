@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A9165B00569D531DDE083F20B6EEB741'
+               BlueprintIdentifier = '0BD16E57B780FD76D75B8B423C82EDE7'
                BlueprintName = 'Pods-Sustainable Schools'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-Sustainable Schools.a'>
+               BuildableName = 'Pods-Sustainable Schools.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

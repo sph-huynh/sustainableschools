@@ -15,7 +15,9 @@
 		2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357005A1EB872380054A521 /* LaunchScreen.storyboard */; };
 		235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */; };
 		235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */; };
-		2900FE9588364B3730233DC3 /* libPods-Sustainable Schools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */; };
+		23F38A031EBF155B0089E243 /* SustainableQuiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 23F38A021EBF155B0089E243 /* SustainableQuiz.json */; };
+		23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F38A061EBF3DCD0089E243 /* Gloss.framework */; };
+		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
 		845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D40781EBB0DBC00BC15AD /* QuizViewController.swift */; };
 		845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */; };
 		845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */; };
@@ -54,11 +56,14 @@
 		2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainable_SchoolsUITests.swift; sourceTree = "<group>"; };
 		235700731EB872390054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F38A021EBF155B0089E243 /* SustainableQuiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SustainableQuiz.json; sourceTree = SOURCE_ROOT; };
+		23F38A061EBF3DCD0089E243 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "Pods/../build/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
+		23F38A081EBF41B40089E243 /* SustainablePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SustainablePlayground.playground; sourceTree = "<group>"; };
+		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845D40781EBB0DBC00BC15AD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsHomeViewController.swift; sourceTree = "<group>"; };
 		845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Sustainable Schools/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84F8FC811EBA404100C3343B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sustainable Schools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sustainable Schools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools.debug.xcconfig"; sourceTree = "<group>"; };
 		E914DA7E6463FF214E36603C /* Pods-Sustainable Schools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sustainable Schools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2900FE9588364B3730233DC3 /* libPods-Sustainable Schools.a in Frameworks */,
+				23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */,
+				6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,7 @@
 		235700421EB872370054A521 = {
 			isa = PBXGroup;
 			children = (
+				23F38A081EBF41B40089E243 /* SustainablePlayground.playground */,
 				845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */,
 				84F8FC811EBA404100C3343B /* Podfile */,
 				2357004D1EB872370054A521 /* Sustainable Schools */,
@@ -120,6 +127,7 @@
 				235700501EB872370054A521 /* HomepageViewController.swift */,
 				845D40781EBB0DBC00BC15AD /* QuizViewController.swift */,
 				235700521EB872370054A521 /* Main.storyboard */,
+				23F38A021EBF155B0089E243 /* SustainableQuiz.json */,
 				845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				2357005A1EB872380054A521 /* LaunchScreen.storyboard */,
@@ -150,7 +158,8 @@
 		319E8D3FB18B2FF00A32448F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2AEA8FD1FEF3A8EE0DB0F29 /* libPods-Sustainable Schools.a */,
+				23F38A061EBF3DCD0089E243 /* Gloss.framework */,
+				62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 				2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
+				23F38A031EBF155B0089E243 /* SustainableQuiz.json in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +518,10 @@
 			baseConfigurationReference = BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Gloss",
+				);
 				INFOPLIST_FILE = "Sustainable Schools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-Schools";
@@ -521,6 +535,10 @@
 			baseConfigurationReference = E914DA7E6463FF214E36603C /* Pods-Sustainable Schools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Gloss",
+				);
 				INFOPLIST_FILE = "Sustainable Schools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-Schools";

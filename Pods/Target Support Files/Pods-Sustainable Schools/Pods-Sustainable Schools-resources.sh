@@ -76,13 +76,11 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "FirebaseInvites/Resources/GINInviteResources.bundle"
   install_resource "FirebaseInvites/Resources/GPPACLPickerResources.bundle"
-  install_resource "GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib"
   install_resource "GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "FirebaseInvites/Resources/GINInviteResources.bundle"
   install_resource "FirebaseInvites/Resources/GPPACLPickerResources.bundle"
-  install_resource "GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib"
   install_resource "GoogleSignIn/Resources/GoogleSignIn.bundle"
 fi
 

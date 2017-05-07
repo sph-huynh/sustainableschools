@@ -12,6 +12,9 @@ class TopicsHomeViewController: UIViewController {
 
     @IBOutlet weak var quizButtonEnergy: UIButton!
     @IBOutlet weak var quizButtonFood: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
