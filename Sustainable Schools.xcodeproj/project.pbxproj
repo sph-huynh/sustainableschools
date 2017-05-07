@@ -15,7 +15,9 @@
 		2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2357005A1EB872380054A521 /* LaunchScreen.storyboard */; };
 		235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */; };
 		235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */; };
-		23F38A031EBF155B0089E243 /* SustainableQuiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 23F38A021EBF155B0089E243 /* SustainableQuiz.json */; };
+		2380A1701EBF6DEB00CC45F3 /* GlossSustainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */; };
+		2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380A1711EBF6E2800CC45F3 /* QNA.swift */; };
+		2380A1741EBF6EA300CC45F3 /* JSONSustainable.json in Resources */ = {isa = PBXBuildFile; fileRef = 2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */; };
 		23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F38A061EBF3DCD0089E243 /* Gloss.framework */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
 		845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D40781EBB0DBC00BC15AD /* QuizViewController.swift */; };
@@ -56,9 +58,10 @@
 		2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainable_SchoolsUITests.swift; sourceTree = "<group>"; };
 		235700731EB872390054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23F38A021EBF155B0089E243 /* SustainableQuiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SustainableQuiz.json; sourceTree = SOURCE_ROOT; };
+		2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossSustainable.swift; sourceTree = "<group>"; };
+		2380A1711EBF6E2800CC45F3 /* QNA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNA.swift; sourceTree = "<group>"; };
+		2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONSustainable.json; sourceTree = "<group>"; };
 		23F38A061EBF3DCD0089E243 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "Pods/../build/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
-		23F38A081EBF41B40089E243 /* SustainablePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SustainablePlayground.playground; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845D40781EBB0DBC00BC15AD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsHomeViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +101,6 @@
 		235700421EB872370054A521 = {
 			isa = PBXGroup;
 			children = (
-				23F38A081EBF41B40089E243 /* SustainablePlayground.playground */,
 				845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */,
 				84F8FC811EBA404100C3343B /* Podfile */,
 				2357004D1EB872370054A521 /* Sustainable Schools */,
@@ -123,16 +125,18 @@
 		2357004D1EB872370054A521 /* Sustainable Schools */ = {
 			isa = PBXGroup;
 			children = (
+				2380A16C1EBF6B9200CC45F3 /* Resources */,
 				2357004E1EB872370054A521 /* AppDelegate.swift */,
 				235700501EB872370054A521 /* HomepageViewController.swift */,
 				845D40781EBB0DBC00BC15AD /* QuizViewController.swift */,
 				235700521EB872370054A521 /* Main.storyboard */,
-				23F38A021EBF155B0089E243 /* SustainableQuiz.json */,
 				845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				2357005A1EB872380054A521 /* LaunchScreen.storyboard */,
 				2357005D1EB872380054A521 /* Info.plist */,
 				235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */,
+				2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */,
+				2380A1711EBF6E2800CC45F3 /* QNA.swift */,
 			);
 			path = "Sustainable Schools";
 			sourceTree = "<group>";
@@ -153,6 +157,14 @@
 				235700731EB872390054A521 /* Info.plist */,
 			);
 			path = "Sustainable SchoolsUITests";
+			sourceTree = "<group>";
+		};
+		2380A16C1EBF6B9200CC45F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		319E8D3FB18B2FF00A32448F /* Frameworks */ = {
@@ -287,7 +299,7 @@
 				2357005C1EB872380054A521 /* LaunchScreen.storyboard in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
-				23F38A031EBF155B0089E243 /* SustainableQuiz.json in Resources */,
+				2380A1741EBF6EA300CC45F3 /* JSONSustainable.json in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,8 +375,10 @@
 			files = (
 				235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */,
 				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
+				2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */,
 				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,
 				845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */,
+				2380A1701EBF6DEB00CC45F3 /* GlossSustainable.swift in Sources */,
 				845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

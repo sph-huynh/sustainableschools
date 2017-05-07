@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Gloss
 
 class QuizViewController: UIViewController {
     
@@ -69,11 +70,46 @@ class QuizViewController: UIViewController {
 
     }
     
+    // Gloss JSON stuff
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let repoJSON: JSON = [
+            "week" : 1,
+            "points" : 5,
+            "qna" : ["How many Sustainable Development Goals are there?", ["17", "19", "8", "4"]]
+        ]
+        
+        guard let repo = Repo(json: repoJSON) else {
+            print("OI DECODING FAILURE")
+            return
+        }
+        
+        print(repo.week)
+        print(repo.points)
+        print(repo.qna)
+        print(" ")
+        
+        print("JSON: \(repo.toJSON())")
+        print(" ")
+        
+        guard let repos = [Repo].from(jsonArray: [repoJSON, repoJSON, repoJSON]) else{
+            print("OI 2 DECODING FAILURE")
+            return
+        }
+        
+        print("REPOS: \(repos)")
+        print("")
+        
+        guard let jsonArray = repos.toJSONArray() else {
+            print("ENCODING FAILURE :(")
+            return
+        }
+        
+        print("JSON ARRAY: \(jsonArray)")
         // Do any additional setup after loading the view.
     }
 
