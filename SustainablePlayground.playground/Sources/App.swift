@@ -1,25 +1,25 @@
 import Foundation
 
 public struct App: Decodable {
-    public let questionList: String
-    public let level: String
-    public let answers: String
+    public let levelNumber: String
+    public let difficulty: String
+    public let qna: String
     
     public init?(json: JSON) {
-        guard let container: JSON = "level" <~~ json, let points: JSON = "points" <~~ json else {
+        guard let container: JSON = "level" <~~ json, let points: JSON = "points" <~~ json, let questionsAndAnswers: JSON = "questionsAndAnswers" <~~ json else {
             return nil
         }
         
-        guard let questionList: JSON = "questionList" <~~ json, let level: String = "points" <~~ points else {
+        
+        guard let levelNumber: String = "levelNumber" <~~ container, let difficulty: String = "points" <~~ points, let qna: String = "questionsAndAnswers" <~~ questionsAndAnswers else {
             return nil
         }
         
-//        guard let answers: JSON = "answers" <~~ json, let level: String = "points" <~~ points else {
-//            return nil
-//        }
         
-        self.questionList = questionList
-        self.level = level
+        self.levelNumber = levelNumber
+        self.difficulty = difficulty
+        self.qna = qna
+        
         
     }
 }

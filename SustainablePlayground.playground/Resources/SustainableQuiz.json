@@ -10,7 +10,7 @@
               ]
         },
         {"5",
-        "easy-questions": [
+        "medium-questions": [
                {"What is Goal 4?", "Quality Education", "Example 1", "Example 2", "Example 4"},
                {"What is Goal 5?", "Gender Equality", "Using clean and sustainable energy", "Building sustainable cities", "Using less energy"},
                {"What is Goal 6?", "Clean water and sanitation", "Example 1", "Example 2", "Example 4"},
@@ -24,7 +24,7 @@
                ]
         },
         {"7",
-        "easy-questions": [
+        "hard-questions": [
                {"What is Goal 12?", "Responsible Consumption and production", "Example 1", "Example 2", "Example 4"},
                {"What is Goal 13?", "Climate action", "Example 1", "Example 2", "Example 4"},
                {"What is Goal 14?", "Life below water", "Example 1", "Example 2", "Example 4"}
