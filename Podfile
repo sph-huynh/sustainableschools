@@ -1,21 +1,13 @@
-platform :ios, '10.1'
-use_frameworks!
-
-
-project 'Sustainable Schools'
-
 source 'https://github.com/Cocoapods/Specs.git'
 
+platform :ios, '10.1'
 
 target 'Sustainable Schools' do
-    pod 'Firebase'
-    pod 'Firebase/Analytics'
-    pod 'Firebase/Auth'
-    pod 'Firebase/Crash'
-    pod 'Firebase/Database'
-    pod 'Firebase/DynamicLinks'
-    pod 'Firebase/Invites'
-    pod 'Firebase/RemoteConfig'
-    pod 'Firebase/Storage'
+    use_frameworks!
+
+    pod 'Firebase', '~> 3.17'
+    pod 'FirebaseAnalytics', '~> 3.9'
+    pod 'FirebaseAuth', '~> 3.1'
+    pod 'FirebaseDatabase', '~> 3.1'
     pod 'Gloss', '~> 1.2'
 end
