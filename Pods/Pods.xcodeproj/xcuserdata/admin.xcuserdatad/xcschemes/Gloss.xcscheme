@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9021A9CF737B40AFE8628CC73C7235C0"
-               BuildableName = "GoogleToolboxForMac.framework"
-               BlueprintName = "GoogleToolboxForMac"
+               BlueprintIdentifier = "40E7477AD67135868F5FB08136602674"
+               BuildableName = "Gloss.framework"
+               BlueprintName = "Gloss"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9021A9CF737B40AFE8628CC73C7235C0"
-            BuildableName = "GoogleToolboxForMac.framework"
-            BlueprintName = "GoogleToolboxForMac"
+            BlueprintIdentifier = "40E7477AD67135868F5FB08136602674"
+            BuildableName = "Gloss.framework"
+            BlueprintName = "Gloss"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9021A9CF737B40AFE8628CC73C7235C0"
-            BuildableName = "GoogleToolboxForMac.framework"
-            BlueprintName = "GoogleToolboxForMac"
+            BlueprintIdentifier = "40E7477AD67135868F5FB08136602674"
+            BuildableName = "Gloss.framework"
+            BlueprintName = "Gloss"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

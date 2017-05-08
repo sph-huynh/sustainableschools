@@ -20,6 +20,7 @@
 		2380A1741EBF6EA300CC45F3 /* JSONSustainable.json in Resources */ = {isa = PBXBuildFile; fileRef = 2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */; };
 		23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F38A061EBF3DCD0089E243 /* Gloss.framework */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
+		844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 844AEDF31EC02BBC009B4BDC /* colourscheme.txt */; };
 		845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D40781EBB0DBC00BC15AD /* QuizViewController.swift */; };
 		845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */; };
 		845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */; };
@@ -63,6 +64,7 @@
 		2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONSustainable.json; sourceTree = "<group>"; };
 		23F38A061EBF3DCD0089E243 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "Pods/../build/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844AEDF31EC02BBC009B4BDC /* colourscheme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colourscheme.txt; sourceTree = "<group>"; };
 		845D40781EBB0DBC00BC15AD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsHomeViewController.swift; sourceTree = "<group>"; };
 		845D407C1EBDBCEC00BC15AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Sustainable Schools/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */,
 				2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */,
 				2380A1711EBF6E2800CC45F3 /* QNA.swift */,
+				844AEDF31EC02BBC009B4BDC /* colourscheme.txt */,
 			);
 			path = "Sustainable Schools";
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
 				2380A1741EBF6EA300CC45F3 /* JSONSustainable.json in Resources */,
+				844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EAE45C123C22F83F258F201FDFBA835E"
-               BuildableName = "libGTMOAuth2.a"
+               BlueprintIdentifier = "B1C4AAFAF49036C7007633DAA3C806AD"
+               BuildableName = "GTMOAuth2.framework"
                BlueprintName = "GTMOAuth2"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAE45C123C22F83F258F201FDFBA835E"
-            BuildableName = "libGTMOAuth2.a"
+            BlueprintIdentifier = "B1C4AAFAF49036C7007633DAA3C806AD"
+            BuildableName = "GTMOAuth2.framework"
             BlueprintName = "GTMOAuth2"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EAE45C123C22F83F258F201FDFBA835E"
-            BuildableName = "libGTMOAuth2.a"
+            BlueprintIdentifier = "B1C4AAFAF49036C7007633DAA3C806AD"
+            BuildableName = "GTMOAuth2.framework"
             BlueprintName = "GTMOAuth2"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

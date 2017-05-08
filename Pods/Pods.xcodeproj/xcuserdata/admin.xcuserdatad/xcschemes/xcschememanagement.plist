@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Gloss.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>GoogleAPIClientForREST.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,12 +47,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>0BD16E57B780FD76D75B8B423C82EDE7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>12ADF85C38029B7AE67381E026C36B91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>1AD0E432C9F16CE0B307BB363ABC99B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40E7477AD67135868F5FB08136602674</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9021A9CF737B40AFE8628CC73C7235C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,6 +83,26 @@
 			<true/>
 		</dict>
 		<key>B073EB3AB5AD82BABB5B17C325EDE92A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D754D048A59EE2C949DB4030D58270DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E65D35409B853BECADAFFB832B9C5A16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E790A7B67F67B5D81BE60B90A0FD1322</key>
 		<dict>
 			<key>primary</key>
 			<true/>
