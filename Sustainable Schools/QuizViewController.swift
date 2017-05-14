@@ -11,13 +11,7 @@ import Gloss
 import Foundation
 
 class QuizViewController: UIViewController {
-//    weak var delegate: DataManagerDelegate?
-//    
-//    init(withDelegate delegate: DataManagerDelegate?) {
-//        self.delegate = delegate
-//    }
-//    
-//    
+
     
     let questions = ["WAIT A MINITEHow many Sustainable Development Goals are there?", "What is Goal 1?", "What is Goal 3?"]
     let answers = [["17", "19", "8", "4"],["Producing less waste", "Using more solar", "Ensuring everybody has access to water", "End all forms of poverty everywhere"], ["Using clean and sustainable energy", "Building sustainable cities", "Using less energy", "Promoting gender equality"]]
@@ -55,6 +49,7 @@ class QuizViewController: UIViewController {
     
     // Question function
     func displayQuestion(){
+        
         questionLabel.text = questions[currentQuestion]
         
         correctAnswerPlacement = arc4random_uniform(4)+1
@@ -82,140 +77,34 @@ class QuizViewController: UIViewController {
 
     }
     
-//    delegate.getSustainableDataFromNetWithSuccess { (data) -> Void in
-//    
-//        var json: Any!
-//        do {
-//        let data = try Data(contentsOf: url)
-//        json = try JSONSerialization.jsonObject(with:data)
-//        print("JSON:::\(json)")
-//        
-//        }
-//        catch{
-//        print(error)
-//        }
+    
+
+    
+//    func parseJSON(){
+// 
 //
+//
+//     let quizURL = URL(string: "https://github.com/sph-huynh/sustainable-schools-quiz/raw/master/users.json")
+//        URLSession.shared.dataTask(with: (quizURL)!, completionHandler: {(data, response, error) -> Void in
+//            
+//            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary{
+//                print(jsonObj!.value(forKey: "points")!)
+//                
+//                OperationQueue.main.addOperation({
+//                    self.displayQuestion()
+//                })
+//            }
+//            
+//        }).resume()
+//        
 //    }
-    
-    
-    func parseJSON(){
-    
-//        guard let path = Bundle.main.path(forResource: "TempJSONStuff", ofType: "json") else {return }
-//        let url = URL(fileURLWithPath: path)
-
-    
-//        let quizURL = "https://github.com/sph-huynh/sustainable-schools-quiz/blob/master/data.json"
-//        
-//        
-//        loadDataFromURL(url: URL(string: quizURL)!){ (data, error)-> Void in
-//            if let data = data {
-//                success(data)
-//            }
-//        }
-        
-        
-//            do{
-//                print("Contents: \(data)")
-//            }
-//            catch{
-//                print("content couldn't be loaded")
-//            }
-//        }
-//        else{
-//            print("url didn't work")
-//        }
-//
-
-        
-     let quizURL = URL(string: "https://github.com/sph-huynh/sustainable-schools-quiz/blob/master/data.json")
-        URLSession.shared.dataTask(with: (quizURL)!, completionHandler: {(data, response, error) -> Void in
-            
-            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary{
-                print(jsonObj!.value(forKey: "points")!)
-                
-                OperationQueue.main.addOperation({
-                    self.displayQuestion()
-                })
-            }
-            
-
-            
-//            guard let dictionary = jsonObj as? [String: Any] else {
-//                print("Sorry couldn't initiliase Dictionary")
-//                return
-//            }
-//            
-//            guard let qna = QNA(json: dictionary) else{
-//                print("error initilising object")
-//                return
-//            }
-//            
-//            guard let firstItem = qna.week else{
-//                print("no such item")
-//                return
-//            }
-//            
-//            print("HERES THE FIRST ITEM")
-//            print(firstItem)
-//            
-//            
-            
-        }).resume()
-        
-
-        
-
-    }
-    
-    // Gloss JSON stuff
-    
-
-
-    
+//    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
-        
-
-        
-        parseJSON()
-        
-        
-        
         displayQuestion()
 
-
-//        print(repo.week)
-//        print(repo.points)
-//        print(repo.qna)
-//        print(" ")
-        
-//        print("JSON: \(repo.toJSON())")
-//        print(" ")
-//
-//        guard let repos = [GlossSustainable].from(jsonArray: [repoJSON]) else{
-//            print("OI 2 DECODING FAILURE")
-//            return
-//        }
-//        
-//        //
-//        print(repos.week)
-//        print(repos.points)
-//        print(repos.qna)
-//        print(" ")
-//
-//        print("REPOS: \(repos)")
-//        print("")
-//        
-//        guard let jsonArray = repos.toJSONArray() else {
-//            print("ENCODING FAILURE :(")
-//            return
-//        }
-//        
-//        print("JSON ARRAY: \(jsonArray)")
-//        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

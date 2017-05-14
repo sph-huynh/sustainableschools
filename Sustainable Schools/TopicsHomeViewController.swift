@@ -19,9 +19,8 @@ class TopicsHomeViewController: UIViewController {
     
     @IBAction func getGlossUser(_ sender: Any) {
         print("Here's the Gloss")
+        
         DataManager.shared.getWeeklyQuestions(){ data in
-//            let json = try! JSONSerialization.jsonObject(with: data, options: []) as! 
-//            print(json)
             guard let gloss = QNA(data: data) else{ return }
             print("Week: \(gloss.week)")
             print(gloss.bossPoints)
