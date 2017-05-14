@@ -25,6 +25,7 @@
 		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AA1EC858A500CB547B /* DataManager.swift */; };
 		28F9C5AD1EC87A4600CB547B /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 28F9C5AC1EC87A4600CB547B /* users.json */; };
+		28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
 		844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 844AEDF31EC02BBC009B4BDC /* colourscheme.txt */; };
 		845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D40781EBB0DBC00BC15AD /* QuizViewController.swift */; };
@@ -75,6 +76,7 @@
 		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		28F9C5AA1EC858A500CB547B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		28F9C5AC1EC87A4600CB547B /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = ../../../Desktop/users.json; sourceTree = "<group>"; };
+		28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayingPointsViewController.swift; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844AEDF31EC02BBC009B4BDC /* colourscheme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colourscheme.txt; sourceTree = "<group>"; };
 		845D40781EBB0DBC00BC15AD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				845D40781EBB0DBC00BC15AD /* QuizViewController.swift */,
 				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
 				235700521EB872370054A521 /* Main.storyboard */,
+				28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */,
 				845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				2357005A1EB872380054A521 /* LaunchScreen.storyboard */,
@@ -400,6 +403,7 @@
 			files = (
 				235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */,
 				28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */,
+				28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */,
 				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
 				2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */,
 				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,

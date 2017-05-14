@@ -25,7 +25,6 @@ class QuizViewController: UIViewController {
     public var accumulatedPoints = 0
     public var reachedLimit: Bool = false
 
-    @IBOutlet weak var testPoints: UILabel!
 
     @IBAction func AnswerButton(_ sender: AnyObject) {
         if (sender.tag == Int(correctAnswerPlacement)){
@@ -43,7 +42,8 @@ class QuizViewController: UIViewController {
             }
             else{
                 reachedLimit = true
-                questionLabel.text = String(accumulatedPoints)
+                performSegue(withIdentifier: "displayingPointsSegue", sender: nil)
+    //                questionLabel.text = String(accumulatedPoints)
                 
             }
         }
@@ -123,6 +123,17 @@ class QuizViewController: UIViewController {
 
         
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if (segue.identifier == "displayingPointsSegue"){
+            if let displayingPointsSegue = segue.destination as? displayingPointsViewController{
+                displayingPointsSegue.accumulatedPoints = accumulatedPoints
+                
+            }
+        }
+        
+
     }
 
     override func viewDidLoad() {

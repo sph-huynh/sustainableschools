@@ -177,14 +177,6 @@
                                     <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="ijm-Lv-UOr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-X0-XIx">
-                                <rect key="frame" x="166" y="159" width="42" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="testPoints"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,17 +186,17 @@
                     </view>
                     <connections>
                         <outlet property="questionLabel" destination="5X0-g5-xhd" id="Aw4-dh-tQh"/>
-                        <outlet property="testPoints" destination="VYC-X0-XIx" id="Mb8-ov-jhH"/>
+                        <segue destination="vkK-GG-blE" kind="show" identifier="displayingPointsSegue" id="wsG-KI-wY2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-M6-Snr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2332" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
+        <!--Displaying Points View Controller-->
         <scene sceneID="Qui-X1-Yhm">
             <objects>
-                <viewController id="vkK-GG-blE" sceneMemberID="viewController">
+                <viewController id="vkK-GG-blE" customClass="displayingPointsViewController" customModule="Sustainable_Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BfI-Mk-Lbd"/>
                         <viewControllerLayoutGuide type="bottom" id="2hc-tj-d0P"/>
@@ -231,10 +223,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="pointsLabel" destination="New-iG-CRQ" id="zvA-9s-MT3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fH-3X-UWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3134" y="149"/>
+            <point key="canvasLocation" x="3092" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ibe-GE-Fb5">
