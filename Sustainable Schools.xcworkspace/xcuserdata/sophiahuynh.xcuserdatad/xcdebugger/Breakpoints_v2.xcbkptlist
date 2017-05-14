@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516470308.881132"
+            timestampString = "516471408.91181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "AnswerButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/DataManager.swift"
@@ -61,103 +61,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516470612.25103"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "parseJSON()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Sustainable_Schools.QuizViewController.parseJSON () -&gt; ()"
-                  moduleName = "Sustainable Schools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
-                  timestampString = "516470389.67278"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "202">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Sustainable_Schools.QuizViewController.(parseJSON () -&gt; ()).(closure #1)"
-                  moduleName = "Sustainable Schools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
-                  timestampString = "516470389.675406"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "2972">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516470612.25103"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "parseJSON()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Sustainable_Schools.QuizViewController.parseJSON () -&gt; ()"
-                  moduleName = "Sustainable Schools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
-                  timestampString = "516470389.691811"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "202">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Sustainable_Schools.QuizViewController.(parseJSON () -&gt; ()).(closure #1)"
-                  moduleName = "Sustainable Schools"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
-                  timestampString = "516470389.69535"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "115"
-                  endingLineNumber = "115"
-                  offsetFromSymbolStart = "2972">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QNA.swift"
@@ -177,11 +81,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516470377.668847"
+            timestampString = "516471513.477954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "displayQuestion()"
             landmarkType = "7">
          </BreakpointContent>
@@ -193,12 +97,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516470379.971575"
+            timestampString = "516471825.990552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "displayQuestion()"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "AnswerButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

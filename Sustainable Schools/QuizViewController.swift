@@ -18,6 +18,8 @@ class QuizViewController: UIViewController {
     public var questionLimit = 1
     //to jump over the correct answer, we store this index
     public var incorrectAnswerIndex = 2
+    public var currentQuestionArray = [Array<String>]()
+    public var difficultyLevels = 1
 
 
     @IBAction func AnswerButton(_ sender: AnyObject) {
@@ -30,8 +32,15 @@ class QuizViewController: UIViewController {
         }
         
         if (currentQuestion != questionLimit){
-            displayQuestion()
+            if (difficultyLevels < 4) {
+                difficultyLevels += 1
+                currentQuestion = 0
+            }
+            else{
+                // display finish screen
+            }
         }
+        displayQuestion()
         
     }
     
@@ -51,64 +60,52 @@ class QuizViewController: UIViewController {
     func displayQuestion(){
         parseJSON()
 
-        DataManager.shared.getWeeklyQuestions(){ data in
-            guard let gloss = QNA(data: data) else{ return }
-            questionLabel.text = gloss.easyQuestions[currentQuestion][0]
-            
-            correctAnswerPlacement = arc4random_uniform(4)+1
+        questionLabel.text = currentQuestionArray[currentQuestion][0]
+        
+        correctAnswerPlacement = arc4random_uniform(4)+1
 
-            var button:UIButton = UIButton()
-            
+        var button:UIButton = UIButton()
+        
 
+        
+        // we access each button by creating a new button with the tags set
+        for buttonTag in 1...4{
+            button = view.viewWithTag(buttonTag) as! UIButton
             
-            // we access each button by creating a new button with the tags set
-            for buttonTag in 1...4{
-                button = view.viewWithTag(buttonTag) as! UIButton
-                
-                if (buttonTag == Int(correctAnswerPlacement)){
-                    button.setTitle(gloss.easyQuestions[currentQuestion][1], for: .normal)
-                }
-                else {
-                    button.setTitle(gloss.easyQuestions[currentQuestion][incorrectAnswerIndex], for: .normal)
-                    incorrectAnswerIndex += 1
-                }
-                
-                
+            if (buttonTag == Int(correctAnswerPlacement)){
+                button.setTitle(currentQuestionArray[currentQuestion][1], for: .normal)
             }
-            incorrectAnswerIndex = 2
-            currentQuestion += 1
-            questionLimit = gloss.easyQuestions.count
+            else {
+                button.setTitle(currentQuestionArray[currentQuestion][incorrectAnswerIndex], for: .normal)
+                incorrectAnswerIndex += 1
+            }
+            
+            
         }
+        incorrectAnswerIndex = 2
+        currentQuestion += 1
+        questionLimit = (currentQuestionArray.count) - 1
+    
         
 
 
     }
     
     func parseJSON(){
-        print("Double checking me gloss works")
-        
         DataManager.shared.getWeeklyQuestions(){ data in
             guard let gloss = QNA(data: data) else{ return }
-            print("Week: \(gloss.week)")
-            print("Points: \(gloss.easyPoints)")
-            print("Points: \(gloss.mediumPoints)")
-            print("Points: \(gloss.hardPoints)")
-            print("Questions easy")
-            print(gloss.easyQuestions)
-            print("")
-            print(gloss.easyQuestions[0][0])
-            print("OK QUIZ TIME")
-//            guard let easyQuestions = gloss.easyQuestions as? [[String: Any]] else{
-//                return
-//            }
-//            print(easyQuestions)
+            if (difficultyLevels == 1){
+                currentQuestionArray = gloss.easyQuestions
+            }
+            if (difficultyLevels == 2){
+                currentQuestionArray = gloss.mediumQuestions
+            }
+            if (difficultyLevels == 3){
+                currentQuestionArray = gloss.hardQuestions
+            }
 
-//            print("Questions medium")
-//            print(gloss.mediumQuestions)
-//            print("Questions hard")
-//            print(gloss.hardQuestions)
-        
-        
+
+
         
         }
     }
