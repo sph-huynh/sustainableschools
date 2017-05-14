@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516471408.91181"
+            timestampString = "516472977.050268"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "AnswerButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -81,28 +81,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516471513.477954"
+            timestampString = "516472977.050268"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "displayQuestion()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516471825.990552"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "AnswerButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

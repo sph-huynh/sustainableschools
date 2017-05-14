@@ -20,32 +20,40 @@ class QuizViewController: UIViewController {
     public var incorrectAnswerIndex = 2
     public var currentQuestionArray = [Array<String>]()
     public var difficultyLevels = 1
+    public var currentPoints = 0
+    public var currentWeek = 1
+    public var accumulatedPoints = 0
+    public var reachedLimit: Bool = false
 
+    @IBOutlet weak var testPoints: UILabel!
 
     @IBAction func AnswerButton(_ sender: AnyObject) {
         if (sender.tag == Int(correctAnswerPlacement)){
             print ("correct")
-//            addPoints(repo.week)
+            addPoints(week: currentWeek)
         }
         else{
             print("wrong")
         }
         
         if (currentQuestion != questionLimit){
-            if (difficultyLevels < 4) {
+            if (difficultyLevels < 3) {
                 difficultyLevels += 1
                 currentQuestion = 0
             }
             else{
-                // display finish screen
+                reachedLimit = true
+                questionLabel.text = String(accumulatedPoints)
+                
             }
         }
         displayQuestion()
+
         
     }
     
     func addPoints(week: Int){
-        
+        accumulatedPoints += currentPoints
     }
     
     
@@ -58,6 +66,7 @@ class QuizViewController: UIViewController {
     
     // Question function
     func displayQuestion(){
+        if reachedLimit != true{
         parseJSON()
 
         questionLabel.text = currentQuestionArray[currentQuestion][0]
@@ -88,20 +97,26 @@ class QuizViewController: UIViewController {
     
         
 
-
+        }
     }
     
     func parseJSON(){
         DataManager.shared.getWeeklyQuestions(){ data in
             guard let gloss = QNA(data: data) else{ return }
+            currentWeek = gloss.week
             if (difficultyLevels == 1){
                 currentQuestionArray = gloss.easyQuestions
+                currentPoints = gloss.easyPoints
             }
             if (difficultyLevels == 2){
                 currentQuestionArray = gloss.mediumQuestions
+                currentPoints = gloss.mediumPoints
+
             }
             if (difficultyLevels == 3){
                 currentQuestionArray = gloss.hardQuestions
+                currentPoints = gloss.hardPoints
+
             }
 
 

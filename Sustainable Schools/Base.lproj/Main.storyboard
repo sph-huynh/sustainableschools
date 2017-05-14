@@ -177,6 +177,14 @@
                                     <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="ijm-Lv-UOr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYC-X0-XIx">
+                                <rect key="frame" x="166" y="159" width="42" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="testPoints"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -186,6 +194,7 @@
                     </view>
                     <connections>
                         <outlet property="questionLabel" destination="5X0-g5-xhd" id="Aw4-dh-tQh"/>
+                        <outlet property="testPoints" destination="VYC-X0-XIx" id="Mb8-ov-jhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-M6-Snr" userLabel="First Responder" sceneMemberID="firstResponder"/>
