@@ -13,11 +13,11 @@ import Foundation
 class QuizViewController: UIViewController {
 
     
-    let questions = ["WAIT A MINITEHow many Sustainable Development Goals are there?", "What is Goal 1?", "What is Goal 3?"]
-    let answers = [["17", "19", "8", "4"],["Producing less waste", "Using more solar", "Ensuring everybody has access to water", "End all forms of poverty everywhere"], ["Using clean and sustainable energy", "Building sustainable cities", "Using less energy", "Promoting gender equality"]]
-    
     public var currentQuestion = 0
     public var correctAnswerPlacement:UInt32 = 0
+    public var questionLimit = 1
+    //to jump over the correct answer, we store this index
+    public var incorrectAnswerIndex = 2
 
 
     @IBAction func AnswerButton(_ sender: AnyObject) {
@@ -29,7 +29,7 @@ class QuizViewController: UIViewController {
             print("wrong")
         }
         
-        if (currentQuestion != questions.count){
+        if (currentQuestion != questionLimit){
             displayQuestion()
         }
         
@@ -50,33 +50,37 @@ class QuizViewController: UIViewController {
     // Question function
     func displayQuestion(){
         parseJSON()
+
         DataManager.shared.getWeeklyQuestions(){ data in
             guard let gloss = QNA(data: data) else{ return }
-            questionLabel.text = gloss.easyQuestions[0][currentQuestion]
+            questionLabel.text = gloss.easyQuestions[currentQuestion][0]
+            
+            correctAnswerPlacement = arc4random_uniform(4)+1
+
+            var button:UIButton = UIButton()
+            
+
+            
+            // we access each button by creating a new button with the tags set
+            for buttonTag in 1...4{
+                button = view.viewWithTag(buttonTag) as! UIButton
+                
+                if (buttonTag == Int(correctAnswerPlacement)){
+                    button.setTitle(gloss.easyQuestions[currentQuestion][1], for: .normal)
+                }
+                else {
+                    button.setTitle(gloss.easyQuestions[currentQuestion][incorrectAnswerIndex], for: .normal)
+                    incorrectAnswerIndex += 1
+                }
+                
+                
+            }
+            incorrectAnswerIndex = 2
+            currentQuestion += 1
+            questionLimit = gloss.easyQuestions.count
         }
         
-        correctAnswerPlacement = arc4random_uniform(4)+1
-        
-        var button:UIButton = UIButton()
-        
-        //to jump over the correct answer, we store this index
-        var incorrectAnswerIndex = 1
-        
-        // we access each button by creating a new button with the tags set
-        for j in 1...4{
-            button = view.viewWithTag(j) as! UIButton
-            
-            if (j == Int(correctAnswerPlacement)){
-                button.setTitle(answers[currentQuestion][0], for: .normal)
-            }
-            else {
-                button.setTitle(answers[currentQuestion][incorrectAnswerIndex], for: .normal)
-                incorrectAnswerIndex = 2
-            }
-            
-            
-        }
-        currentQuestion += 1
+
 
     }
     
