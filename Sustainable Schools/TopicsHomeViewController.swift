@@ -12,8 +12,21 @@ class TopicsHomeViewController: UIViewController {
 
     @IBOutlet weak var quizButtonEnergy: UIButton!
     @IBOutlet weak var quizButtonFood: UIButton!
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var testButton: UIButton!
+
     
     
+    @IBAction func getGlossUser(_ sender: Any) {
+        print("Here's the Gloss")
+        DataManager.shared.getWeeklyQuestions(){ data in
+//            let json = try! JSONSerialization.jsonObject(with: data, options: []) as! 
+//            print(json)
+            guard let gloss = QNA(data: data) else{ return }
+            print("Week: \(gloss.week)")
+            print(gloss.bossPoints)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

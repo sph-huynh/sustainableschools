@@ -104,12 +104,22 @@
                                 <rect key="frame" x="123" y="167" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E92-b6-zeD">
+                                <rect key="frame" x="33" y="338" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="testButton"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="getGlossUser:" destination="x6W-4X-oly" eventType="touchUpInside" id="f05-xY-ywZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="quizButtonEnergy" destination="KzH-hg-ft5" id="xW2-xA-KlR"/>
                         <outlet property="quizButtonFood" destination="Gtv-B6-eyT" id="o5d-sA-M0Q"/>
+                        <outlet property="testButton" destination="E92-b6-zeD" id="vJn-Uk-HTg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-H7-7re" userLabel="First Responder" sceneMemberID="firstResponder"/>
