@@ -29,8 +29,8 @@
                                 <rect key="frame" x="56" y="466" width="263" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.76287955045700073" blue="0.05046052485704422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration" identifier="LoginButton"/>
-                                <state key="normal" title="LoginButton">
+                                <accessibility key="accessibilityConfiguration" identifier="AuthButton"/>
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -39,7 +39,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="Wai-e8-N27"/>
+                                    <action selector="authUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="LlZ-rN-mg3"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8rO-VJ-Ndg">
@@ -58,12 +58,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKn-VM-FhT">
+                                <rect key="frame" x="235" y="510" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="RegisterToggle"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerToggleButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDW-8N-3uR"/>
+                                    <segue destination="hE1-dR-7Pf" kind="show" id="nLZ-qZ-5uc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVb-7j-Ky3">
+                                <rect key="frame" x="77" y="515" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94107431173324585" green="0.94123548269271851" blue="0.94106405973434448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="gU1-9p-1in"/>
                     <connections>
-                        <outlet property="LoginButton" destination="3b3-Yg-GAu" id="7sR-Z5-SQi"/>
+                        <outlet property="emailLabel" destination="Za4-v1-T4p" id="6sZ-Ib-cJm"/>
+                        <outlet property="loginButton" destination="3b3-Yg-GAu" id="pj3-jw-MSX"/>
+                        <outlet property="passwordLabel" destination="8rO-VJ-Ndg" id="Yg1-3P-nfO"/>
+                        <outlet property="registerToggle" destination="pKn-VM-FhT" id="NGU-Y9-RAx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -248,6 +269,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itH-jV-YwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="124"/>
+        </scene>
+        <!--Homepage View Controller-->
+        <scene sceneID="48q-oZ-Aj8">
+            <objects>
+                <viewController id="hE1-dR-7Pf" customClass="HomepageViewController" customModule="Sustainable_Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jQe-Td-Apx"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fN-cV-ycu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hFe-ak-tdI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M64-Rl-Nzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="793"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
