@@ -23,7 +23,18 @@ class TopicsHomeViewController: UIViewController {
         DataManager.shared.getWeeklyQuestions(){ data in
             guard let gloss = QNA(data: data) else{ return }
             print("Week: \(gloss.week)")
-            print(gloss.bossPoints)
+            print("Points: \(gloss.easyPoints)")
+            print("Points: \(gloss.mediumPoints)")
+            print("Points: \(gloss.hardPoints)")
+            print("Questions easy")
+            print(gloss.easyQuestions)
+            print("Questions medium")
+            print(gloss.mediumQuestions)
+            print("Questions hard")
+            print(gloss.hardQuestions)
+
+            
+
         }
     }
     
