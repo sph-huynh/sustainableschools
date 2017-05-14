@@ -23,9 +23,9 @@ public struct GlossSustainable: Glossy {
     //        questions = "Questions" <~~ json
     //    }
     
-    let week: Int?
-    let points: Int?
-    let qna: NSArray?
+    let week: Int
+    let points: Int
+    let qna: NSArray
     
     enum Language: String {
         case Swift = "Swift"

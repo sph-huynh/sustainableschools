@@ -1,0 +1,51 @@
+{
+    "week": 1,
+    "points": {
+        "easy": 3,
+        "medium": 5,
+        "hard": 7
+    },
+    "questions": {
+        "easy": [
+                    [
+                    "How many Sustainable Development Goals are there?",
+                    "17",
+                    "19",
+                    "8",
+                    "4"
+                    ],
+                    [
+                    "What is Goal 1?",
+                    "No poverty",
+                    "Producing less waste",
+                    "Using more solar",
+                    "Ensuring everybody has access to water"
+                    ]
+                ],
+        "medium": [
+                    [
+                    "What is Goal 2?",
+                    "Zero Hunger",
+                    "Example 1",
+                    "Example 2",
+                    "Example 4"
+                    ]
+        ],
+        "hard": [
+                    [
+                    "What is Goal 3?",
+                    "Good health and well being",
+                    "Example 1",
+                    "Example 2",
+                    "Example 4"
+                    ],
+                    [
+                    "What is Goal 17?",
+                    "Partnerships for the goals",
+                    "End all forms of poverty everywhere",
+                    "Example 1",
+                    "Example 2"
+                    ]
+        ]
+    }
+}

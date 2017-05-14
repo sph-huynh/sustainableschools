@@ -1,0 +1,6 @@
+framework module Pods_Sustainable_Schools {
+  umbrella header "Pods-Sustainable Schools-umbrella.h"
+
+  export *
+  module * { export * }
+}

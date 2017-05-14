@@ -1,34 +1,137 @@
 {
-    "level-1": {
-    {"3",
+    "easy-points": "3",
     "easy-questions": [
-    {"How many Sustainable Development Goals are there?", "17", "19", "8", "4"},
-    {"What is Goal 1?", "No poverty", "Producing less waste", "Using more solar", "Ensuring everybody has access to water"},
-    {"What is Goal 2?", "Zero Hunger", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 3?", "Good health and well being", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 17?", "Partnerships for the goals", "End all forms of poverty everywhere", "Example 1", "Example 2",}
-    ]
-    },
-    {"5",
+                       [
+                        "How many Sustainable Development Goals are there?",
+                        "17",
+                        "19",
+                        "8",
+                        "4"
+                        ],
+                       [
+                        "What is Goal 1?",
+                        "No poverty",
+                        "Producing less waste",
+                        "Using more solar",
+                        "Ensuring everybody has access to water"
+                        ],
+                       [
+                        "What is Goal 2?",
+                        "Zero Hunger",
+                        "Example 1",
+                        "Example 2",
+                        "Example 4"
+                        ],
+                       [
+                        "What is Goal 3?",
+                        "Good health and well being",
+                        "Example 1",
+                        "Example 2",
+                        "Example 4"
+                        ],
+                       [
+                        "What is Goal 17?",
+                        "Partnerships for the goals",
+                        "End all forms of poverty everywhere",
+                        "Example 1",
+                        "Example 2"
+                        ]
+                       ],
+    "medium-points": "5",
     "medium-questions": [
-    {"What is Goal 4?", "Quality Education", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 5?", "Gender Equality", "Using clean and sustainable energy", "Building sustainable cities", "Using less energy"},
-    {"What is Goal 6?", "Clean water and sanitation", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 7?", "Affordable and clean energy", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 8?", "Decent work and economic growth", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 9?", "Industry, Innovation and infrastructure", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 10?", "Reduced Inequalities", "Promoting gender equality", "Example 1", "Example 2",},
-    {"What is Goal 11?", "Sustainable cities and communities", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 15?", "Life on land", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 16?", "Peace, Justice and Strong Institutions", "Example 1", "Example 2", "Example 4"}
-    ]
-    },
-    {"7",
+                         [
+                          "What is Goal 4?",
+                          "Quality Education",
+                          "Example",
+                          "Example",
+                          "Example"
+                          ],
+                         [
+                          "What is Goal 5?",
+                          "Gender Equality",
+                          "Using clean and sustainable energy",
+                          "Building sustainable cities",
+                          "Ensuring everybody has access to water"
+                          ],
+                         [
+                          "What is Goal 6?",
+                          "Clean water and sanitation",
+                          "Example 1",
+                          "Example 2",
+                          "Example 4"
+                          ],
+                         [
+                          "What is Goal 7?",
+                          "Affordable and clean energy",
+                          "Example 1",
+                          "Example 2",
+                          "Example 4"
+                          ],
+                         [
+                          "What is Goal 8?",
+                          "Decent work and economic growth",
+                          "End all forms of poverty everywhere",
+                          "Example 1",
+                          "Example 2"
+                          ],
+                         [
+                          "What is Goal 9?",
+                          "Industry, Innovation and infrastructure",
+                          "Example 1",
+                          "Example 2",
+                          "Example 4"
+                          ],
+                         [
+                          "What is Goal 10?",
+                          "Reduced Inequalities",
+                          "Example 1",
+                          "Example 2",
+                          "Example 4"
+                          ],
+                         [
+                          "What is Goal 11?",
+                          "Sustainable cities and communities",
+                          "Example 1",
+                          "Example 2",
+                          "Example 4"
+                          ],
+                         [
+                          "What is Goal 15?",
+                          "Life on land",
+                          "Example 1",
+                          "Example 2",
+                          "Example 4"
+                          ],
+                         [
+                          "What is Goal 16?",
+                          "Peace, Justice and Strong Institutions",
+                          "Good health and well being",
+                          "Example 1",
+                          "Example 2"
+                          ]
+                         ],
+    "hard-points": "7",
     "hard-questions": [
-    {"What is Goal 12?", "Responsible Consumption and production", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 13?", "Climate action", "Example 1", "Example 2", "Example 4"},
-    {"What is Goal 14?", "Life below water", "Example 1", "Example 2", "Example 4"}
-    ]
-    },
-    }
+                       [
+                        "What is Goal 12?",
+                        "Responsible Consumption and production",
+                        "Example 1",
+                        "Example 2",
+                        "Example 4"
+                        ],
+                       [
+                        "What is Goal 13?",
+                        "Climate action",
+                        "Example 1",
+                        "Example 2",
+                        "Example 4"
+                        ],
+                       [
+                        "What is Goal 14?",
+                        "Life below water",
+                        "Good health and well being",
+                        "Example 1",
+                        "Example 2"
+                        ]
+                       ]
 }

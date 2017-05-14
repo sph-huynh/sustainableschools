@@ -7,20 +7,47 @@ struct QNA: Glossy {
     //    public init?(json: JSON) {
     //        level = "level" <~~ json
     //    }
-    let qnaQuestions: String?
-    let qnaAnswers: NSArray?
+
+    // From Gloss doco
+    
+//    let qnaQuestions: String?
+//    let qnaAnswers: NSArray?
+//    
+//    init?(json: JSON){
+//        self.qnaQuestions = "qna.questions" <~~ json
+//        self.qnaAnswers = "qna.answers" <~~ json
+//
+//    }
+//    
+//    func toJSON() -> JSON? {
+//        return jsonify([
+//            "qna.questions" ~~> self.qnaQuestions,
+//            "qna.answers" ~~> self.qnaAnswers
+//            ])
+//    }
+    
+    // Ray Wenderlich tutorial
+    
+    let week: Int?
+    let points: Points?
+    let questions: Quiz?
+    
+    enum Language: String {
+        case Swift = "Swift"
+        case ObjectiveC = "Objective-C"
+    }
     
     init?(json: JSON){
-        guard let qnaQuestions: String = "questions" <~~ json else { return nil }
-        self.qnaQuestions = qnaQuestions
-        self.qnaAnswers = qnaAnswers
+        self.week = "week" <~~ json
+        self.points = "points" <~~ json
+        self.questions = "questions" <~~ json
     }
     
     func toJSON() -> JSON? {
         return jsonify([
-            "questions" ~~> self.qnaQuestions,
-            "answers" ~~> self.qnaAnswers
+            "week" ~~> self.week,
+            "points" ~~> self.points,
+            "questions" ~~> self.questions
             ])
     }
-    
 }

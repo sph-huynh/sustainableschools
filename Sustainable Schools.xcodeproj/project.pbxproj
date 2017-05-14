@@ -19,6 +19,10 @@
 		2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380A1711EBF6E2800CC45F3 /* QNA.swift */; };
 		2380A1741EBF6EA300CC45F3 /* JSONSustainable.json in Resources */ = {isa = PBXBuildFile; fileRef = 2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */; };
 		23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F38A061EBF3DCD0089E243 /* Gloss.framework */; };
+		281292A81EC5A4FB007DB106 /* TempJSONStuff.json in Resources */ = {isa = PBXBuildFile; fileRef = 281292A71EC5A4FB007DB106 /* TempJSONStuff.json */; };
+		281292AA1EC6F531007DB106 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 281292A91EC6F531007DB106 /* data.json */; };
+		281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AB1EC6FAA6007DB106 /* Difficulty.swift */; };
+		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
 		844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 844AEDF31EC02BBC009B4BDC /* colourscheme.txt */; };
 		845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D40781EBB0DBC00BC15AD /* QuizViewController.swift */; };
@@ -63,6 +67,10 @@
 		2380A1711EBF6E2800CC45F3 /* QNA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNA.swift; sourceTree = "<group>"; };
 		2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONSustainable.json; sourceTree = "<group>"; };
 		23F38A061EBF3DCD0089E243 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "Pods/../build/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
+		281292A71EC5A4FB007DB106 /* TempJSONStuff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TempJSONStuff.json; sourceTree = "<group>"; };
+		281292A91EC6F531007DB106 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		281292AB1EC6FAA6007DB106 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844AEDF31EC02BBC009B4BDC /* colourscheme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colourscheme.txt; sourceTree = "<group>"; };
 		845D40781EBB0DBC00BC15AD /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +147,8 @@
 				235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */,
 				2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */,
 				2380A1711EBF6E2800CC45F3 /* QNA.swift */,
+				281292AB1EC6FAA6007DB106 /* Difficulty.swift */,
+				281292AD1EC6FAD7007DB106 /* Quiz.swift */,
 				844AEDF31EC02BBC009B4BDC /* colourscheme.txt */,
 			);
 			path = "Sustainable Schools";
@@ -165,7 +175,9 @@
 		2380A16C1EBF6B9200CC45F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				281292A91EC6F531007DB106 /* data.json */,
 				2380A1731EBF6EA300CC45F3 /* JSONSustainable.json */,
+				281292A71EC5A4FB007DB106 /* TempJSONStuff.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -303,7 +315,9 @@
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
 				2380A1741EBF6EA300CC45F3 /* JSONSustainable.json in Resources */,
+				281292A81EC5A4FB007DB106 /* TempJSONStuff.json in Resources */,
 				844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */,
+				281292AA1EC6F531007DB106 /* data.json in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E160EDAA501BD72BA33F2E4D /* [CP] Embed Pods Frameworks */ = {
@@ -381,9 +395,11 @@
 				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
 				2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */,
 				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,
+				281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */,
 				845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */,
 				2380A1701EBF6DEB00CC45F3 /* GlossSustainable.swift in Sources */,
 				845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */,
+				281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
