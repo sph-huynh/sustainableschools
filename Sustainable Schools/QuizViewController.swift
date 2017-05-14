@@ -16,8 +16,8 @@ class QuizViewController: UIViewController {
     let questions = ["WAIT A MINITEHow many Sustainable Development Goals are there?", "What is Goal 1?", "What is Goal 3?"]
     let answers = [["17", "19", "8", "4"],["Producing less waste", "Using more solar", "Ensuring everybody has access to water", "End all forms of poverty everywhere"], ["Using clean and sustainable energy", "Building sustainable cities", "Using less energy", "Promoting gender equality"]]
     
-    var currentQuestion = 0
-    var correctAnswerPlacement:UInt32 = 0
+    public var currentQuestion = 0
+    public var correctAnswerPlacement:UInt32 = 0
 
 
     @IBAction func AnswerButton(_ sender: AnyObject) {
@@ -49,8 +49,11 @@ class QuizViewController: UIViewController {
     
     // Question function
     func displayQuestion(){
-        
-        questionLabel.text = questions[currentQuestion]
+        parseJSON()
+        DataManager.shared.getWeeklyQuestions(){ data in
+            guard let gloss = QNA(data: data) else{ return }
+            questionLabel.text = gloss.easyQuestions[0][currentQuestion]
+        }
         
         correctAnswerPlacement = arc4random_uniform(4)+1
         
@@ -77,29 +80,35 @@ class QuizViewController: UIViewController {
 
     }
     
-    
-
-    
-//    func parseJSON(){
-// 
-//
-//
-//     let quizURL = URL(string: "https://github.com/sph-huynh/sustainable-schools-quiz/raw/master/users.json")
-//        URLSession.shared.dataTask(with: (quizURL)!, completionHandler: {(data, response, error) -> Void in
-//            
-//            if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary{
-//                print(jsonObj!.value(forKey: "points")!)
-//                
-//                OperationQueue.main.addOperation({
-//                    self.displayQuestion()
-//                })
+    func parseJSON(){
+        print("Double checking me gloss works")
+        
+        DataManager.shared.getWeeklyQuestions(){ data in
+            guard let gloss = QNA(data: data) else{ return }
+            print("Week: \(gloss.week)")
+            print("Points: \(gloss.easyPoints)")
+            print("Points: \(gloss.mediumPoints)")
+            print("Points: \(gloss.hardPoints)")
+            print("Questions easy")
+            print(gloss.easyQuestions)
+            print("")
+            print(gloss.easyQuestions[0][0])
+            print("OK QUIZ TIME")
+//            guard let easyQuestions = gloss.easyQuestions as? [[String: Any]] else{
+//                return
 //            }
-//            
-//        }).resume()
-//        
-//    }
-//    
-    
+//            print(easyQuestions)
+
+//            print("Questions medium")
+//            print(gloss.mediumQuestions)
+//            print("Questions hard")
+//            print(gloss.hardQuestions)
+        
+        
+        
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     

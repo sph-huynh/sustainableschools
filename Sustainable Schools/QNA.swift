@@ -8,9 +8,9 @@ struct QNA {
     var easyPoints: Int
     var mediumPoints: Int
     var hardPoints: Int
-    var easyQuestions: Array<Any>
-    var mediumQuestions: Array<Any>
-    var hardQuestions: Array<Any>
+    var easyQuestions: [Array<String>]
+    var mediumQuestions: [Array<String>]
+    var hardQuestions: [Array<String>]
     let bossPoints: String
     
 
@@ -29,9 +29,9 @@ struct QNA {
         let easyQuestions = "questions.easy" <~~ json ?? [["Error with Questions"]]
         let mediumQuestions = "questions.medium" <~~ json ?? [["Error with Questions"]]
         let hardQuestions = "questions.hard" <~~ json ?? [["Error with Questions"]]
-        self.easyQuestions = [easyQuestions]
-        self.mediumQuestions = [mediumQuestions]
-        self.hardQuestions = [hardQuestions]
+        self.easyQuestions = easyQuestions
+        self.mediumQuestions = mediumQuestions
+        self.hardQuestions = hardQuestions
         self.bossPoints = "E: \(easyPoints!)M: \(mediumPoints!)H: \(hardPoints!)"
 
 

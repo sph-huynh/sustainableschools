@@ -162,9 +162,8 @@
                                     <action selector="AnswerButton:" destination="tSg-vm-UmU" eventType="touchUpInside" id="aD9-55-Lsa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X0-g5-xhd">
-                                <rect key="frame" x="16" y="337" width="343" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question like for example just want to put in a really long q" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X0-g5-xhd">
+                                <rect key="frame" x="16" y="337" width="344" height="85"/>
                                 <accessibility key="accessibilityConfiguration" identifier="questionLabel"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -180,6 +179,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5X0-g5-xhd" firstAttribute="centerY" secondItem="A9O-FY-DYg" secondAttribute="centerY" constant="46" id="F1n-oM-Yge"/>
+                            <constraint firstItem="5X0-g5-xhd" firstAttribute="centerX" secondItem="A9O-FY-DYg" secondAttribute="centerX" id="isS-E0-efB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="questionLabel" destination="5X0-g5-xhd" id="Aw4-dh-tQh"/>
@@ -187,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-M6-Snr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2333.5" y="127.5"/>
+            <point key="canvasLocation" x="2332" y="127.28635682158921"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qui-X1-Yhm">
