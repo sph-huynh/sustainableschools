@@ -22,32 +22,44 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UITextField!
     @IBOutlet weak var registerToggle: UIButton!
     
+    // if you have an account, go straight into the app
+    // if error print error in input
     @IBAction func authUser(){
-        emailInput = emailLabel.text!
-        passwordInput = passwordLabel.text!
-        loginUser(email: emailInput, password: passwordInput)
+        if let emailInput = emailLabel.text, let passwordInput = passwordLabel.text {
+            FIRAuth.auth()?.signIn(withEmail: emailInput, password: passwordInput) { (user, error) in
+                if error == nil {
+                    //perform segue
+                }
+                else {
+                    // print incorrect password or username
+                }
+            }
+            
+        }
+        
     }
     
+    // If you press this button,
+    // we send email to register page
+    // and it will ask for more details before registering
     @IBAction func registerToggleButton(){
-        registerUser(email: emailInput, password: passwordInput)
+        // perform segue
+        // go to register page
     }
     
-    func loginUser(email: String, password: String){
-        print("I log you in now")
-//        FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
-//            // ...
-//        }
-    }
     
     
 
-    
+    // After display register page
+    // Create new user, store info
+    // Log in
+    // Go to app
     func registerUser(email: String, password: String){
         print("I register user now")
 
-//        FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
-//            // ...
-//        }
+        FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+            // ...
+        }
 
     }
     
