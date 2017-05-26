@@ -12,7 +12,7 @@ import Foundation
 
 class QuizViewController: UIViewController {
 
-    
+    var username: String = ""
     public var currentQuestion = 0
     public var correctAnswerPlacement:UInt32 = 0
     public var questionLimit = 1

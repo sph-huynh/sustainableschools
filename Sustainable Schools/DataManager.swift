@@ -11,12 +11,18 @@
 
 
 import Foundation
+import FirebaseAuth
+import FirebaseDatabase
+
 
 class DataManager {
     static let shared = DataManager()
+    
     private init(){
     
     }
+    
+    
 
 
     func getWeeklyQuestions(completion: (Data) -> Void){

@@ -1,9 +1,9 @@
 FFD256 Orange
 96C9FF Blue
-31A6CC Deepr blue
+30A5CC Deepr blue
 
-999671 earthy green
-F7EEB1 brown
+CCC230 earthy green
+999671 brown
 
 light grey
 dark grey
