@@ -11,15 +11,20 @@
 
 
 import Foundation
+import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
 
 class DataManager {
+    
+    // so that we can use the Data Manager through out the application
     static let shared = DataManager()
     
-    private init(){
+
     
+    private init(){
+
     }
     
     

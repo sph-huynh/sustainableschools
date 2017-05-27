@@ -29,7 +29,7 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.1)
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
-  - GTMSessionFetcher/Core (1.1.9)
+  - GTMSessionFetcher/Core (1.1.10)
 
 DEPENDENCIES:
   - Firebase (~> 3.17)
@@ -47,7 +47,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
-  GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
 
 PODFILE CHECKSUM: d92e41ac391ee6ee43261dc33f95abb421ade9a7
 

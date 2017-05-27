@@ -10,13 +10,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/QuizViewController.swift"
-            timestampString = "516474562.022468"
+            timestampString = "517454678.991869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "QuizViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sustainable_Schools.QuizViewController.accumulatedPoints.getter : Swift.Int"
+                  moduleName = "Sustainable Schools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
+                  timestampString = "517557589.010323"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sustainable_Schools.QuizViewController.accumulatedPoints.setter : Swift.Int"
+                  moduleName = "Sustainable Schools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
+                  timestampString = "517557589.012801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sustainable_Schools.QuizViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Sustainable_Schools.QuizViewController"
+                  moduleName = "Sustainable Schools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
+                  timestampString = "517557589.015701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sustainable_Schools.QuizViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Sustainable_Schools.QuizViewController&gt;"
+                  moduleName = "Sustainable Schools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophiahuynh/Documents/sustainableschools/Sustainable%20Schools/QuizViewController.swift"
+                  timestampString = "517557589.018667"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "210">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sustainable Schools/DataManager.swift"
-            timestampString = "516771424.546359"
+            timestampString = "517556312.205611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "DataManager"
             landmarkType = "3">
          </BreakpointContent>

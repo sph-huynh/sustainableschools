@@ -10,33 +10,29 @@ import Foundation
 
 
 class ValidationManager {
-    
-    init (itemToBeValidated: String, keyOfItem: Int) {
-        let typeOfItem = keyOfItem
-        switch typeOfItem {
-        case 1 :
-            print("validate email")
-        case 2 :
-            print("validate password")
-        default :
-            print("You good")
-        }
-    }
+    static let shared = ValidationManager()
+
     
     func validateEmail (emailToBeValidated: String) -> Bool {
-        print("validate this email\(emailToBeValidated)")
-        let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        let result = emailTest.evaluate(with: emailToBeValidated)
-        return result
+        if emailToBeValidated != ""{
+            print("validate this email\(emailToBeValidated)")
+            let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
+            let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            let result = emailTest.evaluate(with: emailToBeValidated)
+            return result
+        }
+        else{
+            return false
+        }
     }
     
     func validatePassword (passwordToBeValidated: String) -> Bool {
         print("validate this password")
-        if passwordToBeValidated.characters.count <= 7 {
+        if passwordToBeValidated != "" && passwordToBeValidated.characters.count >= 8 {
             return true
         }
         else{
+            print("You need a password longer than 8 characters")
             return false
         }
     }

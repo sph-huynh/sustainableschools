@@ -41,7 +41,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="authUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="LlZ-rN-mg3"/>
-                                    <segue destination="x6W-4X-oly" kind="show" identifier="loginToQuizSegue" id="hmk-nz-jKH"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8rO-VJ-Ndg">
@@ -67,8 +66,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <action selector="registerToggleButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDW-8N-3uR"/>
-                                    <segue destination="hE1-dR-7Pf" kind="show" identifier="registrationPageSegue" id="nLZ-qZ-5uc"/>
+                                    <action selector="registerToggleButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="NI4-rN-PLf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVb-7j-Ky3">
@@ -93,7 +91,9 @@
                         <outlet property="emailLabel" destination="Za4-v1-T4p" id="6sZ-Ib-cJm"/>
                         <outlet property="loginButton" destination="3b3-Yg-GAu" id="pj3-jw-MSX"/>
                         <outlet property="passwordLabel" destination="8rO-VJ-Ndg" id="Yg1-3P-nfO"/>
-                        <outlet property="registerToggle" destination="pKn-VM-FhT" id="NGU-Y9-RAx"/>
+                        <outlet property="registerToggle" destination="pKn-VM-FhT" id="Viy-Nf-su6"/>
+                        <segue destination="hE1-dR-7Pf" kind="show" identifier="registrationPageSegue" id="1Gh-yj-kjt"/>
+                        <segue destination="x6W-4X-oly" kind="show" identifier="loginToQuizSegue" id="Zuv-cI-uSn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,12 +134,20 @@
                                 <rect key="frame" x="123" y="167" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKV-C3-j98">
+                                <rect key="frame" x="166" y="341" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="quizButtonEnergy" destination="KzH-hg-ft5" id="xW2-xA-KlR"/>
                         <outlet property="quizButtonFood" destination="Gtv-B6-eyT" id="o5d-sA-M0Q"/>
+                        <outlet property="testLabel" destination="RKV-C3-j98" id="rtK-7O-x4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-H7-7re" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,13 +349,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teacher" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Em-r5-QAM">
-                                <rect key="frame" x="143" y="437" width="216" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDT-Fq-9MI">
                                 <rect key="frame" x="15" y="353" width="88" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -383,13 +384,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My teacher:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNy-sd-chs">
-                                <rect key="frame" x="15" y="443" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aqe-4H-LlS">
                                 <rect key="frame" x="143" y="283" width="216" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -411,9 +405,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqo-5g-ZEf">
+                                <rect key="frame" x="302" y="517" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerUser" destination="hE1-dR-7Pf" eventType="touchUpInside" id="Fbu-E6-pn7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94119322299957275" green="0.9411730170249939" blue="0.94117695093154907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="emailInput" destination="D8r-NS-Ihg" id="MyG-Tb-Euo"/>
+                        <outlet property="firstNameInput" destination="MJt-02-CcA" id="ha5-KL-FJl"/>
+                        <outlet property="lastNameInput" destination="wV5-Gu-FRM" id="Gwy-b5-Xad"/>
+                        <outlet property="passwordInput" destination="Gdq-oC-SHF" id="mtT-PI-5HO"/>
+                        <segue destination="x6W-4X-oly" kind="show" identifier="quizViewConSegue" id="0Kv-5e-IYJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M64-Rl-Nzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,6 +430,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KLM-wY-hyB"/>
+        <segue reference="Zuv-cI-uSn"/>
+        <segue reference="GAC-Qi-lzx"/>
     </inferredMetricsTieBreakers>
 </document>
