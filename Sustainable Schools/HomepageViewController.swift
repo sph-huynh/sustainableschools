@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import QuartzCore
 import FirebaseAuth
-
+import Spring
 
 class HomepageViewController: UIViewController {
     
@@ -20,11 +19,49 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var emailLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     @IBOutlet weak var registerToggle: UIButton!
+    @IBOutlet weak var noAccountText: UILabel!
     
 
-//    var email: String = ""
-//    var password: String = ""
+    // animated logo variables
+    @IBOutlet var earthLogo: SpringImageView!
+
     
+    // perform the animation
+    func animateEarthLogo() {
+        earthLogo.animation = "swing"
+        earthLogo.curve = "easeIn"
+        earthLogo.duration = 1.0
+
+        
+    }
+    
+    func slideUpLogo(){
+        earthLogo.animation = "slideUp"
+        earthLogo.curve = "spring"
+        earthLogo.duration = 1.0
+
+
+        
+    }
+    
+    func chainAnimation(){
+        slideUpLogo()
+        earthLogo.animate()
+        animateEarthLogo()
+        earthLogo.animate()
+    }
+    
+    // show labels after a delay of 1 second
+    func showLabels(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.emailLabel.isHidden = false
+            self.passwordLabel.isHidden = false
+            self.loginButton.isHidden = false
+            self.registerToggle.isHidden = false
+            self.noAccountText.isHidden = false
+        })
+
+    }
 
     
     
@@ -92,10 +129,17 @@ class HomepageViewController: UIViewController {
     
 
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // delay label by 5 seconds
+        showLabels()
+        // animate the logo as soon as the app loads
+        chainAnimation()
+        
+
         
     }
     

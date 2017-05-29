@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5BBE4C98ED3DD8D19825C4D5A09BFC359A6B436E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BBE4C98ED3DD8D19825C4D5A09BFC359A6B436E" : 9223372036854775807,
+    "71F5D8D885CFF6BD7151066D7BFF25CC48A5235E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E62498E6-FEE2-454C-80B0-1E81E3000120",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BBE4C98ED3DD8D19825C4D5A09BFC359A6B436E" : "sustainableschools\/",
+    "71F5D8D885CFF6BD7151066D7BFF25CC48A5235E" : "sustainableschools\/Sustainable%20Schools\/Spring\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Sustainable Schools",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sustainable Schools.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sph-huynh\/sustainableschools.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BBE4C98ED3DD8D19825C4D5A09BFC359A6B436E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MengTo\/Spring.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71F5D8D885CFF6BD7151066D7BFF25CC48A5235E"
+    }
+  ]
+}

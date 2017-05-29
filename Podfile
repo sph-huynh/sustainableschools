@@ -10,4 +10,5 @@ target 'Sustainable Schools' do
     pod 'FirebaseAuth', '~> 3.1'
     pod 'FirebaseDatabase', '~> 3.1'
     pod 'Gloss', '~> 1.2'
+    pod 'Spring', '~> 1.0.3'
 end
