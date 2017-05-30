@@ -11,11 +11,18 @@ import UIKit
 class displayingPointsViewController: UIViewController {
     
     var accumulatedPoints = 0
+    
+    func moveBackToQuizVC(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            self.performSegue(withIdentifier: "goBackToQuizVCSegue", sender: nil)
+        })
+    }
 
     @IBOutlet weak var pointsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         pointsLabel.text = String(accumulatedPoints)
+        moveBackToQuizVC()
         // Do any additional setup after loading the view.
     }
 
