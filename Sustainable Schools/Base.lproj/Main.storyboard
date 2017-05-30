@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9E-vH-5Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1582" y="-545"/>
+            <point key="canvasLocation" x="1580" y="852"/>
         </scene>
         <!--Homepage View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -159,29 +159,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sad transparent" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-ZB-MUB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="FgF-wO-rhc" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="115" y="144" width="143" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes" translatesAutoresizingMaskIntoConstraints="NO" id="RgE-zz-qwk">
-                                <rect key="frame" x="145" y="184" width="85" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frown'" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-aJ-JFG">
-                                <rect key="frame" x="175" y="215" width="23" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-BF-2UN">
-                                <rect key="frame" x="77" y="483" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-hg-ft5">
-                                <rect key="frame" x="175" y="476" width="151" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-hg-ft5">
+                                <rect key="frame" x="187" y="469" width="116" height="35"/>
                                 <color key="backgroundColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" identifier="quizButtonEnergy"/>
                                 <state key="normal" title="Energy">
@@ -196,25 +175,120 @@
                                     <segue destination="tSg-vm-UmU" kind="show" id="KLM-wY-hyB"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad transparent" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-ZB-MUB">
+                                <rect key="frame" x="0.0" y="-124" width="375" height="500"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frown'" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-aJ-JFG">
+                                <rect key="frame" x="175" y="215" width="23" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-BF-2UN">
+                                <rect key="frame" x="96" y="476" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-f6-Ba1">
+                                <rect key="frame" x="71" y="391" width="232" height="29"/>
+                                <segments>
+                                    <segment title="Home"/>
+                                    <segment title="Settings"/>
+                                </segments>
+                                <color key="tintColor" red="0.28512164950370789" green="0.60875535011291504" blue="0.8196558952331543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="pageSegmentChanged:" destination="x6W-4X-oly" eventType="valueChanged" id="Mej-6v-Dz9"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthSad" translatesAutoresizingMaskIntoConstraints="NO" id="FgF-wO-rhc" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="116" y="144" width="143" height="112"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HM-uU-IMd">
+                                <rect key="frame" x="71" y="497" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="About SDGs">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wWC-Cr-keS" kind="show" id="pPD-bo-fzA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-RO-NMN">
+                                <rect key="frame" x="71" y="535" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Leadership Board">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xwh-Bv-44D" kind="show" id="APZ-At-8oi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVa-li-g73">
+                                <rect key="frame" x="71" y="459" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="About Sustainable Schools">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4I9-OG-5ma" kind="show" id="Mps-6S-83f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="KzH-hg-ft5" secondAttribute="trailing" constant="33" id="31T-Gg-Vbg"/>
-                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="KzH-hg-ft5" secondAttribute="bottom" constant="156" id="972-em-hbS"/>
-                            <constraint firstItem="aIu-ZB-MUB" firstAttribute="centerX" secondItem="iE4-5l-zbI" secondAttribute="centerX" id="GFE-7O-bKi"/>
+                            <constraint firstItem="8HM-uU-IMd" firstAttribute="top" secondItem="XVa-li-g73" secondAttribute="bottom" constant="8" id="2KL-hk-TTx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KzH-hg-ft5" secondAttribute="trailing" constant="56" id="31T-Gg-Vbg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QbN-f6-Ba1" secondAttribute="trailing" constant="56" id="7md-hD-PVm"/>
+                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="KzH-hg-ft5" secondAttribute="bottom" constant="163" id="972-em-hbS"/>
+                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="YbW-RO-NMN" secondAttribute="bottom" constant="102" id="BvT-dM-9rP"/>
+                            <constraint firstItem="FgF-wO-rhc" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="100" id="DjH-a5-PlC"/>
+                            <constraint firstItem="QbN-f6-Ba1" firstAttribute="top" secondItem="aIu-ZB-MUB" secondAttribute="bottom" constant="15" id="FNh-6i-N7o"/>
+                            <constraint firstItem="8HM-uU-IMd" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="Gv7-vV-wsX"/>
+                            <constraint firstAttribute="trailing" secondItem="aIu-ZB-MUB" secondAttribute="trailing" id="I5o-L5-lYR"/>
+                            <constraint firstItem="FgF-wO-rhc" firstAttribute="top" secondItem="u0Y-tp-0Qp" secondAttribute="bottom" constant="124" id="JLx-MF-DgI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YbW-RO-NMN" secondAttribute="trailing" constant="56" id="Let-gp-BYH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8HM-uU-IMd" secondAttribute="trailing" constant="56" id="RDQ-5R-nip"/>
+                            <constraint firstItem="YbW-RO-NMN" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="RTx-ae-X1P"/>
+                            <constraint firstItem="YbW-RO-NMN" firstAttribute="top" secondItem="8HM-uU-IMd" secondAttribute="bottom" constant="8" id="SiG-Ok-IdS"/>
                             <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="aIu-ZB-MUB" secondAttribute="bottom" constant="291" id="V8f-wT-Il8"/>
-                            <constraint firstItem="lxv-BF-2UN" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="61" id="mBP-Ud-qEZ"/>
-                            <constraint firstItem="KzH-hg-ft5" firstAttribute="leading" secondItem="lxv-BF-2UN" secondAttribute="trailing" constant="41" id="nUe-R4-RBC"/>
-                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="lxv-BF-2UN" secondAttribute="bottom" constant="163" id="nyg-Rw-vYq"/>
+                            <constraint firstItem="aIu-ZB-MUB" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leading" id="X4r-d5-150"/>
+                            <constraint firstItem="XVa-li-g73" firstAttribute="top" secondItem="QbN-f6-Ba1" secondAttribute="bottom" constant="40" id="YUz-6p-UgN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FgF-wO-rhc" secondAttribute="trailing" constant="100" id="Yve-73-izo"/>
+                            <constraint firstItem="QbN-f6-Ba1" firstAttribute="top" secondItem="FgF-wO-rhc" secondAttribute="bottom" constant="135" id="cmX-Dq-Trm"/>
+                            <constraint firstItem="XVa-li-g73" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="glC-Lg-saB"/>
+                            <constraint firstItem="QbN-f6-Ba1" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="gm9-WR-mrK"/>
+                            <constraint firstItem="lxv-BF-2UN" firstAttribute="top" secondItem="QbN-f6-Ba1" secondAttribute="bottom" constant="57" id="k9v-vg-dUf"/>
+                            <constraint firstItem="lxv-BF-2UN" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="80" id="mBP-Ud-qEZ"/>
+                            <constraint firstItem="KzH-hg-ft5" firstAttribute="leading" secondItem="lxv-BF-2UN" secondAttribute="trailing" constant="34" id="nUe-R4-RBC"/>
+                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="lxv-BF-2UN" secondAttribute="bottom" constant="170" id="nyg-Rw-vYq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XVa-li-g73" secondAttribute="trailing" constant="56" id="wCh-Vg-JPE"/>
+                            <constraint firstItem="KzH-hg-ft5" firstAttribute="top" secondItem="QbN-f6-Ba1" secondAttribute="bottom" constant="50" id="wjZ-op-Gjt"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avatarSad" destination="FgF-wO-rhc" id="EqZ-YN-RGa"/>
+                        <outlet property="level1Label" destination="lxv-BF-2UN" id="Ik1-7c-sda"/>
+                        <outlet property="pageSegmentControl" destination="QbN-f6-Ba1" id="CS7-ud-CFY"/>
                         <outlet property="quizButtonEnergy" destination="KzH-hg-ft5" id="xW2-xA-KlR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-H7-7re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1581.5" y="129.5"/>
+            <point key="canvasLocation" x="1580" y="129.08545727136433"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="wH9-lb-DTx">
@@ -269,6 +343,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLUE CIRCLE" translatesAutoresizingMaskIntoConstraints="NO" id="T79-vY-ttC">
                                 <rect key="frame" x="84" y="106" width="206" height="203"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Energy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKm-OT-6XE">
+                                <rect key="frame" x="121" y="173" width="132" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -294,7 +374,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="zKF-1M-zc6" secondAttribute="trailing" constant="-1" id="by0-Mn-AFb"/>
                             <constraint firstItem="5X0-g5-xhd" firstAttribute="top" secondItem="T79-vY-ttC" secondAttribute="bottom" constant="28" id="gl3-X5-fpl"/>
                             <constraint firstItem="5X0-g5-xhd" firstAttribute="centerX" secondItem="A9O-FY-DYg" secondAttribute="centerX" id="isS-E0-efB"/>
+                            <constraint firstItem="LKm-OT-6XE" firstAttribute="centerY" secondItem="T79-vY-ttC" secondAttribute="centerY" id="iz4-xT-xcD"/>
                             <constraint firstItem="BJY-gV-hCv" firstAttribute="width" secondItem="F2g-dF-voA" secondAttribute="width" id="jNQ-UL-vGZ"/>
+                            <constraint firstItem="LKm-OT-6XE" firstAttribute="centerX" secondItem="T79-vY-ttC" secondAttribute="centerX" id="mbm-hh-B0u"/>
                             <constraint firstItem="BJY-gV-hCv" firstAttribute="height" secondItem="naB-K8-PXi" secondAttribute="height" id="nIO-Qr-641"/>
                             <constraint firstItem="BJY-gV-hCv" firstAttribute="leading" secondItem="A9O-FY-DYg" secondAttribute="leadingMargin" id="qym-gp-0lb"/>
                             <constraint firstItem="T79-vY-ttC" firstAttribute="top" secondItem="vCG-oL-2b4" secondAttribute="bottom" constant="86" id="x2D-wP-dEh"/>
@@ -308,6 +390,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeO-M6-Snr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2332" y="127.28635682158921"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ra0-tl-oor">
+            <objects>
+                <viewController id="4I9-OG-5ma" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RI7-qa-q0r"/>
+                        <viewControllerLayoutGuide type="bottom" id="wHh-Dz-5yf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FW6-lW-23Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCa-zY-2xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="851"/>
         </scene>
         <!--Displaying Points View Controller-->
         <scene sceneID="Qui-X1-Yhm">
@@ -489,14 +589,13 @@
     </scenes>
     <resources>
         <image name="BLUE CIRCLE" width="520" height="520"/>
-        <image name="earth" width="1028" height="1028"/>
         <image name="earthFull" width="1028" height="1028"/>
-        <image name="eyes" width="566" height="116"/>
+        <image name="earthSad" width="1028" height="1028"/>
         <image name="frown'" width="95" height="92"/>
         <image name="sad transparent" width="500" height="500"/>
         <image name="yay" width="640" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5rZ-0O-jxM"/>
+        <segue reference="Zuv-cI-uSn"/>
     </inferredMetricsTieBreakers>
 </document>

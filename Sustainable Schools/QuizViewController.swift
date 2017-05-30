@@ -56,6 +56,9 @@ class QuizViewController: UIViewController {
         accumulatedPoints += currentPoints
     }
     
+    func animateAvatar(){
+        
+    }
     
     @IBOutlet weak var questionLabel: UILabel!
 

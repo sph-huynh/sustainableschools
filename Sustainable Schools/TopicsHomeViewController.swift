@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Spring
 
 class TopicsHomeViewController: UIViewController {
 
@@ -14,8 +15,11 @@ class TopicsHomeViewController: UIViewController {
     @IBOutlet weak var quizButtonFood: UIButton!
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var testButton: UIButton!
+    @IBOutlet weak var level1Label: UILabel!
 
+    @IBOutlet var pageSegmentControl: UISegmentedControl!
     
+    @IBOutlet var avatarSad: SpringImageView!
     
     @IBAction func getGlossUser(_ sender: Any) {
         print("Here's the Gloss")
@@ -38,10 +42,40 @@ class TopicsHomeViewController: UIViewController {
         }
     }
     
+    @IBAction func pageSegmentChanged(_ sender: UISegmentedControl) {
+        switch pageSegmentControl.selectedSegmentIndex{
+            case 0:
+                // Show Homepage items
+                self.quizButtonEnergy.isHidden = false
+                self.level1Label.isHidden = false
+            
+                //Hide settings labels
+            
+            case 1:
+                // Hide Homepage items
+                self.quizButtonEnergy.isHidden = true
+                self.level1Label.isHidden = true
+            
+                // Show settings labels
+            default:
+                break
+        }
+    }
+    
+    func animateAvatar(){
+        avatarSad.animation = "wobble"
+        avatarSad.curve = "linear"
+        avatarSad.duration = 1.0
+        avatarSad.animate()
+        print("animating now")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        // animate the avatar
+        animateAvatar()
     }
 
     override func didReceiveMemoryWarning() {
