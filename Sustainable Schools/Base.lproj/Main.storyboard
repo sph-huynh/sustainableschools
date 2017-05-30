@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GRW-gx-gGU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -159,35 +159,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-hg-ft5">
-                                <rect key="frame" x="33" y="470" width="151" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sad transparent" translatesAutoresizingMaskIntoConstraints="NO" id="aIu-ZB-MUB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="FgF-wO-rhc" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="115" y="144" width="143" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes" translatesAutoresizingMaskIntoConstraints="NO" id="RgE-zz-qwk">
+                                <rect key="frame" x="145" y="184" width="85" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frown'" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-aJ-JFG">
+                                <rect key="frame" x="175" y="215" width="23" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxv-BF-2UN">
+                                <rect key="frame" x="77" y="483" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-hg-ft5">
+                                <rect key="frame" x="175" y="476" width="151" height="35"/>
+                                <color key="backgroundColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" identifier="quizButtonEnergy"/>
-                                <state key="normal" title="quizButtonEnergy"/>
+                                <state key="normal" title="Energy">
+                                    <color key="titleColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="tSg-vm-UmU" kind="show" id="KLM-wY-hyB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtv-B6-eyT">
-                                <rect key="frame" x="205" y="470" width="135" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="quizButtonFood"/>
-                                <state key="normal" title="quizButtonFood"/>
-                                <connections>
-                                    <segue destination="tSg-vm-UmU" kind="show" id="GAC-Qi-lzx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KzH-hg-ft5" secondAttribute="trailing" constant="33" id="31T-Gg-Vbg"/>
+                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="KzH-hg-ft5" secondAttribute="bottom" constant="156" id="972-em-hbS"/>
+                            <constraint firstItem="aIu-ZB-MUB" firstAttribute="centerX" secondItem="iE4-5l-zbI" secondAttribute="centerX" id="GFE-7O-bKi"/>
+                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="aIu-ZB-MUB" secondAttribute="bottom" constant="291" id="V8f-wT-Il8"/>
+                            <constraint firstItem="lxv-BF-2UN" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="61" id="mBP-Ud-qEZ"/>
+                            <constraint firstItem="KzH-hg-ft5" firstAttribute="leading" secondItem="lxv-BF-2UN" secondAttribute="trailing" constant="41" id="nUe-R4-RBC"/>
+                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="lxv-BF-2UN" secondAttribute="bottom" constant="163" id="nyg-Rw-vYq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="quizButtonEnergy" destination="KzH-hg-ft5" id="xW2-xA-KlR"/>
-                        <outlet property="quizButtonFood" destination="Gtv-B6-eyT" id="o5d-sA-M0Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-H7-7re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1581.5999999999999" y="129.98500749625188"/>
+            <point key="canvasLocation" x="1581.5" y="129.5"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="wH9-lb-DTx">
@@ -240,7 +267,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="5X0-g5-xhd" firstAttribute="leading" secondItem="A9O-FY-DYg" secondAttribute="leading" constant="16" id="B34-ce-hUZ"/>
                             <constraint firstItem="5X0-g5-xhd" firstAttribute="centerY" secondItem="A9O-FY-DYg" secondAttribute="centerY" constant="46" id="F1n-oM-Yge"/>
@@ -312,24 +339,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fH-3X-UWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3092" y="124"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ibe-GE-Fb5">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GRW-gx-gGU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NwI-7Y-Jiy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="D5T-ax-O2s"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="itH-jV-YwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-820" y="124"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="48q-oZ-Aj8">
@@ -447,10 +456,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="earth" width="1028" height="1028"/>
         <image name="earthFull" width="1028" height="1028"/>
+        <image name="eyes" width="566" height="116"/>
+        <image name="frown'" width="95" height="92"/>
+        <image name="sad transparent" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Kv-5e-IYJ"/>
-        <segue reference="GAC-Qi-lzx"/>
+        <segue reference="Zuv-cI-uSn"/>
     </inferredMetricsTieBreakers>
 </document>
