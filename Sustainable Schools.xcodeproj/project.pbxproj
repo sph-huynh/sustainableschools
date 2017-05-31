@@ -23,6 +23,8 @@
 		281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AB1EC6FAA6007DB106 /* Difficulty.swift */; };
 		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */; };
+		285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */; };
+		285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */; };
 		285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E25541ED0641A0091A33D /* ValidationManager.swift */; };
 		285EF8CD1EC9709E00CDC606 /* leadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */; };
 		285EF8CF1EC971DB00CDC606 /* greyearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 285EF8CE1EC971DB00CDC606 /* greyearth.png */; };
@@ -77,6 +79,8 @@
 		281292AB1EC6FAA6007DB106 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDGTableViewCell.swift; sourceTree = "<group>"; };
+		285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutSDGViewController.swift; sourceTree = "<group>"; };
 		285E25541ED0641A0091A33D /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipBoardViewController.swift; sourceTree = "<group>"; };
 		285EF8CE1EC971DB00CDC606 /* greyearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greyearth.png; path = Assets.xcassets/greyearth.png; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				845D40781EBB0DBC00BC15AD /* QuizViewController.swift */,
 				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
 				235700521EB872370054A521 /* Main.storyboard */,
+				285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */,
 				285E25541ED0641A0091A33D /* ValidationManager.swift */,
 				285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */,
 				28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */,
@@ -168,6 +173,7 @@
 				281292AB1EC6FAA6007DB106 /* Difficulty.swift */,
 				281292AD1EC6FAD7007DB106 /* Quiz.swift */,
 				844AEDF31EC02BBC009B4BDC /* colourscheme.txt */,
+				285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */,
 			);
 			path = "Sustainable Schools";
 			sourceTree = "<group>";
@@ -412,6 +418,8 @@
 			files = (
 				235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */,
 				28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */,
+				285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */,
+				285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */,
 				28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */,
 				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
 				281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */,

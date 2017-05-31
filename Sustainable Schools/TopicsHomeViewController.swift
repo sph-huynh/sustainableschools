@@ -16,6 +16,12 @@ class TopicsHomeViewController: UIViewController {
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var testButton: UIButton!
     @IBOutlet weak var level1Label: UILabel!
+    
+    // settings buttons
+    @IBOutlet weak var aboutUsButton: UIButton!
+    @IBOutlet weak var sdgPageButton: UIButton!
+    @IBOutlet weak var leadershipBoardButton: UIButton!
+    
 
     @IBOutlet var pageSegmentControl: UISegmentedControl!
     
@@ -50,13 +56,18 @@ class TopicsHomeViewController: UIViewController {
                 self.level1Label.isHidden = false
             
                 //Hide settings labels
-            
+                self.aboutUsButton.isHidden = true
+                self.sdgPageButton.isHidden = true
+                self.leadershipBoardButton.isHidden = true
             case 1:
                 // Hide Homepage items
                 self.quizButtonEnergy.isHidden = true
                 self.level1Label.isHidden = true
             
                 // Show settings labels
+                self.aboutUsButton.isHidden = false
+                self.sdgPageButton.isHidden = false
+                self.leadershipBoardButton.isHidden = false
             default:
                 break
         }
