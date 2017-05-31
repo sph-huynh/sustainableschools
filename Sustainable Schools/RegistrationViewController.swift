@@ -34,15 +34,16 @@ class RegistrationViewController: UIViewController {
             self.errorTextLabel.isHidden = false
             return
         }
-        if confirmPasswordInput.text != passwordInput.text {
-            self.errorTextLabel.text = "Password does not match!"
-            self.errorTextLabel.isHidden = false
-            self.errorLabelDissapear()
-        }
+
         if ValidationManager.shared.validateEmail(emailToBeValidated: email!) == false || ValidationManager.shared.validatePassword(passwordToBeValidated: password) == false{
             print("Email or password is invalid")
             self.errorTextLabel.text = "Password needs to be longer than 8 characters."
             self.errorTextLabel.isHidden = false
+        }
+        if confirmPasswordInput.text != passwordInput.text {
+            self.errorTextLabel.text = "Password does not match!"
+            self.errorTextLabel.isHidden = false
+            self.errorLabelDissapear()
         }
         else {
             FIRAuth.auth()?.createUser(withEmail: email!, password: password) { (user, error) in
@@ -76,6 +77,7 @@ class RegistrationViewController: UIViewController {
                     })
                     
                     self.performSegue(withIdentifier: "quizViewConSegue", sender: nil)
+                    print("wair not yet")
                 }
             }
         }
