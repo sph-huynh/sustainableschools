@@ -16,7 +16,8 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var firstNameInput: UITextField!
     @IBOutlet weak var lastNameInput: UITextField!
-
+    @IBOutlet weak var confirmPasswordInput: UITextField!
+    
     @IBOutlet var errorTextLabel: UILabel!
     @IBOutlet weak var registrationConfirm: UIButton!
     var username: String = ""
@@ -33,6 +34,11 @@ class RegistrationViewController: UIViewController {
             self.errorTextLabel.isHidden = false
             return
         }
+        if confirmPasswordInput.text != passwordInput.text {
+            self.errorTextLabel.text = "Password does not match!"
+            self.errorTextLabel.isHidden = false
+            self.errorLabelDissapear()
+        }
         if ValidationManager.shared.validateEmail(emailToBeValidated: email!) == false || ValidationManager.shared.validatePassword(passwordToBeValidated: password) == false{
             print("Email or password is invalid")
             self.errorTextLabel.text = "Password needs to be longer than 8 characters."
@@ -44,6 +50,7 @@ class RegistrationViewController: UIViewController {
                     print("something went wrong")
                     self.errorTextLabel.text = "Something went wrong ):"
                     self.errorTextLabel.isHidden = false
+                    self.errorLabelDissapear()
                 }
                 else {
                     
@@ -73,6 +80,12 @@ class RegistrationViewController: UIViewController {
             }
         }
         
+    }
+    
+    func errorLabelDissapear(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.errorTextLabel.isHidden = true
+        })
     }
     
     // Prepare segue for login

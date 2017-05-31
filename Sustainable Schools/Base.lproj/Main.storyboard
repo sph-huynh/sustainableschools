@@ -932,6 +932,7 @@ Ok</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="confirmPasswordInput" destination="Aqe-4H-LlS" id="5L7-Ph-pnF"/>
                         <outlet property="emailInput" destination="D8r-NS-Ihg" id="MyG-Tb-Euo"/>
                         <outlet property="errorTextLabel" destination="c4k-IU-zQX" id="uTt-SL-WsM"/>
                         <outlet property="firstNameInput" destination="MJt-02-CcA" id="ha5-KL-FJl"/>

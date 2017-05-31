@@ -64,11 +64,7 @@ class HomepageViewController: UIViewController {
 
     }
 
-    func errorLabelDissapear(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-            self.errorLabel.isHidden = true
-        })
-    }
+
     
     // if you have an account, go straight into the app
     // if error print error in input
