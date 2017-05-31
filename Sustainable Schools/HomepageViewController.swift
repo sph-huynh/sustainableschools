@@ -21,6 +21,7 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var registerToggle: UIButton!
     @IBOutlet weak var noAccountText: UILabel!
     
+    @IBOutlet var errorLabel: UILabel!
 
     // animated logo variables
     @IBOutlet var earthLogo: SpringImageView!
@@ -63,7 +64,11 @@ class HomepageViewController: UIViewController {
 
     }
 
-    
+    func errorLabelDissapear(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.errorLabel.isHidden = true
+        })
+    }
     
     // if you have an account, go straight into the app
     // if error print error in input
@@ -74,7 +79,8 @@ class HomepageViewController: UIViewController {
         }
         if emailLabel.text == "" || passwordLabel.text == "" {
             // alert nothing has been entered
-            print("you didn't enter anything")
+            errorLabel.text = "You didn't enter anything."
+            self.errorLabel.isHidden = false
         }
         else {
                 FIRAuth.auth()?.signIn(withEmail: email!, password: password) { (user, error) in
@@ -86,9 +92,7 @@ class HomepageViewController: UIViewController {
                         print("logged you in")
                     }
                     else {
-                        print(" ")
-                        print(" ")
-
+                        self.errorLabel.text = "Incorrect password or username."
                         print("incorrect password or username")
                     }
                 }
