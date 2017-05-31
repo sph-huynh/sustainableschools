@@ -17,6 +17,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var firstNameInput: UITextField!
     @IBOutlet weak var lastNameInput: UITextField!
 
+    @IBOutlet var errorTextLabel: UILabel!
     @IBOutlet weak var registrationConfirm: UIButton!
     var username: String = ""
     
@@ -28,15 +29,21 @@ class RegistrationViewController: UIViewController {
         print("I register user now")
         guard case let email = emailInput.text, let password = passwordInput.text, let firstname = firstNameInput.text, let lastname = lastNameInput.text else{
             print("Input was not valid")
+            self.errorTextLabel.text = "Input was not valid!"
+            self.errorTextLabel.isHidden = false
             return
         }
         if ValidationManager.shared.validateEmail(emailToBeValidated: email!) == false || ValidationManager.shared.validatePassword(passwordToBeValidated: password) == false{
             print("Email or password is invalid")
+            self.errorTextLabel.text = "Password needs to be longer than 8 characters."
+            self.errorTextLabel.isHidden = false
         }
         else {
             FIRAuth.auth()?.createUser(withEmail: email!, password: password) { (user, error) in
                 if error != nil {
                     print("something went wrong")
+                    self.errorTextLabel.text = "Something went wrong ):"
+                    self.errorTextLabel.isHidden = false
                 }
                 else {
                     
@@ -54,6 +61,8 @@ class RegistrationViewController: UIViewController {
                     usersDBRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
                         if err != nil {
                             print(err ?? "Couldn't add user to database")
+                            self.errorTextLabel.text = "Couldn't register. Please look over input."
+                            self.errorTextLabel.isHidden = false
                             return
                         }
                         print("added user to database")

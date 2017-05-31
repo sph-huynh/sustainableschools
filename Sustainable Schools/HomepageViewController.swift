@@ -93,6 +93,7 @@ class HomepageViewController: UIViewController {
                     }
                     else {
                         self.errorLabel.text = "Incorrect password or username."
+                        self.errorLabel.isHidden = false
                         print("incorrect password or username")
                     }
                 }
