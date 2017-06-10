@@ -12,6 +12,8 @@ import Foundation
 
 class QuizViewController: UIViewController {
 
+    
+    
     var username: String = ""
     public var currentQuestion = 0
     public var correctAnswerPlacement:UInt32 = 0
@@ -42,8 +44,16 @@ class QuizViewController: UIViewController {
             }
             else{
                 reachedLimit = true
-                performSegue(withIdentifier: "displayingPointsSegue", sender: nil)
-    //                questionLabel.text = String(accumulatedPoints)
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let displayingPointsViewController = mainStoryboard.instantiateViewController(withIdentifier: "displayingPointsViewController") as! displayingPointsViewController
+                
+//                var displayingPointsSegue = segue.destination as! displayingPointsViewController
+//                displayingPointsSegue.accumulatedPoints = accumulatedPoints
+                
+                present(displayingPointsViewController, animated: true, completion: nil)
+                
+                
+
                 
             }
         }
@@ -57,14 +67,14 @@ class QuizViewController: UIViewController {
     }
     
     func animateAvatar(){
-        
+        print("PRZ do some animation first")
     }
     
     @IBOutlet weak var questionLabel: UILabel!
 
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        animateAvatar()
     }
     
     // Question function
@@ -128,20 +138,10 @@ class QuizViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if (segue.identifier == "displayingPointsSegue"){
-            if let displayingPointsSegue = segue.destination as? displayingPointsViewController{
-                displayingPointsSegue.accumulatedPoints = accumulatedPoints
-                
-            }
-        }
-        
-
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        print("Does this come first?")
         displayQuestion()
 
     }

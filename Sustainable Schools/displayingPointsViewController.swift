@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Spring
 
 class displayingPointsViewController: UIViewController {
+    @IBOutlet var congratulationsImage: SpringImageView!
     
     var accumulatedPoints = 0
     
@@ -18,10 +20,22 @@ class displayingPointsViewController: UIViewController {
         })
     }
 
+    // perform the animation
+    func animateCongratulationsImage() {
+        congratulationsImage.delay = 0.5
+        congratulationsImage.animation = "swing"
+        congratulationsImage.curve = "easeIn"
+        congratulationsImage.duration = 1.0
+        print("LIKE IS IT HAPPENING OR WHAT?")
+        congratulationsImage.animate()
+        
+    }
+
     @IBOutlet weak var pointsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         pointsLabel.text = String(accumulatedPoints)
+        animateCongratulationsImage()
         moveBackToQuizVC()
         // Do any additional setup after loading the view.
     }

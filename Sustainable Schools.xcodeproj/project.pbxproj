@@ -23,13 +23,13 @@
 		281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AB1EC6FAA6007DB106 /* Difficulty.swift */; };
 		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */; };
+		28558B5B1EEBA2A000198FD5 /* quizSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5A1EEBA2A000198FD5 /* quizSegue.swift */; };
 		285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */; };
 		285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */; };
 		285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E25541ED0641A0091A33D /* ValidationManager.swift */; };
 		285EF8CD1EC9709E00CDC606 /* leadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */; };
 		285EF8CF1EC971DB00CDC606 /* greyearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 285EF8CE1EC971DB00CDC606 /* greyearth.png */; };
 		28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AA1EC858A500CB547B /* DataManager.swift */; };
-		28F9C5AD1EC87A4600CB547B /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 28F9C5AC1EC87A4600CB547B /* users.json */; };
 		28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
 		844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 844AEDF31EC02BBC009B4BDC /* colourscheme.txt */; };
@@ -79,13 +79,13 @@
 		281292AB1EC6FAA6007DB106 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		28558B5A1EEBA2A000198FD5 /* quizSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizSegue.swift; sourceTree = "<group>"; };
 		285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDGTableViewCell.swift; sourceTree = "<group>"; };
 		285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutSDGViewController.swift; sourceTree = "<group>"; };
 		285E25541ED0641A0091A33D /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipBoardViewController.swift; sourceTree = "<group>"; };
 		285EF8CE1EC971DB00CDC606 /* greyearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greyearth.png; path = Assets.xcassets/greyearth.png; sourceTree = "<group>"; };
 		28F9C5AA1EC858A500CB547B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		28F9C5AC1EC87A4600CB547B /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = ../../../Desktop/users.json; sourceTree = "<group>"; };
 		28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayingPointsViewController.swift; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844AEDF31EC02BBC009B4BDC /* colourscheme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = colourscheme.txt; sourceTree = "<group>"; };
@@ -151,7 +151,6 @@
 		2357004D1EB872370054A521 /* Sustainable Schools */ = {
 			isa = PBXGroup;
 			children = (
-				28F9C5AC1EC87A4600CB547B /* users.json */,
 				2380A16C1EBF6B9200CC45F3 /* Resources */,
 				2357004E1EB872370054A521 /* AppDelegate.swift */,
 				235700501EB872370054A521 /* HomepageViewController.swift */,
@@ -174,6 +173,7 @@
 				281292AD1EC6FAD7007DB106 /* Quiz.swift */,
 				844AEDF31EC02BBC009B4BDC /* colourscheme.txt */,
 				285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */,
+				28558B5A1EEBA2A000198FD5 /* quizSegue.swift */,
 			);
 			path = "Sustainable Schools";
 			sourceTree = "<group>";
@@ -334,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F9C5AD1EC87A4600CB547B /* users.json in Resources */,
 				845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
@@ -432,6 +431,7 @@
 				2380A1701EBF6DEB00CC45F3 /* GlossSustainable.swift in Sources */,
 				845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */,
 				281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */,
+				28558B5B1EEBA2A000198FD5 /* quizSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

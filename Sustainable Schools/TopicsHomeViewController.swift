@@ -86,6 +86,7 @@ class TopicsHomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // animate the avatar
+        avatarSad.delay = 0.5
         animateAvatar()
     }
 

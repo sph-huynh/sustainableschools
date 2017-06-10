@@ -12,6 +12,8 @@ import Spring
 
 class HomepageViewController: UIViewController {
     
+    
+    
 
     
     @IBOutlet weak var loginButton: UIButton!
@@ -103,7 +105,6 @@ class HomepageViewController: UIViewController {
     @IBAction func registerToggleButton(){
         performSegue(withIdentifier: "registrationPageSegue", sender: nil)
     }
-    
     
     
 
