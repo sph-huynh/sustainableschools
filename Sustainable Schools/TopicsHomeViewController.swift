@@ -36,7 +36,6 @@ class TopicsHomeViewController: UIViewController {
         switch pageSegmentControl.selectedSegmentIndex{
             case 0:
                 // Show Homepage items
-                self.startQuizButton.isHidden = false
 //                self.level1Label.isHidden = false
             
                 //Hide settings labels
@@ -46,7 +45,6 @@ class TopicsHomeViewController: UIViewController {
                 self.logoutButton.isHidden = true
             case 1:
                 // Hide Homepage items
-                self.startQuizButton.isHidden = true
 //                self.level1Label.isHidden = true
             
                 // Show settings labels

@@ -18,7 +18,8 @@ class ScrollingTopicsViewController: UIPageViewController, UIPageViewControllerD
     
     // An array holds the View Controllers we are scrolling through
     lazy var orderedViewControllers: [UIViewController] = {
-        return [self.newViewController(viewController: "landHome"),
+        return [self.newViewController(viewController: "TopicsHomeViewController"),
+                self.newViewController(viewController: "landHome"),
                 self.newViewController(viewController: "energyHome")]
     }()
     
