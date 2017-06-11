@@ -86,8 +86,13 @@ class HomepageViewController: UIViewController {
                         //perform segue
                         print(" ")
                         print(" ")
-                        self.performSegue(withIdentifier: "loginToQuizSegue", sender: nil)
-                        print("logged you in")
+//                        self.performSegue(withIdentifier: "loginToQuizSegue", sender: nil)
+//                        print("logged you in")
+//                        
+                        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let TopicsHomeViewController = mainStoryboard.instantiateViewController(withIdentifier: "TopicsHomeViewController") as! TopicsHomeViewController
+                        
+                        self.present(TopicsHomeViewController, animated: false, completion: nil)
                     }
                     else {
                         self.errorLabel.text = "Incorrect password or username."

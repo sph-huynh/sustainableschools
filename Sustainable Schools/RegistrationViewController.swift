@@ -27,65 +27,92 @@ class RegistrationViewController: UIViewController {
     // Log in
     // Go to app
     @IBAction func registerUser(){
+        var invalidInput: Bool = false
         print("I register user now")
         guard case let email = emailInput.text, let password = passwordInput.text, let firstname = firstNameInput.text, let lastname = lastNameInput.text else{
             print("Input was not valid")
-            self.errorTextLabel.text = "Input was not valid!"
-            self.errorTextLabel.isHidden = false
+            self.errorLabelAppearAndDissapear(errorType: "invalidInput")
+            invalidInput = true
             return
         }
 
-        if ValidationManager.shared.validateEmail(emailToBeValidated: email!) == false || ValidationManager.shared.validatePassword(passwordToBeValidated: password) == false{
-            print("Email or password is invalid")
-            self.errorTextLabel.text = "Password needs to be longer than 8 characters."
-            self.errorTextLabel.isHidden = false
-        }
-        if confirmPasswordInput.text != passwordInput.text {
-            self.errorTextLabel.text = "Password does not match!"
-            self.errorTextLabel.isHidden = false
-            self.errorLabelDissapear()
-        }
-        else {
-            FIRAuth.auth()?.createUser(withEmail: email!, password: password) { (user, error) in
-                if error != nil {
-                    print("something went wrong")
-                    self.errorTextLabel.text = "Something went wrong ):"
-                    self.errorTextLabel.isHidden = false
-                    self.errorLabelDissapear()
-                }
-                else {
-                    
-                    guard let uid = user?.uid else{
-                        return
-                    }
-                    
-                    // Initilising Firebase Database to use throughout the application
-                    
-                    let ref = FIRDatabase.database().reference(fromURL: "https://sustainable-schools.firebaseio.com/")
-                    
-                    let usersDBRef = ref.child("users").child(uid)
-                    // these are the values I want to save into my database per creation of a new user
-                    let values = ["email": email, "firstname": firstname, "lastname": lastname]
-                    usersDBRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
-                        if err != nil {
-                            print(err ?? "Couldn't add user to database")
-                            self.errorTextLabel.text = "Couldn't register. Please look over input."
-                            self.errorTextLabel.isHidden = false
-                            return
-                        }
-                        print("added user to database")
-                    })
-                    
-                    self.performSegue(withIdentifier: "quizViewConSegue", sender: nil)
-                    print("wair not yet")
-                }
-            }
+        guard case confirmPasswordInput.text! = passwordInput.text! else {
+            self.errorLabelAppearAndDissapear(errorType: "passwordMismatch")
+            invalidInput = true
+            return
         }
         
+        
+        if ValidationManager.shared.validateEmail(emailToBeValidated: email!) == false {
+            self.errorLabelAppearAndDissapear(errorType: "invalidEmail")
+            invalidInput = true
+        }
+    
+        else if ValidationManager.shared.validatePassword(passwordToBeValidated: password) == false {
+            self.errorLabelAppearAndDissapear(errorType: "passwordLength")
+            invalidInput = true
+        }
+    
+        if !invalidInput {
+            createNewUser(email: email!, password: password, firstname: firstname, lastname: lastname)
+            
+        }
     }
     
-    func errorLabelDissapear(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+    func createNewUser(email: String, password: String, firstname: String, lastname: String) {
+        FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+            if error != nil {
+                print("something went wrong")
+                self.errorLabelAppearAndDissapear(errorType: "generic")
+            }
+            else {
+                
+                guard let uid = user?.uid else{
+                    return
+                }
+                
+                // Initilising Firebase Database to use throughout the application
+                
+                let ref = FIRDatabase.database().reference(fromURL: "https://sustainable-schools.firebaseio.com/")
+                
+                let usersDBRef = ref.child("users").child(uid)
+                // these are the values I want to save into my database per creation of a new user
+                let values = ["email": email, "firstname": firstname, "lastname": lastname, "energy-points": 0] as [String : Any]
+                usersDBRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
+                    if err != nil {
+                        print(err ?? "Couldn't add user to database")
+                        self.errorLabelAppearAndDissapear(errorType: "registration")
+                        return
+                    }
+                    print("added user to database")
+                })
+                
+                self.performSegue(withIdentifier: "quizViewConSegue", sender: nil)
+                print("wair not yet")
+            }
+        }
+    }
+    
+    func errorLabelAppearAndDissapear(errorType: String){
+        switch errorType {
+        case "invalidInput":
+            self.errorTextLabel.text = "Input was not valid!"
+        case "passwordMismatch":
+            self.errorTextLabel.text = "Password does not match!"
+        case "passwordLength":
+            self.errorTextLabel.text = "Password needs to be longer than 8 characters."
+        case "invalidEmail":
+            self.errorTextLabel.text = "Email was not of valid format!"
+        case "registration":
+            self.errorTextLabel.text = "Couldn't register. Please look over input."
+        case "generic":
+            self.errorTextLabel.text = "Something went wrong. Double check your internet connection"
+        default:
+            self.errorTextLabel.text = "Something went wrong"
+        }
+        self.errorTextLabel.isHidden = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
             self.errorTextLabel.isHidden = true
         })
     }
