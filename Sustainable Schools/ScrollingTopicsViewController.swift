@@ -1,5 +1,5 @@
 //
-//  QuizTopicsHomeViewController.swift
+//  ScrollingTopicsViewController
 //  Sustainable Schools
 //
 //  Created by Sophia Huynh on 11/6/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuizTopicsHomeViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+class ScrollingTopicsViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
 
     // METHODS TO MAKE SURE WE ARE OPENING THE RIGHT VCs
     // To go to the right View Controller passed through

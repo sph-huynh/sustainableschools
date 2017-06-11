@@ -90,9 +90,9 @@ class HomepageViewController: UIViewController {
 //                        print("logged you in")
 //                        
                         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let TopicsHomeViewController = mainStoryboard.instantiateViewController(withIdentifier: "TopicsHomeViewController") as! TopicsHomeViewController
+                        let ScrollingTopicsViewController = mainStoryboard.instantiateViewController(withIdentifier: "ScrollingTopicsViewController") as! ScrollingTopicsViewController
                         
-                        self.present(TopicsHomeViewController, animated: false, completion: nil)
+                        self.present(ScrollingTopicsViewController, animated: false, completion: nil)
                     }
                     else {
                         self.errorLabel.text = "Incorrect password or username."

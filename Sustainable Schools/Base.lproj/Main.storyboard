@@ -29,9 +29,6 @@
                                     <constraint firstAttribute="width" constant="27" id="vA8-xo-253"/>
                                 </constraints>
                                 <state key="normal" image="back button"/>
-                                <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="ZUL-37-8Xp"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership Board" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc6-VC-iSO">
                                 <rect key="frame" x="117" y="32" width="141" height="23"/>
@@ -48,9 +45,6 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="hHB-Jv-FJy"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earthFull" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-sg-FPe">
                                 <rect key="frame" x="45" y="92" width="51" height="41"/>
@@ -194,13 +188,13 @@
             </objects>
             <point key="canvasLocation" x="1756" y="-618.44077961019491"/>
         </scene>
-        <!--Quiz Topics Home View Controller-->
+        <!--Scrolling Topics View Controller-->
         <scene sceneID="B7y-jy-EDg">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="T6X-P0-Xez" customClass="QuizTopicsHomeViewController" customModule="Sustainable_Schools" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="ScrollingTopicsViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="min" id="T6X-P0-Xez" customClass="ScrollingTopicsViewController" customModule="Sustainable_Schools" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycV-qV-oYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="127"/>
+            <point key="canvasLocation" x="663" y="127"/>
         </scene>
         <!--Energy Home View Controller-->
         <scene sceneID="sZM-of-n3n">
@@ -249,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxF-OV-PoQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480.8000000000002" y="-566.26686656671666"/>
+            <point key="canvasLocation" x="2481" y="-618"/>
         </scene>
         <!--AboutSDG View Controller-->
         <scene sceneID="HbT-xy-QeZ">
@@ -269,9 +263,6 @@
                                     <constraint firstAttribute="width" constant="27" id="ihd-Am-mSJ"/>
                                 </constraints>
                                 <state key="normal" image="back button"/>
-                                <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="UZY-v8-5oO"/>
-                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ruk-fW-xcO">
                                 <rect key="frame" x="0.0" y="66" width="375" height="601"/>
@@ -327,9 +318,6 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="7sW-Es-UAd"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search the SDGs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmR-cg-GIz">
                                 <rect key="frame" x="120" y="24" width="135" height="21"/>
@@ -364,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9E-vH-5Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="851"/>
+            <point key="canvasLocation" x="1310" y="851"/>
         </scene>
         <!--Homepage View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -558,7 +546,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8D-LM-XLv">
-                                <rect key="frame" x="232" y="459" width="21" height="21"/>
+                                <rect key="frame" x="226" y="335" width="21" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="sdgsPoints"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -566,33 +554,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCJ-wI-846">
-                                <rect key="frame" x="261" y="459" width="48" height="21"/>
+                                <rect key="frame" x="255" y="335" width="48" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="sdgPointLabel"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-hg-ft5">
-                                <rect key="frame" x="132" y="574" width="109" height="35"/>
-                                <color key="backgroundColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <accessibility key="accessibilityConfiguration" identifier="startQuizButton"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="T6X-P0-Xez" kind="show" id="btr-iN-xGQ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SDGs:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I30-Hg-GEG">
-                                <rect key="frame" x="71" y="459" width="48" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="sdgLabel"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -613,13 +577,19 @@
                                     <action selector="logoutUser" destination="x6W-4X-oly" eventType="touchUpInside" id="QT6-T8-FCi"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SDGs:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I30-Hg-GEG">
+                                <rect key="frame" x="71" y="335" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sdgLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="8HM-uU-IMd" firstAttribute="top" secondItem="XVa-li-g73" secondAttribute="bottom" constant="8" id="2KL-hk-TTx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KzH-hg-ft5" secondAttribute="trailing" constant="118" id="31T-Gg-Vbg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QbN-f6-Ba1" secondAttribute="trailing" constant="56" id="7md-hD-PVm"/>
-                            <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="KzH-hg-ft5" secondAttribute="bottom" constant="58" id="972-em-hbS"/>
                             <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="YbW-RO-NMN" secondAttribute="bottom" constant="102" id="BvT-dM-9rP"/>
                             <constraint firstItem="FgF-wO-rhc" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="100" id="DjH-a5-PlC"/>
                             <constraint firstItem="QbN-f6-Ba1" firstAttribute="top" secondItem="aIu-ZB-MUB" secondAttribute="bottom" constant="15" id="FNh-6i-N7o"/>
@@ -630,7 +600,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="8HM-uU-IMd" secondAttribute="trailing" constant="56" id="RDQ-5R-nip"/>
                             <constraint firstItem="YbW-RO-NMN" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="RTx-ae-X1P"/>
                             <constraint firstItem="YbW-RO-NMN" firstAttribute="top" secondItem="8HM-uU-IMd" secondAttribute="bottom" constant="8" id="SiG-Ok-IdS"/>
-                            <constraint firstItem="KzH-hg-ft5" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="116" id="Udb-LH-TuY"/>
                             <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="aIu-ZB-MUB" secondAttribute="bottom" constant="291" id="V8f-wT-Il8"/>
                             <constraint firstItem="aIu-ZB-MUB" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leading" id="X4r-d5-150"/>
                             <constraint firstItem="XVa-li-g73" firstAttribute="top" secondItem="QbN-f6-Ba1" secondAttribute="bottom" constant="40" id="YUz-6p-UgN"/>
@@ -639,7 +608,6 @@
                             <constraint firstItem="XVa-li-g73" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="glC-Lg-saB"/>
                             <constraint firstItem="QbN-f6-Ba1" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leadingMargin" constant="55" id="gm9-WR-mrK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XVa-li-g73" secondAttribute="trailing" constant="56" id="wCh-Vg-JPE"/>
-                            <constraint firstItem="KzH-hg-ft5" firstAttribute="top" secondItem="QbN-f6-Ba1" secondAttribute="bottom" constant="155" id="wjZ-op-Gjt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2s4-cZ-Qqb"/>
@@ -650,12 +618,11 @@
                         <outlet property="logoutButton" destination="pz9-GU-5Ju" id="22u-HZ-VB7"/>
                         <outlet property="pageSegmentControl" destination="QbN-f6-Ba1" id="CS7-ud-CFY"/>
                         <outlet property="sdgPageButton" destination="8HM-uU-IMd" id="o0E-lJ-Zzy"/>
-                        <outlet property="startQuizButton" destination="KzH-hg-ft5" id="glF-IH-vJZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-H7-7re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="127"/>
+            <point key="canvasLocation" x="1652" y="127"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FhF-1x-nuL">
@@ -869,9 +836,6 @@ Students should be able to play and compare progress with classmates, schoolmate
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="gQ6-6p-8cs"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeT-KF-dfh">
                                 <rect key="frame" x="16" y="13" width="27" height="45"/>
@@ -882,9 +846,6 @@ Students should be able to play and compare progress with classmates, schoolmate
                                 <state key="normal" image="back button">
                                     <color key="titleColor" red="0.66146695609999995" green="0.65276592970000002" blue="0.46669879559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <segue destination="x6W-4X-oly" kind="show" id="yLr-Qo-pRV"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94119322299999997" green="0.941173017" blue="0.94117695089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -924,7 +885,7 @@ Students should be able to play and compare progress with classmates, schoolmate
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCa-zY-2xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="851"/>
+            <point key="canvasLocation" x="1982" y="851"/>
         </scene>
         <!--Displaying Points View Controller-->
         <scene sceneID="Qui-X1-Yhm">
@@ -983,7 +944,6 @@ Students should be able to play and compare progress with classmates, schoolmate
                     <connections>
                         <outlet property="congratulationsImage" destination="6Lc-vc-kY2" id="Ue1-xc-UJe"/>
                         <outlet property="pointsLabel" destination="New-iG-CRQ" id="zvA-9s-MT3"/>
-                        <segue destination="x6W-4X-oly" kind="presentation" identifier="goBackToQuizVCSegue" id="5rZ-0O-jxM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fH-3X-UWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1179,7 +1139,6 @@ Ok</string>
         <image name="yay" width="640" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hHB-Jv-FJy"/>
         <segue reference="lRu-xB-6My"/>
     </inferredMetricsTieBreakers>
 </document>

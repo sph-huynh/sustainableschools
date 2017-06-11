@@ -18,9 +18,9 @@ class displayingPointsViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
 //            self.performSegue(withIdentifier: "goBackToQuizVCSegue", sender: nil)
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let TopicsHomeViewController = mainStoryboard.instantiateViewController(withIdentifier: "TopicsHomeViewController") as! TopicsHomeViewController
+            let ScrollingTopicsViewController = mainStoryboard.instantiateViewController(withIdentifier: "ScrollingTopicsViewController") as! ScrollingTopicsViewController
             
-            self.present(TopicsHomeViewController, animated: false, completion: nil)
+            self.present(ScrollingTopicsViewController, animated: false, completion: nil)
         })
     }
 
