@@ -21,7 +21,6 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
     var sdg = [String]()
     var keys: [Any] = []
     var key: Any = "Goal"
-    var selectedGoal = (0, "Goal Name")
     
     //    print(sdgDictionary.count)
     

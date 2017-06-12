@@ -23,7 +23,7 @@ class detailedSDGViewController: UIViewController {
         //but we have to make sure we have the right monster before we set the labels
         goalNumber.text = "\(goalNum)"
         goalTitle.text = sdgTitles[goalNum]
-//        goalImage.image = UIImage(named:"yay1")
+        goalImage.image = UIImage(named:goalNum)
         goalDescription.text = sdgDictionary[goalNum]
     }
 
