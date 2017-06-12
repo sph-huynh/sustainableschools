@@ -39,6 +39,7 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
     var sdg = [String]()
     var keys: [Any] = []
     var key: Any = "Goal"
+    var selectedGoal = (0, "Goal Name")
     
     //    print(sdgDictionary.count)
     
@@ -132,16 +133,25 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
         return cell
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "detailedSDGsegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                if searchController.isActive && searchController.searchBar.text != "" {
+                    sdg = [filtered[indexPath.row]]
+                }
+                else{
+                    sdg = [sdg[indexPath.row]]
+                    
+                }
+            //we are making sure we're sending to the right VC
+            let detailedVC = (segue.destination as! detailedSDGViewController)
+            detailedVC.goalNumber.text = "Common now"
+            detailedVC.goalNumber.text = "Goal: \(key)"
+                print(sdg)
+                print(" \(key)")
+            }
+        }
     }
-    */
-
 }
 extension aboutSDGViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {

@@ -1,42 +1,39 @@
 //
-//  energyHomeViewController.swift
+//  landHomeViewController.swift
 //  Sustainable Schools
 //
-//  Created by Sophia Huynh on 11/6/17.
+//  Created by Sophia Huynh on 12/6/17.
 //  Copyright © 2017 Sophia Huynh. All rights reserved.
 //
 
 import UIKit
 
+class landHomeViewController: UIViewController {
 
-class energyHomeViewController: UIViewController {
-
-    @IBOutlet var energyBG: UIImageView!
+    @IBOutlet var landBG: UIImageView!
     
-    var energybg1: UIImage!
-    var energybg2: UIImage!
+    var landbg1: UIImage!
+    var landbg2: UIImage!
     
     var animation: [UIImage] = []
     
     var animatedBG: UIImage!
     
-    func animatingEnergyBG(){
-        energybg1 = UIImage(named: "energybg1")
-        energybg2 = UIImage(named: "energybg2")
+    func animatingLandBG(){
+        landbg1 = UIImage(named: "landbg1")
+        landbg2 = UIImage(named: "landbg2")
         
-        animation = [energybg1, energybg2]
+        animation = [landbg1, landbg2]
         animatedBG = UIImage.animatedImage(with: animation, duration: 2.0)
         
-        energyBG.image = animatedBG
+        landBG.image = animatedBG
     }
     
     
-    @IBOutlet var playButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        animatingLandBG()
 
-        animatingEnergyBG()
         // Do any additional setup after loading the view.
     }
 

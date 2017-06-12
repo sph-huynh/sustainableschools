@@ -10,7 +10,27 @@ import UIKit
 import Spring
 
 class displayingPointsViewController: UIViewController {
-    @IBOutlet var congratulationsImage: SpringImageView!
+    
+    @IBOutlet var congratulationsImage: UIImageView!
+    var yay1: UIImage!
+    var yay2: UIImage!
+    var yay3: UIImage!
+
+    var animation: [UIImage] = []
+    
+    var animatedYay: UIImage!
+    
+    func animatedYayImage(){
+        yay1 = UIImage(named: "yay1")
+        yay2 = UIImage(named: "yay2")
+        yay3 = UIImage(named: "yay3")
+        
+        animation = [yay1, yay2, yay3]
+        animatedYay = UIImage.animatedImage(with: animation, duration: 1.0)
+        
+        congratulationsImage.image = animatedYay
+    }
+    
     
     var accumulatedPoints = 0
     
@@ -24,22 +44,15 @@ class displayingPointsViewController: UIViewController {
         })
     }
 
-    // perform the animation
-    func animateCongratulationsImage() {
-        congratulationsImage.delay = 0.5
-        congratulationsImage.animation = "swing"
-        congratulationsImage.curve = "easeIn"
-        congratulationsImage.duration = 1.0
-        print("LIKE IS IT HAPPENING OR WHAT?")
-        congratulationsImage.animate()
-        
-    }
+
 
     @IBOutlet weak var pointsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         pointsLabel.text = String(accumulatedPoints)
-        animateCongratulationsImage()
+        
+        animatedYayImage()
+
         moveBackToQuizVC()
         // Do any additional setup after loading the view.
     }

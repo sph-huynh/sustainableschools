@@ -1,5 +1,5 @@
 //
-//  energyHomeViewController.swift
+//  detailedSDGViewController.swift
 //  Sustainable Schools
 //
 //  Created by Sophia Huynh on 11/6/17.
@@ -8,35 +8,24 @@
 
 import UIKit
 
+class detailedSDGViewController: UIViewController {
+    
+    
+    @IBOutlet weak var goalNumber: UILabel!
+    @IBOutlet weak var goalTitle: UILabel!
+    @IBOutlet weak var goalImage: UIImageView!
+    @IBOutlet weak var goalDescription: UILabel!
+    
+//    func configureView() {
+//        //but we have to make sure we have the right monster before we set the labels
+//        goalNumber.text = "Goal: \(goalNumber.text)"
+//        print(goalNumber!)
+//    }
 
-class energyHomeViewController: UIViewController {
-
-    @IBOutlet var energyBG: UIImageView!
-    
-    var energybg1: UIImage!
-    var energybg2: UIImage!
-    
-    var animation: [UIImage] = []
-    
-    var animatedBG: UIImage!
-    
-    func animatingEnergyBG(){
-        energybg1 = UIImage(named: "energybg1")
-        energybg2 = UIImage(named: "energybg2")
-        
-        animation = [energybg1, energybg2]
-        animatedBG = UIImage.animatedImage(with: animation, duration: 2.0)
-        
-        energyBG.image = animatedBG
-    }
-    
-    
-    @IBOutlet var playButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        configureView()
 
-        animatingEnergyBG()
         // Do any additional setup after loading the view.
     }
 

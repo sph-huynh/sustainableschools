@@ -24,38 +24,31 @@ class TopicsHomeViewController: UIViewController {
     @IBOutlet var logoutButton: UIButton!
     @IBOutlet weak var leadershipBoardButton: UIButton!
     
+    
+    @IBOutlet var bgImage: UIImageView!
 
-    @IBOutlet var pageSegmentControl: UISegmentedControl!
+    var level1bg1: UIImage!
+    var level1bg2: UIImage!
+    var level1bg3: UIImage!
+    var level1bg4: UIImage!
     
-    @IBOutlet var avatarSad: SpringImageView!
+    var animation: [UIImage] = []
     
-
+    var animatedBG: UIImage!
     
-    // Different buttons on the homescreen
-    @IBAction func pageSegmentChanged(_ sender: UISegmentedControl) {
-        switch pageSegmentControl.selectedSegmentIndex{
-            case 0:
-                // Show Homepage items
-//                self.level1Label.isHidden = false
-            
-                //Hide settings labels
-                self.aboutUsButton.isHidden = true
-                self.sdgPageButton.isHidden = true
-                self.leadershipBoardButton.isHidden = true
-                self.logoutButton.isHidden = true
-            case 1:
-                // Hide Homepage items
-//                self.level1Label.isHidden = true
-            
-                // Show settings labels
-                self.aboutUsButton.isHidden = false
-                self.sdgPageButton.isHidden = false
-                self.leadershipBoardButton.isHidden = false
-                self.logoutButton.isHidden = false
-            default:
-                break
-        }
+    func animateBG(){
+        level1bg1 = UIImage(named: "level1bg1")
+        level1bg2 = UIImage(named: "level1bg2")
+        level1bg3 = UIImage(named: "level1bg3")
+        level1bg4 = UIImage(named: "level1bg4")
+        
+        animation = [level1bg1, level1bg2, level1bg3, level1bg4]
+        animatedBG = UIImage.animatedImage(with: animation, duration: 1.0)
+        
+        bgImage.image = animatedBG
     }
+    
+    
     
     @IBAction func logoutUser(){
         let firebaseAuth = FIRAuth.auth()
@@ -67,22 +60,13 @@ class TopicsHomeViewController: UIViewController {
         
     }
     
-    func animateAvatar(){
-        avatarSad.delay = 0.5
-        avatarSad.animation = "wobble"
-        avatarSad.curve = "linear"
-        avatarSad.duration = 1.0
-        avatarSad.animate()
-        print("animating now")
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         // animate the avatar
-        
-        animateAvatar()
+        animateBG()
     }
 
     override func didReceiveMemoryWarning() {
