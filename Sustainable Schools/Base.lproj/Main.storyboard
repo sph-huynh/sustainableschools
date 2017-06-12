@@ -341,7 +341,7 @@
                                         <connections>
                                             <outlet property="descriptionLabel" destination="scm-Vt-etE" id="ds3-zM-od5"/>
                                             <outlet property="goalName" destination="M1O-xF-DBS" id="9Xq-no-ZEx"/>
-                                            <segue destination="cEK-xM-vgO" kind="show" id="Xei-sa-2F6"/>
+                                            <segue destination="cEK-xM-vgO" kind="show" identifier="detailedSDGsegue" id="Xei-sa-2F6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -383,7 +383,6 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Ruk-fW-xcO" id="o3A-04-FZf"/>
-                        <segue destination="cEK-xM-vgO" kind="show" identifier="detailedSDGsegue" id="gdS-D7-6Rd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9E-vH-5Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -393,7 +392,7 @@
         <!--DetailedSDG View Controller-->
         <scene sceneID="hg8-VL-8hm">
             <objects>
-                <viewController id="cEK-xM-vgO" customClass="detailedSDGViewController" customModule="Sustainable_Schools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailedSDGViewController" id="cEK-xM-vgO" customClass="detailedSDGViewController" customModule="Sustainable_Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Aim-3H-AMy"/>
                         <viewControllerLayoutGuide type="bottom" id="x5P-uZ-CeQ"/>
@@ -757,7 +756,6 @@ Goals</string>
                             <constraint firstItem="tOd-UP-JQU" firstAttribute="trailing" secondItem="pz9-GU-5Ju" secondAttribute="trailing" id="QMI-10-Zem"/>
                             <constraint firstItem="8HM-uU-IMd" firstAttribute="leading" secondItem="YbW-RO-NMN" secondAttribute="trailing" constant="8" id="Tem-88-sJk"/>
                             <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="aIu-ZB-MUB" secondAttribute="bottom" constant="291" id="V8f-wT-Il8"/>
-                            <constraint firstItem="pz9-GU-5Ju" firstAttribute="leading" secondItem="XVa-li-g73" secondAttribute="trailing" constant="8" id="WTh-m6-ppG"/>
                             <constraint firstItem="aIu-ZB-MUB" firstAttribute="leading" secondItem="iE4-5l-zbI" secondAttribute="leading" id="X4r-d5-150"/>
                             <constraint firstItem="XVa-li-g73" firstAttribute="top" secondItem="pz9-GU-5Ju" secondAttribute="top" id="X8y-wa-HUE"/>
                             <constraint firstItem="ufz-WA-vFb" firstAttribute="top" secondItem="pz9-GU-5Ju" secondAttribute="bottom" constant="109" id="XeC-fC-brg"/>
@@ -1308,8 +1306,7 @@ Ok</string>
         <image name="yay" width="640" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gdS-D7-6Rd"/>
-        <segue reference="kLy-Zu-rfL"/>
-        <segue reference="SjT-j6-E2p"/>
+        <segue reference="6JB-3z-S0i"/>
+        <segue reference="tIe-3e-32c"/>
     </inferredMetricsTieBreakers>
 </document>

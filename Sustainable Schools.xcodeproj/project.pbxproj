@@ -10,7 +10,6 @@
 		2357004F1EB872370054A521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2357004E1EB872370054A521 /* AppDelegate.swift */; };
 		235700511EB872370054A521 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700501EB872370054A521 /* HomepageViewController.swift */; };
 		235700541EB872370054A521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235700521EB872370054A521 /* Main.storyboard */; };
-		235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */; };
 		235700591EB872380054A521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235700581EB872380054A521 /* Assets.xcassets */; };
 		235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */; };
 		235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */; };
@@ -20,6 +19,7 @@
 		281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AB1EC6FAA6007DB106 /* Difficulty.swift */; };
 		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */; };
+		283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96AE1EEEF36100B5345F /* sdgReference.swift */; };
 		28558B5D1EED2AA700198FD5 /* ScrollingTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */; };
 		28558B5F1EED539E00198FD5 /* energyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */; };
 		28558B611EED844700198FD5 /* detailedSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B601EED844700198FD5 /* detailedSDGViewController.swift */; };
@@ -28,7 +28,6 @@
 		285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */; };
 		285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E25541ED0641A0091A33D /* ValidationManager.swift */; };
 		285EF8CD1EC9709E00CDC606 /* leadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */; };
-		285EF8CF1EC971DB00CDC606 /* greyearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 285EF8CE1EC971DB00CDC606 /* greyearth.png */; };
 		28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AA1EC858A500CB547B /* DataManager.swift */; };
 		28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
@@ -61,7 +60,6 @@
 		2357004E1EB872370054A521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235700501EB872370054A521 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		235700531EB872370054A521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		235700561EB872380054A521 /* Sustainable_Schools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sustainable_Schools.xcdatamodel; sourceTree = "<group>"; };
 		235700581EB872380054A521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2357005D1EB872380054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235700621EB872380054A521 /* Sustainable SchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +74,7 @@
 		281292AB1EC6FAA6007DB106 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		283B96AE1EEEF36100B5345F /* sdgReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdgReference.swift; sourceTree = "<group>"; };
 		28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTopicsViewController.swift; sourceTree = "<group>"; };
 		28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = energyHomeViewController.swift; sourceTree = "<group>"; };
 		28558B601EED844700198FD5 /* detailedSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailedSDGViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +83,6 @@
 		285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutSDGViewController.swift; sourceTree = "<group>"; };
 		285E25541ED0641A0091A33D /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipBoardViewController.swift; sourceTree = "<group>"; };
-		285EF8CE1EC971DB00CDC606 /* greyearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greyearth.png; path = Assets.xcassets/greyearth.png; sourceTree = "<group>"; };
 		28F9C5AA1EC858A500CB547B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayingPointsViewController.swift; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +152,7 @@
 				2357004E1EB872370054A521 /* AppDelegate.swift */,
 				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
 				285E25541ED0641A0091A33D /* ValidationManager.swift */,
+				2357005D1EB872380054A521 /* Info.plist */,
 				235700501EB872370054A521 /* HomepageViewController.swift */,
 				281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */,
 				235700521EB872370054A521 /* Main.storyboard */,
@@ -168,9 +167,7 @@
 				28558B601EED844700198FD5 /* detailedSDGViewController.swift */,
 				285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
-				285EF8CE1EC971DB00CDC606 /* greyearth.png */,
-				2357005D1EB872380054A521 /* Info.plist */,
-				235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */,
+				283B96AE1EEEF36100B5345F /* sdgReference.swift */,
 				2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */,
 				2380A1711EBF6E2800CC45F3 /* QNA.swift */,
 				281292AB1EC6FAA6007DB106 /* Difficulty.swift */,
@@ -329,7 +326,6 @@
 				845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
-				285EF8CF1EC971DB00CDC606 /* greyearth.png in Resources */,
 				844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
@@ -404,13 +400,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				235700571EB872380054A521 /* Sustainable_Schools.xcdatamodeld in Sources */,
 				28558B611EED844700198FD5 /* detailedSDGViewController.swift in Sources */,
 				28558B5F1EED539E00198FD5 /* energyHomeViewController.swift in Sources */,
 				28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */,
 				285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */,
 				285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */,
 				28558B5D1EED2AA700198FD5 /* ScrollingTopicsViewController.swift in Sources */,
+				283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */,
 				28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */,
 				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
 				281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */,
@@ -693,19 +689,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		235700551EB872380054A521 /* Sustainable_Schools.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				235700561EB872380054A521 /* Sustainable_Schools.xcdatamodel */,
-			);
-			currentVersion = 235700561EB872380054A521 /* Sustainable_Schools.xcdatamodel */;
-			path = Sustainable_Schools.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 235700431EB872370054A521 /* Project object */;
 }

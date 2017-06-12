@@ -17,25 +17,7 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
     // key is the goal number (Chronological order)
     // and the value is the description of the goal
     // Hard code the goals because they will never change
-    var sdgDictionary: [String: String] = [
-        "Goal 1" : "End poverty in all its forms everywhere",
-        "Goal 2" : "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
-        "Goal 3" : "Ensure healthy lives and promote well-being for all at all ages",
-        "Goal 4": "Quality Education",
-        "Goal 5": "Gender Equality",
-        "Goal 6": "Clean Water and Sanitation",
-        "Goal 7": "Affordable and Clean Energy",
-        "Goal 8": "Decent Work and Economic Growth",
-        "Goal 9": "Industry, Innovation and Infrastructure",
-        "Goal 10": "Reduced Inequalities",
-        "Goal 11": "Sustainable Cities and Communities",
-        "Goal 12": "Responsible Consumption and Production",
-        "Goal 13": "Climate Action",
-        "Goal 14": "Life Below Water",
-        "Goal 15": "Life on Land",
-        "Goal 16": "Peace, Justice and Strong Institutions",
-        "Goal 17": "Partnerships for the Goals"
-    ]
+    var sdgDictionary = sdgReference.shared.sdgNames
     var sdg = [String]()
     var keys: [Any] = []
     var key: Any = "Goal"
@@ -103,11 +85,10 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
         
         // is a list of filtered or non filtered goals
         let dict = (sdgDictionary as NSDictionary)
-        print("Am I even here yet")
         if searchController.isActive && searchController.searchBar.text != ""{
             // make it filtered
             sdg = [filtered[indexPath.row]]
-            // DICT RETURNS A FKN [ANY] SO I HAVE TO GET IT OUT BEFORE PRINTING
+            // DICT RETURNS AN [ANY] SO I HAVE TO GET IT OUT BEFORE PRINTING
             // Dictionaries in Swift don't have a find value for key function
             // So I have to convert a Swift Dictionary to a NSDictionary
             // Grab the key
@@ -126,7 +107,6 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
             sdg = [sdg[indexPath.row]]
             keys = dict.allKeys(for: sdg[0])
             key = keys[0]
-            print(sdg)
         }
         cell.goalName?.text = ("\(key)")
         cell.descriptionLabel?.text = sdg[0]
@@ -135,20 +115,24 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailedSDGsegue" {
+            let dict = (sdgDictionary as NSDictionary)
             if let indexPath = tableView.indexPathForSelectedRow {
                 if searchController.isActive && searchController.searchBar.text != "" {
                     sdg = [filtered[indexPath.row]]
+                    keys = dict.allKeys(for: sdg[0])
+                    key = keys[0]
                 }
                 else{
+                    sdg = Array(sdgDictionary.values)
                     sdg = [sdg[indexPath.row]]
+                    keys = dict.allKeys(for: sdg[0])
+                    key = keys[0]
                     
                 }
             //we are making sure we're sending to the right VC
             let detailedVC = (segue.destination as! detailedSDGViewController)
-            detailedVC.goalNumber.text = "Common now"
-            detailedVC.goalNumber.text = "Goal: \(key)"
-                print(sdg)
-                print(" \(key)")
+            print(" \(key)")
+            detailedVC.goalNum = "\(key)"
             }
         }
     }
