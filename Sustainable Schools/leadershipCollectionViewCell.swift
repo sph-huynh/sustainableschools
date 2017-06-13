@@ -11,32 +11,12 @@ import UIKit
 class leadershipCollectionViewCell: UICollectionViewCell {
     // cell identifier leadershipBoardCell
     
-    var firstname: String = "Unable to load name"
-    var level: Int = 1
-    
+
     @IBOutlet weak var firstnameLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    func configureView(){
-            setImage(level: level)
-            firstnameLabel.text = firstname
-            levelLabel.text = String(level)
-        
-    }
-    
-    func setImage(level: Int){
-        switch level {
-        case 1:
-            imageView.image = UIImage(named:"earthSad")
-        case 2:
-            imageView.image = UIImage(named:"energyEarth")
-        case 3:
-            imageView.image = UIImage(named:"energyLand")
-        default:
-            imageView.image = UIImage(named:"earthSad")
-        }
-    }
+
     
     
 
