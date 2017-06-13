@@ -61,8 +61,17 @@ class TopicsHomeViewController: UIViewController {
             print ("Error signing out: %@", signOutError)
         }
         
+        
+        
     }
     
+    func exitAppToHomescreen(){
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let HomepageViewController = mainStoryboard.instantiateViewController(withIdentifier: "HomepageViewController") as! HomepageViewController
+        
+        self.present(HomepageViewController, animated: false, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
