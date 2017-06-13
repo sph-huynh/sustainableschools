@@ -11,7 +11,7 @@ import Firebase
 
 class RegistrationViewController: UIViewController {
 
-
+    // outlets for interface
     @IBOutlet weak var emailInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var firstNameInput: UITextField!
@@ -19,7 +19,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var confirmPasswordInput: UITextField!
     
     @IBOutlet var errorTextLabel: UILabel!
-    @IBOutlet weak var registrationConfirm: UIButton!
+
     var username: String = ""
     
     // After display register page
@@ -35,30 +35,34 @@ class RegistrationViewController: UIViewController {
             invalidInput = true
             return
         }
-
+        
+        // check that the user has put the same password in the confirm password box
         guard case confirmPasswordInput.text! = passwordInput.text! else {
             self.errorLabelAppearAndDissapear(errorType: "passwordMismatch")
             invalidInput = true
             return
         }
         
-        
+        // validates the format of the email
         if ValidationManager.shared.validateEmail(emailToBeValidated: email!) == false {
             self.errorLabelAppearAndDissapear(errorType: "invalidEmail")
             invalidInput = true
         }
-    
+            
+        // checks the length of the password
         else if ValidationManager.shared.validatePassword(passwordToBeValidated: password) == false {
             self.errorLabelAppearAndDissapear(errorType: "passwordLength")
             invalidInput = true
         }
-    
+        // and if there are no flags that say the input was bad aka the invalidInput boolean
+        // we try to create a new user
         if !invalidInput {
             createNewUser(email: email!, password: password, firstname: firstname, lastname: lastname)
             
         }
     }
     
+    // creating a new user
     func createNewUser(email: String, password: String, firstname: String, lastname: String) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
             if error != nil {
@@ -86,13 +90,14 @@ class RegistrationViewController: UIViewController {
                     }
                     print("added user to database")
                 })
-                
+                // go to the application if they are registered
                 self.performSegue(withIdentifier: "quizViewConSegue", sender: nil)
                 print("wair not yet")
             }
         }
     }
     
+    // depending on the error, the correct message will appear above the email input box
     func errorLabelAppearAndDissapear(errorType: String){
         switch errorType {
         case "invalidInput":
@@ -120,9 +125,7 @@ class RegistrationViewController: UIViewController {
     // Prepare segue for login
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if (segue.identifier == "quizViewConSegue"){
-  
-            print("Lol what")
-        }
+          }
     }
     
     override func viewDidLoad() {

@@ -84,61 +84,61 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
 
     }
     
-    
-    func setImage(cell: leadershipCollectionViewCell, level: Int){
-        
-        // Set firstname and level
-        userFirstNameLabel.text = userFirstName
-        userLevelLabel.text = userLevel
-        
-        // Set avatar based on level of user
-        
-        switch level {
-        case 1:
-            cell.imageView.image = UIImage(named:"earthSad")
-        case 2:
-            cell.imageView.image = UIImage(named:"energyEarth")
-        case 3:
-            cell.imageView.image = UIImage(named:"energyLand")
-        default:
-            cell.imageView.image = UIImage(named:"earthSad")
-        }
-    }
-    
+//    
+//    func setImage(cell: leadershipCollectionViewCell, level: Int){
+//        
+//        // Set firstname and level
+//        userFirstNameLabel.text = userFirstName
+//        userLevelLabel.text = userLevel
+//        
+//        // Set avatar based on level of user
+//        
+//        switch level {
+//        case 1:
+//            cell.imageView.image = UIImage(named:"earthSad")
+//        case 2:
+//            cell.imageView.image = UIImage(named:"energyEarth")
+//        case 3:
+//            cell.imageView.image = UIImage(named:"energyLand")
+//        default:
+//            cell.imageView.image = UIImage(named:"earthSad")
+//        }
+//    }
+//    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUserView()
+//        configureUserView()
         ref.observe(.value, with: { snapshot in
             print(snapshot.value!)
         })
         
-        ref.observe(.value, with: { snapshot in
-            var iteratorNum = 0
-            // create a dictionary with top users
-
-            // for each user add to the dictionary
-            for user in snapshot.children {
-                // 4
-                var firstname = snapshot.childSnapshot(forPath: "firstname") as! String
-                var level = snapshot.childSnapshot(forPath: "level") as! Int
-                var totalPoints = snapshot.childSnapshot(forPath: "total-points") as! Int
-
-                print(level)
-                print("firstname")
-                print(firstname)
-                print("total\(totalPoints)")
-                    
-//                self.users[iteratorNum] = [level, firstname, totalPoints]
-                iteratorNum += 1
-            }
-            
-            
-            
-            // 5
-            print(self.users)
-            self.collectionView.reloadData()
-        })
+//        ref.observe(.value, with: { snapshot in
+//            var iteratorNum = 0
+//            // create a dictionary with top users
+//
+//            // for each user add to the dictionary
+//            for user in snapshot.children {
+//                // 4
+//                var firstname = snapshot.childSnapshot(forPath: "firstname") as! String
+//                var level = snapshot.childSnapshot(forPath: "level") as! Int
+//                var totalPoints = snapshot.childSnapshot(forPath: "total-points") as! Int
+//
+//                print(level)
+//                print("firstname")
+//                print(firstname)
+//                print("total\(totalPoints)")
+//                    
+////                self.users[iteratorNum] = [level, firstname, totalPoints]
+//                iteratorNum += 1
+//            }
+//            
+//            
+//            
+//            // 5
+//            print(self.users)
+//            self.collectionView.reloadData()
+//        })
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -188,7 +188,7 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
 
         cell.levelLabel.text = "2"
         cell.firstnameLabel.text = firstname
-        setImage(cell:cell, level: level)
+//        setImage(cell:cell, level: level)
         
         return cell
     }

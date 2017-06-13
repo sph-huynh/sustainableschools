@@ -12,41 +12,35 @@ import Spring
 
 class HomepageViewController: UIViewController {
     
-    
-    
-
-    
+    // outlets for the interface
     @IBOutlet weak var loginButton: UIButton!
-
     @IBOutlet weak var emailLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     @IBOutlet weak var registerToggle: UIButton!
     @IBOutlet weak var noAccountText: UILabel!
     
+    // error label that starts off hidden
     @IBOutlet var errorLabel: UILabel!
 
     // animated logo variables
     @IBOutlet var earthLogo: SpringImageView!
 
     
-    // perform the animation
+    // perform the animation using Spring
     func animateEarthLogo() {
         earthLogo.animation = "swing"
         earthLogo.curve = "easeIn"
         earthLogo.duration = 1.0
-
-        
     }
     
+    // moving the avatar up
     func slideUpLogo(){
         earthLogo.animation = "slideUp"
         earthLogo.curve = "spring"
         earthLogo.duration = 1.0
-
-
-        
     }
     
+    // stacking animation functions together
     func chainAnimation(){
         slideUpLogo()
         earthLogo.animate()
@@ -55,6 +49,7 @@ class HomepageViewController: UIViewController {
     }
     
     // show labels after a delay of 1 second
+    // just for aethestics so that the earth appears first
     func showLabels(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.emailLabel.isHidden = false
@@ -75,31 +70,30 @@ class HomepageViewController: UIViewController {
             print("Input was not valid")
             return
         }
+        // checking that the input fields aren't empty
         if emailLabel.text == "" || passwordLabel.text == "" {
             // alert nothing has been entered
             errorLabel.text = "You didn't enter anything."
             self.errorLabel.isHidden = false
         }
         else {
-                FIRAuth.auth()?.signIn(withEmail: email!, password: password) { (user, error) in
-                    if error == nil {
-                        //perform segue
-                        print(" ")
-                        print(" ")
-//                        self.performSegue(withIdentifier: "loginToQuizSegue", sender: nil)
-//                        print("logged you in")
-//                        
-                        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let ScrollingTopicsViewController = mainStoryboard.instantiateViewController(withIdentifier: "ScrollingTopicsViewController") as! ScrollingTopicsViewController
-                        
-                        self.present(ScrollingTopicsViewController, animated: false, completion: nil)
-                    }
-                    else {
-                        self.errorLabel.text = "Incorrect password or username."
-                        self.errorLabel.isHidden = false
-                        print("incorrect password or username")
-                    }
+            // try to sign in
+            FIRAuth.auth()?.signIn(withEmail: email!, password: password) { (user, error) in
+                if error == nil {
+                    //perform segue
+                    // Sends user to homepage if success
+                    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let ScrollingTopicsViewController = mainStoryboard.instantiateViewController(withIdentifier: "ScrollingTopicsViewController") as! ScrollingTopicsViewController
+                    
+                    self.present(ScrollingTopicsViewController, animated: false, completion: nil)
                 }
+                else {
+                    // otherwise they will see an error
+                    self.errorLabel.text = "Incorrect password or username."
+                    self.errorLabel.isHidden = false
+                    print("incorrect password or username")
+                }
+            }
         }
 
     }
@@ -117,20 +111,12 @@ class HomepageViewController: UIViewController {
     
     // Prepare segue for login
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if (segue.identifier == "loginToQuizSegue"){
-            if let loginToQuizSegue = segue.destination as? QuizViewController{
-                // If you want to segue anything here's the syntax
-                loginToQuizSegue.username = emailLabel.text!
-            }
-        }
-        // Prepare segue for registration
-
-        else if (segue.identifier == "registrationPageSegue"){
+        // Sends user to registration button if they select register. If they put something in the email input it will be kept.
+        if (segue.identifier == "registrationPageSegue"){
             if let registrationPageSegue = segue.destination as? RegistrationViewController{
                 // If you want to segue anything here's the syntax
                 registrationPageSegue.username = emailLabel.text!
             }
-            print("but you're not supposed to be here")
         }
     }
     
@@ -139,9 +125,8 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        // delay label by 5 seconds
+        // delay label by 1 seconds
         showLabels()
         // animate the logo as soon as the app loads
         chainAnimation()
