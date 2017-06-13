@@ -52,9 +52,12 @@ class TopicsHomeViewController: UIViewController {
     
     @IBAction func logoutUser(){
         let firebaseAuth = FIRAuth.auth()
+        
         do {
             try firebaseAuth?.signOut()
-        } catch let signOutError as NSError {
+        }
+          
+        catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
         

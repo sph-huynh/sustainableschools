@@ -20,6 +20,8 @@
 		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */; };
 		283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96AE1EEEF36100B5345F /* sdgReference.swift */; };
+		283B96B11EEEFF0D00B5345F /* leadersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B01EEEFF0D00B5345F /* leadersCollectionViewController.swift */; };
+		283B96B31EEF7BA300B5345F /* leadershipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */; };
 		28558B5D1EED2AA700198FD5 /* ScrollingTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */; };
 		28558B5F1EED539E00198FD5 /* energyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */; };
 		28558B611EED844700198FD5 /* detailedSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B601EED844700198FD5 /* detailedSDGViewController.swift */; };
@@ -75,6 +77,8 @@
 		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		283B96AE1EEEF36100B5345F /* sdgReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdgReference.swift; sourceTree = "<group>"; };
+		283B96B01EEEFF0D00B5345F /* leadersCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadersCollectionViewController.swift; sourceTree = "<group>"; };
+		283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipCollectionViewCell.swift; sourceTree = "<group>"; };
 		28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTopicsViewController.swift; sourceTree = "<group>"; };
 		28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = energyHomeViewController.swift; sourceTree = "<group>"; };
 		28558B601EED844700198FD5 /* detailedSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailedSDGViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */,
 				28558B601EED844700198FD5 /* detailedSDGViewController.swift */,
 				285EF8CC1EC9709E00CDC606 /* leadershipBoardViewController.swift */,
+				283B96B01EEEFF0D00B5345F /* leadersCollectionViewController.swift */,
+				283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				283B96AE1EEEF36100B5345F /* sdgReference.swift */,
 				2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */,
@@ -400,10 +406,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283B96B11EEEFF0D00B5345F /* leadersCollectionViewController.swift in Sources */,
 				28558B611EED844700198FD5 /* detailedSDGViewController.swift in Sources */,
 				28558B5F1EED539E00198FD5 /* energyHomeViewController.swift in Sources */,
 				28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */,
 				285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */,
+				283B96B31EEF7BA300B5345F /* leadershipCollectionViewCell.swift in Sources */,
 				285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */,
 				28558B5D1EED2AA700198FD5 /* ScrollingTopicsViewController.swift in Sources */,
 				283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */,
