@@ -77,7 +77,7 @@ class RegistrationViewController: UIViewController {
                 
                 let usersDBRef = ref.child("users").child(uid)
                 // these are the values I want to save into my database per creation of a new user
-                let values = ["email": email, "firstname": firstname, "lastname": lastname, "energy-points": 0] as [String : Any]
+                let values = ["email": email, "firstname": firstname, "lastname": lastname, "level": 1, "energy-points": 0, "land-points": 0] as [String : Any]
                 usersDBRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
                     if err != nil {
                         print(err ?? "Couldn't add user to database")

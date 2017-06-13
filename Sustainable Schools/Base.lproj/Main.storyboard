@@ -141,6 +141,11 @@
                                                     <constraint firstItem="AXi-Qw-oLt" firstAttribute="leading" secondItem="CRG-6o-BKC" secondAttribute="leading" id="yyN-Vj-Ho9"/>
                                                     <constraint firstItem="JR0-HL-yBo" firstAttribute="top" secondItem="PCC-gR-BTW" secondAttribute="bottom" constant="38" id="zWa-lF-nwh"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="firstnameLabel" destination="PCC-gR-BTW" id="CdX-pS-VHc"/>
+                                                    <outlet property="imageView" destination="CRG-6o-BKC" id="1Uh-kU-M0h"/>
+                                                    <outlet property="levelLabel" destination="JR0-HL-yBo" id="2Kj-El-GPQ"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
