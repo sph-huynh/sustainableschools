@@ -19,10 +19,9 @@ class leadershipCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     func configureView(){
-        if firstname = firstname,
-            level = level{
             setImage(level: level)
-        }
+            firstnameLabel.text = firstname
+            levelLabel.text = String(level)
         
     }
     
@@ -40,16 +39,5 @@ class leadershipCollectionViewCell: UICollectionViewCell {
     }
     
     
-    // TEMP HARD CODED USER DB
-    
-    var users: [String: String] = [
-        "email": "test@test.com",
-        "energy-points": "0",
-        "firstname": "Enough characters",
-        "lastname": "In password",
-        "level": "1",
-        "energy-points": "0",
-        "land-points": "0"
 
-    ]
 }
