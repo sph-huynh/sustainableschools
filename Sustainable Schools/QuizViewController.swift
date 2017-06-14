@@ -14,19 +14,18 @@ class QuizViewController: UIViewController {
 
     
     
-    var username: String = ""
     // stores the current question, answer
-    public var currentQuestion = 0
-    public var correctAnswerPlacement:UInt32 = 0
-    public var questionLimit = 1
+    var currentQuestion = 0
+    var correctAnswerPlacement:UInt32 = 0
+    var questionLimit = 1
     //to jump over the correct answer, we store this index
-    public var incorrectAnswerIndex = 2
-    public var currentQuestionArray = [Array<String>]()
-    public var difficultyLevels = 1
-    public var currentPoints = 0
-    public var currentWeek = 1
-    public var accumulatedPoints = 0
-    public var reachedLimit: Bool = false
+    var incorrectAnswerIndex = 2
+    var currentQuestionArray = [Array<String>]()
+    var difficultyLevels = 1
+    var currentPoints = 0
+    var currentWeek = 1
+    var accumulatedPoints = 0
+    var reachedLimit: Bool = false
 
     
     // the quiz is formatted as
@@ -52,77 +51,85 @@ class QuizViewController: UIViewController {
         // we need to make sure that we don't exceed the number of questions for that given difficulty
         if (currentQuestion != questionLimit){
             if (difficultyLevels < 3) {
-                difficultyLevels += 1
-                currentQuestion = 0
+                self.difficultyLevels += 1
+                self.currentQuestion = 0
             }
             else{
-                reachedLimit = true
+                // and after going through the questions for each difficulty and levels of difficulty we segue back to 
+                // the topics home vc
+                self.reachedLimit = true
+                
+                
+                DataManager.shared.updatePoints(pointValue: accumulatedPoints)
+
+                // we segue to display points vc
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let displayingPointsViewController = mainStoryboard.instantiateViewController(withIdentifier: "displayingPointsViewController") as! displayingPointsViewController
                 
-//                var displayingPointsSegue = segue.destination as! displayingPointsViewController
-//                displayingPointsSegue.accumulatedPoints = accumulatedPoints
-                
-                present(displayingPointsViewController, animated: true, completion: nil)
-                
-                
-
-                
+                self.present(displayingPointsViewController, animated: false, completion: nil)
             }
         }
         // and then display the next question
         displayQuestion()
+    }
+    
 
+    
+    func addPoints(week: Int){
+        // adding points to the total for that level
+        print(currentPoints)
+        self.accumulatedPoints += currentPoints
         
     }
     
-    func addPoints(week: Int){
-        accumulatedPoints += currentPoints
-    }
+
     
-    func animateAvatar(){
-        print("PRZ do some animation first")
-    }
     
     @IBOutlet weak var questionLabel: UILabel!
 
     
     override func viewDidAppear(_ animated: Bool) {
-        animateAvatar()
     }
     
     // Question function
     func displayQuestion(){
         if reachedLimit != true{
-        parseJSON()
-
-        questionLabel.text = currentQuestionArray[currentQuestion][0]
-        
-        correctAnswerPlacement = arc4random_uniform(4)+1
-
-        var button:UIButton = UIButton()
-        
+            // this function adds the correct set of questions into the current array being used for the questions
+            parseJSON()
 
         
-        // we access each button by creating a new button with the tags set
-        for buttonTag in 1...4{
-            button = view.viewWithTag(buttonTag) as! UIButton
+            questionLabel.text = currentQuestionArray[currentQuestion][0]
+            // a random index is chosen for the correct answer
+            // because the correct answer is alway the first answer, we can always keep check of where this answer is
+            self.correctAnswerPlacement = arc4random_uniform(4)+1
+            // variable for the buttons we use
+            var button:UIButton = UIButton()
             
-            if (buttonTag == Int(correctAnswerPlacement)){
-                button.setTitle(currentQuestionArray[currentQuestion][1], for: .normal)
+
+            
+            // we access each button by creating a new button with the tags set
+            for buttonTag in 1...4{
+                button = view.viewWithTag(buttonTag) as! UIButton
+                // check if we are at the index where the correct answer should be
+                if (buttonTag == Int(correctAnswerPlacement)){
+                    button.setTitle(currentQuestionArray[currentQuestion][1], for: .normal)
+                }
+                else {
+                    // otherwise iterate through the incorrect answers and add them
+                    button.setTitle(currentQuestionArray[currentQuestion][incorrectAnswerIndex], for: .normal)
+                    self.incorrectAnswerIndex += 1
+                }
+                
+                
             }
-            else {
-                button.setTitle(currentQuestionArray[currentQuestion][incorrectAnswerIndex], for: .normal)
-                incorrectAnswerIndex += 1
-            }
-            
-            
-        }
-        incorrectAnswerIndex = 2
-        currentQuestion += 1
-        questionLimit = (currentQuestionArray.count) - 1
-    
+            // reset the incorrect index
+            self.incorrectAnswerIndex = 2
+            // move to the next question
+            self.currentQuestion += 1
+            // and remove the number of questions to go through next
+            self.questionLimit = (self.currentQuestionArray.count) - 1
         
+            
 
         }
     }
@@ -130,24 +137,28 @@ class QuizViewController: UIViewController {
     func parseJSON(){
         DataManager.shared.getWeeklyQuestions(){ data in
             guard let gloss = QNA(data: data) else{ return }
-            currentWeek = gloss.week
-            if (difficultyLevels == 1){
-                currentQuestionArray = gloss.easyQuestions
-                currentPoints = gloss.easyPoints
+            self.currentWeek = gloss.week
+            // depending on the difficulty level, load the correct array of questions and answers
+            switch difficultyLevels {
+                case 1:
+                    self.currentQuestionArray = gloss.easyQuestions
+                    self.currentPoints = gloss.easyPoints
+                    print("points are now\(currentPoints)")
+                    print(gloss.easyPoints)
+                case 2:
+                    self.currentQuestionArray = gloss.mediumQuestions
+                    self.currentPoints = gloss.mediumPoints
+                print("points are now\(currentPoints)")
+                print(gloss.mediumPoints)
+                case 3:
+                    self.currentQuestionArray = gloss.hardQuestions
+                    self.currentPoints = gloss.hardPoints
+                print("points are now\(currentPoints)")
+                print(gloss.hardPoints)
+                default:
+                    self.currentQuestionArray = gloss.easyQuestions
+                    self.currentPoints = gloss.easyPoints
             }
-            if (difficultyLevels == 2){
-                currentQuestionArray = gloss.mediumQuestions
-                currentPoints = gloss.mediumPoints
-
-            }
-            if (difficultyLevels == 3){
-                currentQuestionArray = gloss.hardQuestions
-                currentPoints = gloss.hardPoints
-
-            }
-
-
-
         
         }
     }
@@ -155,7 +166,6 @@ class QuizViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Does this come first?")
         displayQuestion()
 
     }

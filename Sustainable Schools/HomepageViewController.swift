@@ -82,6 +82,11 @@ class HomepageViewController: UIViewController {
                 if error == nil {
                     //perform segue
                     // Sends user to homepage if success
+                    guard let uid = user?.uid else{
+                        return
+                    }
+                    
+                    
                     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let ScrollingTopicsViewController = mainStoryboard.instantiateViewController(withIdentifier: "ScrollingTopicsViewController") as! ScrollingTopicsViewController
                     

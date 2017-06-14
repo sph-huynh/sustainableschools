@@ -74,6 +74,7 @@ class RegistrationViewController: UIViewController {
                 guard let uid = user?.uid else{
                     return
                 }
+
                 
                 // Initilising Firebase Database to use throughout the application
                 
@@ -90,6 +91,7 @@ class RegistrationViewController: UIViewController {
                     }
                     print("added user to database")
                 })
+                
                 // go to the application if they are registered
                 self.performSegue(withIdentifier: "quizViewConSegue", sender: nil)
                 print("wair not yet")

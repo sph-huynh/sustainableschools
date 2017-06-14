@@ -2,7 +2,7 @@
 //  leadershipBoardViewController.swift
 //  Sustainable Schools
 //
-//  Created by Sophia Huynh on 13/6/17.
+//  Created by Sophia Huynh on 8/6/17.
 //  Copyright © 2017 Sophia Huynh. All rights reserved.
 //
 
@@ -37,14 +37,11 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
     
     // TEMP HARD CODED USER DB
     
-    var users: [Int: [String]] = [
-        
-        0: ["Enough characters", "1","0"]
-
-        
-    ]
+    var users = [User]()
     
+    // depending on the level avatars will be different
     func configureUserView(){
+        
         
         switch self.userLevel {
         case 1:
@@ -58,93 +55,66 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
         }
     }
     
-    func getUserDB(){
-        // Refrence for accessing our database
-        // Specifically the Users
-        
-
-        
-        
-        // Observe in the Users DB for the first name
-//        usersDictionary.observeSingleEvent(of: .value, with: { (snapshot: FIRDataSnapshot) in
-//            print("HI")
-//
-//            
-//            // Get user value
-////            let userDictionary = snapshot.value as! [String: String]
-////            print("um herro")
-//            print(usersDictionary)
-//            self.firstname = snapshot.value?.objectForKey("firstname") as! String
-//            print(self.firstname)
-//
-//        }) { (error) in
-//        print("There was an error")
-//        }
-//        print(ref.child("users").child("uid"))
+    func loadUserProfile(){
+        let firRef = FIRDatabase.database().reference()
+        let userRef = firRef.child("users/\(FIRAuth.auth()!.currentUser!.uid)")
+        userRef.observe(.value, with: { (snapshot) in
+            let user = User(snapshot: snapshot)
+            self.userFirstNameLabel.text = "\(user.userFirstname!)"
+            self.userLevelLabel.text = "\(user.currentLevel!)"
+            self.userPointsLabel.text = "\(user.currentTotalPoints!)"
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
 
     }
     
-//    
-//    func setImage(cell: leadershipCollectionViewCell, level: Int){
-//        
-//        // Set firstname and level
-//        userFirstNameLabel.text = userFirstName
-//        userLevelLabel.text = userLevel
-//        
-//        // Set avatar based on level of user
-//        
-//        switch level {
-//        case 1:
-//            cell.imageView.image = UIImage(named:"earthSad")
-//        case 2:
-//            cell.imageView.image = UIImage(named:"energyEarth")
-//        case 3:
-//            cell.imageView.image = UIImage(named:"energyLand")
-//        default:
-//            cell.imageView.image = UIImage(named:"earthSad")
-//        }
-//    }
-//    
+    
+    func setImage(cell: leadershipCollectionViewCell, level: Int){
+        
+        // Set firstname and level
+        userFirstNameLabel.text = userFirstName
+        userLevelLabel.text = "\(userLevel)"
+        
+        // Set avatar based on level of user
+        
+        switch level {
+        case 1:
+            cell.imageView.image = UIImage(named:"earthSad")
+        case 2:
+            cell.imageView.image = UIImage(named:"energyEarth")
+        case 3:
+            cell.imageView.image = UIImage(named:"energyLand")
+        default:
+            cell.imageView.image = UIImage(named:"earthSad")
+        }
+    }
+    
+    func fetchLeadership(){
+        ref.observe(.value, with: { (snapshot) in
+            for user in snapshot.children{
+                self.users.append(User(snapshot: user as! FIRDataSnapshot))
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        users = users.sorted(by: { (u1, u2) -> Bool in
+            u1.currentTotalPoints > u2.currentTotalPoints
+        })
+        
+        self.collectionView.reloadData()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        configureUserView()
-        ref.observe(.value, with: { snapshot in
-            print(snapshot.value!)
-        })
         
-//        ref.observe(.value, with: { snapshot in
-//            var iteratorNum = 0
-//            // create a dictionary with top users
-//
-//            // for each user add to the dictionary
-//            for user in snapshot.children {
-//                // 4
-//                var firstname = snapshot.childSnapshot(forPath: "firstname") as! String
-//                var level = snapshot.childSnapshot(forPath: "level") as! Int
-//                var totalPoints = snapshot.childSnapshot(forPath: "total-points") as! Int
-//
-//                print(level)
-//                print("firstname")
-//                print(firstname)
-//                print("total\(totalPoints)")
-//                    
-////                self.users[iteratorNum] = [level, firstname, totalPoints]
-//                iteratorNum += 1
-//            }
-//            
-//            
-//            
-//            // 5
-//            print(self.users)
-//            self.collectionView.reloadData()
-//        })
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "leadershipCollectionViewCell")
+        loadUserProfile()
+        fetchLeadership()
+        configureUserView()
+
         
         // Do any additional setup after loading the view.
     }
@@ -154,15 +124,6 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
     
     // MARK: UICollectionViewDataSource
     
@@ -180,15 +141,7 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "leadershipCollectionViewCell", for: indexPath) as! leadershipCollectionViewCell
         
-        print("MARCO")
-        getUserDB()
-        
-        
-        // Configure the cell
-
-        cell.levelLabel.text = "2"
-        cell.firstnameLabel.text = firstname
-//        setImage(cell:cell, level: level)
+        cell.configureCell(user: users[indexPath.row])
         
         return cell
     }

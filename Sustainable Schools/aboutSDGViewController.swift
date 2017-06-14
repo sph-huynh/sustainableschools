@@ -22,10 +22,7 @@ class aboutSDGViewController: UIViewController , UITableViewDataSource{
     var keys: [Any] = []
     var key: Any = "Goal"
     
-    //    print(sdgDictionary.count)
-    
-    //    print(sdgDictionary["1"])
-    
+
     // this is a var for the filtered data in an array
     var filtered = [String]()
     

@@ -31,12 +31,15 @@ class displayingPointsViewController: UIViewController {
         congratulationsImage.image = animatedYay
     }
     
+    // reads what has just been stored in the firebase db and sets it as what is displayed
+    func setPoints(){
+        var accumulatedPoints = DataManager.shared.readPoints()
+        pointsLabel.text = "\(accumulatedPoints)"
+    }
     
-    var accumulatedPoints = 0
-    
+    // segue back to topics home
     func moveBackToQuizVC(){
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-//            self.performSegue(withIdentifier: "goBackToQuizVCSegue", sender: nil)
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let ScrollingTopicsViewController = mainStoryboard.instantiateViewController(withIdentifier: "ScrollingTopicsViewController") as! ScrollingTopicsViewController
             
@@ -45,12 +48,12 @@ class displayingPointsViewController: UIViewController {
     }
 
 
-
+    // just loading interface
     @IBOutlet weak var pointsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        pointsLabel.text = String(accumulatedPoints)
         
+        setPoints()
         animatedYayImage()
 
         moveBackToQuizVC()

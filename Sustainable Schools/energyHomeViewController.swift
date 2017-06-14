@@ -2,7 +2,7 @@
 //  energyHomeViewController.swift
 //  Sustainable Schools
 //
-//  Created by Sophia Huynh on 11/6/17.
+//  Created by Sophia Huynh on 2/6/17.
 //  Copyright © 2017 Sophia Huynh. All rights reserved.
 //
 

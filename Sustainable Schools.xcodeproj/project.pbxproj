@@ -22,6 +22,9 @@
 		283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96AE1EEEF36100B5345F /* sdgReference.swift */; };
 		283B96B31EEF7BA300B5345F /* leadershipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */; };
 		283B96B51EEF973100B5345F /* leadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */; };
+		283B96BE1EF154B100B5345F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283B96BD1EF154B100B5345F /* CoreData.framework */; };
+		283B96C01EF15E0600B5345F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96BF1EF15E0600B5345F /* User.swift */; };
+		283B96C21EF1603300B5345F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96C11EF1603300B5345F /* File.swift */; };
 		28558B5D1EED2AA700198FD5 /* ScrollingTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */; };
 		28558B5F1EED539E00198FD5 /* energyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */; };
 		28558B611EED844700198FD5 /* detailedSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B601EED844700198FD5 /* detailedSDGViewController.swift */; };
@@ -78,6 +81,9 @@
 		283B96AE1EEEF36100B5345F /* sdgReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdgReference.swift; sourceTree = "<group>"; };
 		283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipCollectionViewCell.swift; sourceTree = "<group>"; };
 		283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipBoardViewController.swift; sourceTree = "<group>"; };
+		283B96BD1EF154B100B5345F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		283B96BF1EF15E0600B5345F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		283B96C11EF1603300B5345F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTopicsViewController.swift; sourceTree = "<group>"; };
 		28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = energyHomeViewController.swift; sourceTree = "<group>"; };
 		28558B601EED844700198FD5 /* detailedSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailedSDGViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283B96BE1EF154B100B5345F /* CoreData.framework in Frameworks */,
 				23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */,
 				6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */,
 			);
@@ -153,6 +160,7 @@
 			children = (
 				2357004E1EB872370054A521 /* AppDelegate.swift */,
 				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
+				283B96BF1EF15E0600B5345F /* User.swift */,
 				285E25541ED0641A0091A33D /* ValidationManager.swift */,
 				2357005D1EB872380054A521 /* Info.plist */,
 				235700501EB872370054A521 /* HomepageViewController.swift */,
@@ -168,6 +176,7 @@
 				285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */,
 				28558B601EED844700198FD5 /* detailedSDGViewController.swift */,
 				283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */,
+				283B96C11EF1603300B5345F /* File.swift */,
 				283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				283B96AE1EEEF36100B5345F /* sdgReference.swift */,
@@ -201,6 +210,7 @@
 		319E8D3FB18B2FF00A32448F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				283B96BD1EF154B100B5345F /* CoreData.framework */,
 				23F38A061EBF3DCD0089E243 /* Gloss.framework */,
 				62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */,
 			);
@@ -416,6 +426,7 @@
 				235700511EB872370054A521 /* HomepageViewController.swift in Sources */,
 				281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */,
 				2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */,
+				283B96C21EF1603300B5345F /* File.swift in Sources */,
 				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,
 				281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */,
 				845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */,
@@ -424,6 +435,7 @@
 				845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */,
 				28558B631EEEB48800198FD5 /* landHomeViewController.swift in Sources */,
 				281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */,
+				283B96C01EF15E0600B5345F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,21 +51,33 @@ class TopicsHomeViewController: UIViewController {
         bgImage.image = animatedBG
     }
     
+    func configureUserData(){
+        let userLabel = DataManager.shared.currentLevel
+        let userPoints = DataManager.shared.readTotalPoints()
+
+        
+        userLevelLabel.text = "\(userLabel)"
+        userPointsLabel.text = "\(userPoints)"
+    }
     
     // log out user
     @IBAction func logoutUser(){
-        let firebaseAuth = FIRAuth.auth()
         
-        do {
-            try firebaseAuth?.signOut()
+        if FIRAuth.auth()!.currentUser != nil{
+            do {
+                try? FIRAuth.auth()?.signOut()
+                
+                if FIRAuth.auth()?.currentUser == nil{
+                    // send them back to the home page when they have been logged out
+                    exitAppToHomescreen()
+                }
+            }
         }
-          
-        catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
+        else{
+            print("Can't sign user out")
         }
+
         
-        // send them back to the home page when they have been logged out
-        exitAppToHomescreen()
         
     }
     
@@ -80,10 +92,12 @@ class TopicsHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        // Do any additional setup after loading the view.
+        configureUserData()
         // animate the avatar
         animateBG()
+        
     }
 
     override func didReceiveMemoryWarning() {
