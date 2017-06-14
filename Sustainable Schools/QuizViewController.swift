@@ -49,7 +49,7 @@ class QuizViewController: UIViewController {
         }
         
         // we need to make sure that we don't exceed the number of questions for that given difficulty
-        if (self.currentQuestion != self.questionLimit){
+        if (self.currentQuestion == self.questionLimit){
             if (self.difficultyLevels < 3) {
                 self.difficultyLevels += 1
                 self.currentQuestion = 0
