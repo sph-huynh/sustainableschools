@@ -6,6 +6,8 @@
 //  Copyright © 2017 Sophia Huynh. All rights reserved.
 //
 
+// THIS VIEW CONTROLLER WAS MADE USING A TUTORIAL http://www.techotopia.com/index.php/A_Swift_iOS_8_Storyboard-based_Collection_View_Tutorial
+
 import UIKit
 
 class ScrollingTopicsViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
@@ -23,7 +25,8 @@ class ScrollingTopicsViewController: UIPageViewController, UIPageViewControllerD
                 self.newViewController(viewController: "landHome")]
     }()
     
-    // BREADCRUMBS
+    // BREADCRUMBS 
+    // at the bottom of the page
     var pageControl = UIPageControl()
     func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
@@ -49,8 +52,6 @@ class ScrollingTopicsViewController: UIPageViewController, UIPageViewControllerD
         super.viewDidLoad()
 
         self.dataSource = self
-        
-        
         
         // This sets up the first view that will show up on our page control
         if let firstViewController = orderedViewControllers.first {

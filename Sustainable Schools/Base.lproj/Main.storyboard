@@ -784,6 +784,8 @@ Goals
                         <outlet property="leadershipBoardButton" destination="YbW-RO-NMN" id="Dc8-eo-QTj"/>
                         <outlet property="logoutButton" destination="pz9-GU-5Ju" id="22u-HZ-VB7"/>
                         <outlet property="sdgPageButton" destination="8HM-uU-IMd" id="o0E-lJ-Zzy"/>
+                        <outlet property="userLevelLabel" destination="mk5-lf-bNr" id="Fdc-X9-WrT"/>
+                        <outlet property="userPointsLabel" destination="k8D-LM-XLv" id="HY2-5U-fPj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="go3-H7-7re" userLabel="First Responder" sceneMemberID="firstResponder"/>

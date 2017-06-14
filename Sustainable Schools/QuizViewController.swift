@@ -15,6 +15,7 @@ class QuizViewController: UIViewController {
     
     
     var username: String = ""
+    // stores the current question, answer
     public var currentQuestion = 0
     public var correctAnswerPlacement:UInt32 = 0
     public var questionLimit = 1
@@ -27,16 +28,28 @@ class QuizViewController: UIViewController {
     public var accumulatedPoints = 0
     public var reachedLimit: Bool = false
 
-
+    
+    // the quiz is formatted as
+    //    week-no {
+    //        difficulty-points: x,
+    //        questions: [
+    //            [question, correct answer, incorrect answer, incorrect answer, incorrect answer]
+    //        ]
+    //    
+    //    }
+    // the we always keep track of the correct answer in the array
+    // if the user picks the answer with the index that corresponds, it is correct
     @IBAction func AnswerButton(_ sender: AnyObject) {
         if (sender.tag == Int(correctAnswerPlacement)){
             print ("correct")
+            // we add points
             addPoints(week: currentWeek)
         }
         else{
             print("wrong")
         }
         
+        // we need to make sure that we don't exceed the number of questions for that given difficulty
         if (currentQuestion != questionLimit){
             if (difficultyLevels < 3) {
                 difficultyLevels += 1
@@ -57,6 +70,7 @@ class QuizViewController: UIViewController {
                 
             }
         }
+        // and then display the next question
         displayQuestion()
 
         
