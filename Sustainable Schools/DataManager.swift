@@ -47,7 +47,7 @@ class DataManager {
         let ref = FIRDatabase.database().reference()
         let usersDBRef = ref.child("users").child(FIRAuth.auth()!.currentUser!.uid)
         // these are the values I want to save into my database per creation of a new user
-        getNewTotalPoints(pointValue: pointValue)
+        self.newTotalPoints = getNewTotalPoints(pointValue: pointValue)
         self.currentPoints = pointValue
         let values = ["total-points": self.newTotalPoints, "energy-points": pointValue] as [String : Any]
         usersDBRef.updateChildValues(values, withCompletionBlock: { (err, ref) in
@@ -61,9 +61,11 @@ class DataManager {
     }
     
     // just adds the newly set points with the current total points
-    func getNewTotalPoints(pointValue: Int) {
+    func getNewTotalPoints(pointValue: Int) -> Int{
         
-        self.newTotalPoints = self.currentTotalPoints + pointValue
+        self.newTotalPoints = self.readTotalPoints() + pointValue
+        
+        return newTotalPoints
     }
     
     // reads what's currently stored in the firebase db in current points
@@ -97,6 +99,8 @@ class DataManager {
     }
     
 
+
+    
 }
 
 

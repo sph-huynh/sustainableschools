@@ -19,6 +19,7 @@ class detailedSDGViewController: UIViewController {
     @IBOutlet weak var goalImage: UIImageView!
     @IBOutlet weak var goalDescription: UILabel!
     
+    
     func configureView() {
         //but we have to make sure we have the right monster before we set the labels
         goalNumber.text = "\(goalNum)"
@@ -40,14 +41,5 @@ class detailedSDGViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -33,17 +33,13 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
     
     // Variables for Firebase DB Refrenc
     var ref = FIRDatabase.database().reference().child("users")
-    var tempArray = [String]()
     
-    // TEMP HARD CODED USER DB
     
     var users = [User]()
     
     // depending on the level avatars will be different
-    func configureUserView(){
-        
-        
-        switch self.userLevel {
+    func configureUserAvatar(level: Int){
+        switch level {
         case 1:
         userAvatarImage.image = UIImage(named:"earthSad")
         case 2:
@@ -63,6 +59,7 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
             self.userFirstNameLabel.text = "\(user.userFirstname!)"
             self.userLevelLabel.text = "\(user.currentLevel!)"
             self.userPointsLabel.text = "\(user.currentTotalPoints!)"
+            self.configureUserAvatar(level: user.currentLevel!)
             
         }) { (error) in
             print(error.localizedDescription)
@@ -71,52 +68,42 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
     }
     
     
-    func setImage(cell: leadershipCollectionViewCell, level: Int){
-        
-        // Set firstname and level
-        userFirstNameLabel.text = userFirstName
-        userLevelLabel.text = "\(userLevel)"
-        
-        // Set avatar based on level of user
-        
-        switch level {
-        case 1:
-            cell.imageView.image = UIImage(named:"earthSad")
-        case 2:
-            cell.imageView.image = UIImage(named:"energyEarth")
-        case 3:
-            cell.imageView.image = UIImage(named:"energyLand")
-        default:
-            cell.imageView.image = UIImage(named:"earthSad")
-        }
-    }
-    
     func fetchLeadership(){
         ref.observe(.value, with: { (snapshot) in
             for user in snapshot.children{
                 self.users.append(User(snapshot: user as! FIRDataSnapshot))
             }
+            
+            // sorting users by total points
+            self.users = self.users.sorted(by: { (firstUser, secondUser) -> Bool in
+                firstUser.currentTotalPoints > secondUser.currentTotalPoints
+            })
+            
+            self.collectionView.reloadData()
         }) { (error) in
             print(error.localizedDescription)
         }
         
-        users = users.sorted(by: { (u1, u2) -> Bool in
-            u1.currentTotalPoints > u2.currentTotalPoints
-        })
         
-        self.collectionView.reloadData()
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadUserProfile()
-        fetchLeadership()
-        configureUserView()
+        
 
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        fetchLeadership()
+        loadUserProfile()
+        
+        print(users.count)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -135,7 +122,7 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return users.count
+        return self.users.count
     }
     
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -146,5 +133,6 @@ class leadershipBoardViewController: UIViewController, UICollectionViewDataSourc
         return cell
     }
     
+
     
 }

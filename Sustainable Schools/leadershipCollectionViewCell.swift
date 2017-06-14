@@ -24,7 +24,7 @@ class leadershipCollectionViewCell: UICollectionViewCell {
     func configureCell(user: User){
         self.firstnameLabel.text = user.userFirstname!
         self.levelLabel.text = "\(user.currentLevel!)"
-        self.pointLabel.text = "\(user.currentTotalPoints!)"
+        self.pointLabel.text = "Points: \(user.currentTotalPoints!)"
         configureImage(level: user.currentLevel)
     }
     
@@ -41,6 +41,8 @@ class leadershipCollectionViewCell: UICollectionViewCell {
             imageView.image = UIImage(named:"earthSad")
         }
     }
+    
+    
     
 
 }

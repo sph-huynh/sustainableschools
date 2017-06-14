@@ -8,7 +8,7 @@
 
 import UIKit
 import Spring
-import FirebaseAuth
+import Firebase
 
 class TopicsHomeViewController: UIViewController {
 
@@ -38,6 +38,10 @@ class TopicsHomeViewController: UIViewController {
     // variable to save the animation in
     var animatedBG: UIImage!
     
+    // variables for the points and level labels
+    var userLabel = 1
+    var userPoints = 1
+    
     //sets the correct images to the variables and loops through each image
     func animateBG(){
         level1bg1 = UIImage(named: "level1bg1")
@@ -51,14 +55,24 @@ class TopicsHomeViewController: UIViewController {
         bgImage.image = animatedBG
     }
     
-    func configureUserData(){
-        let userLabel = DataManager.shared.currentLevel
-        let userPoints = DataManager.shared.readTotalPoints()
-
         
-        userLevelLabel.text = "\(userLabel)"
-        userPointsLabel.text = "\(userPoints)"
+    func loadUserProfile(){
+        let firRef = FIRDatabase.database().reference()
+        let userRef = firRef.child("users/\(FIRAuth.auth()!.currentUser!.uid)")
+        userRef.observe(.value, with: { (snapshot) in
+            let user = User(snapshot: snapshot)
+            self.userLevelLabel.text = "\(user.currentLevel!)"
+            self.userPointsLabel.text = "\(user.currentTotalPoints!)"
+ 
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
     }
+
+    
+
     
     // log out user
     @IBAction func logoutUser(){
@@ -94,10 +108,19 @@ class TopicsHomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        configureUserData()
+        loadUserProfile()
         // animate the avatar
         animateBG()
         
+    }
+
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        
+        loadUserProfile()
+
     }
 
     override func didReceiveMemoryWarning() {
