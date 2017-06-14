@@ -1023,10 +1023,10 @@ Goals
                                 <color key="textColor" red="0.28512164950000002" green="0.60875535010000004" blue="0.81965589520000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-JU-CyD">
-                                <rect key="frame" x="49" y="454" width="238" height="122"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-JU-CyD">
+                                <rect key="frame" x="49" y="454" width="289" height="193"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="JxH-db-gjW"/>
+                                    <constraint firstAttribute="height" constant="193" id="JxH-db-gjW"/>
                                 </constraints>
                                 <string key="text">Firebase Authentication
 Firebase Database
@@ -1034,7 +1034,8 @@ Firebase Database
 Gloss JSON
 
 Spring Animation
-</string>
+
+Some questions have been taken from http://uncw.edu/campuslife/documents/RecyclingTriviaQuestions.pdf for demonstration purposes.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1072,7 +1073,7 @@ Students should be able to play and compare progress with classmates, schoolmate
                             <constraint firstItem="RcL-3J-dG0" firstAttribute="trailing" secondItem="XKO-S1-ywe" secondAttribute="trailing" id="EFE-Hj-enM"/>
                             <constraint firstItem="1Fd-Ab-uEE" firstAttribute="top" secondItem="ciS-7U-rLJ" secondAttribute="bottom" constant="50" id="Iph-JC-yVJ"/>
                             <constraint firstItem="vKf-UD-wJ5" firstAttribute="top" secondItem="XKO-S1-ywe" secondAttribute="bottom" constant="1" id="LkT-Ax-5zb"/>
-                            <constraint firstItem="wHh-Dz-5yf" firstAttribute="top" secondItem="ffl-JU-CyD" secondAttribute="bottom" constant="91" id="Ppd-rh-dhc"/>
+                            <constraint firstItem="wHh-Dz-5yf" firstAttribute="top" secondItem="ffl-JU-CyD" secondAttribute="bottom" constant="20" id="Ppd-rh-dhc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vKf-UD-wJ5" secondAttribute="trailing" constant="212" id="Q1u-lL-rrb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ngo-h7-23N" secondAttribute="trailing" constant="32" id="QG8-Wm-Dpa"/>
                             <constraint firstItem="XKO-S1-ywe" firstAttribute="leading" secondItem="FW6-lW-23Y" secondAttribute="leadingMargin" constant="33" id="QrP-aE-HHD"/>
@@ -1085,7 +1086,7 @@ Students should be able to play and compare progress with classmates, schoolmate
                             <constraint firstAttribute="trailingMargin" secondItem="XKO-S1-ywe" secondAttribute="trailing" constant="21" id="lQL-My-tsH"/>
                             <constraint firstItem="Ngo-h7-23N" firstAttribute="top" secondItem="RI7-qa-q0r" secondAttribute="bottom" constant="122" id="njW-Xe-jlO"/>
                             <constraint firstItem="vKf-UD-wJ5" firstAttribute="top" secondItem="XKO-S1-ywe" secondAttribute="bottom" constant="1" id="sqH-1C-IvS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ffl-JU-CyD" secondAttribute="trailing" constant="72" id="suL-Z8-vpt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ffl-JU-CyD" secondAttribute="trailing" constant="21" id="suL-Z8-vpt"/>
                             <constraint firstItem="ffl-JU-CyD" firstAttribute="top" secondItem="vKf-UD-wJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="uaY-fs-SmS"/>
                             <constraint firstItem="1Fd-Ab-uEE" firstAttribute="top" secondItem="RI7-qa-q0r" secondAttribute="bottom" constant="106" id="wam-dw-5j2"/>
                             <constraint firstItem="1Fd-Ab-uEE" firstAttribute="leading" secondItem="FW6-lW-23Y" secondAttribute="leadingMargin" constant="13" id="zsx-Rg-Jvc"/>
@@ -1094,7 +1095,7 @@ Students should be able to play and compare progress with classmates, schoolmate
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCa-zY-2xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="851"/>
+            <point key="canvasLocation" x="1957.5999999999999" y="850.52473763118451"/>
         </scene>
         <!--Displaying Points View Controller-->
         <scene sceneID="Qui-X1-Yhm">
@@ -1345,6 +1346,6 @@ Ok</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kLy-Zu-rfL"/>
-        <segue reference="tIe-3e-32c"/>
+        <segue reference="Sjt-9A-7DX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,7 +17,7 @@ class QuizViewController: UIViewController {
     // stores the current question, answer
     var currentQuestion = 0
     var correctAnswerPlacement:UInt32 = 0
-    var questionLimit = 1
+    var questionLimit = 10
     //to jump over the correct answer, we store this index
     var incorrectAnswerIndex = 2
     var currentQuestionArray = [Array<String>]()
@@ -49,8 +49,8 @@ class QuizViewController: UIViewController {
         }
         
         // we need to make sure that we don't exceed the number of questions for that given difficulty
-        if (currentQuestion != questionLimit){
-            if (difficultyLevels < 3) {
+        if (self.currentQuestion != self.questionLimit){
+            if (self.difficultyLevels < 3) {
                 self.difficultyLevels += 1
                 self.currentQuestion = 0
             }
@@ -126,8 +126,7 @@ class QuizViewController: UIViewController {
             self.incorrectAnswerIndex = 2
             // move to the next question
             self.currentQuestion += 1
-            // and remove the number of questions to go through next
-            self.questionLimit = (self.currentQuestionArray.count) - 1
+            
         
             
 
