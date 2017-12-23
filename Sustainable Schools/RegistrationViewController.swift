@@ -14,9 +14,10 @@ class RegistrationViewController: UIViewController {
     // outlets for interface
     @IBOutlet weak var emailInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
+    @IBOutlet weak var confirmPasswordInput: UITextField!
+
     @IBOutlet weak var firstNameInput: UITextField!
     @IBOutlet weak var lastNameInput: UITextField!
-    @IBOutlet weak var confirmPasswordInput: UITextField!
     
     @IBOutlet var errorTextLabel: UILabel!
 

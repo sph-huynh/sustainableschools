@@ -22,9 +22,9 @@ struct QNA {
         let easyPoints = "points.easy" <~~ json ?? 0
         let mediumPoints = "points.medium" <~~ json ?? 0
         let hardPoints = "points.hard" <~~ json ?? 0
-        self.easyPoints = easyPoints!
-        self.mediumPoints = mediumPoints!
-        self.hardPoints = hardPoints!
+        self.easyPoints = easyPoints
+        self.mediumPoints = mediumPoints
+        self.hardPoints = hardPoints
 
         let easyQuestions = "questions.easy" <~~ json ?? [["Error with Questions"]]
         let mediumQuestions = "questions.medium" <~~ json ?? [["Error with Questions"]]
@@ -32,7 +32,7 @@ struct QNA {
         self.easyQuestions = easyQuestions
         self.mediumQuestions = mediumQuestions
         self.hardQuestions = hardQuestions
-        self.bossPoints = "E: \(easyPoints!)M: \(mediumPoints!)H: \(hardPoints!)"
+        self.bossPoints = "E: \(easyPoints)M: \(mediumPoints)H: \(hardPoints)"
 
 
         

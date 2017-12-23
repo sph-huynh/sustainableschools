@@ -17,7 +17,7 @@ class QuizViewController: UIViewController {
     // stores the current question, answer
     var currentQuestion = 0
     var correctAnswerPlacement:UInt32 = 0
-    var questionLimit = 10
+    var questionLimit = 5
     //to jump over the correct answer, we store this index
     var incorrectAnswerIndex = 2
     var currentQuestionArray = [Array<String>]()
@@ -63,7 +63,7 @@ class QuizViewController: UIViewController {
                 DataManager.shared.updatePoints(pointValue: accumulatedPoints)
 
                 // we segue to display points vc
-                let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainStoryboard = UIStoryboard(name: "Quiz", bundle: nil)
                 let displayingPointsViewController = mainStoryboard.instantiateViewController(withIdentifier: "displayingPointsViewController") as! displayingPointsViewController
                 
                 self.present(displayingPointsViewController, animated: false, completion: nil)

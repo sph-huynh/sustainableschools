@@ -17,7 +17,6 @@ class displayingPointsViewController: UIViewController {
     var yay3: UIImage!
 
     var animation: [UIImage] = []
-    
     var animatedYay: UIImage!
     
     func animatedYayImage(){
@@ -33,7 +32,7 @@ class displayingPointsViewController: UIViewController {
     
     // reads what has just been stored in the firebase db and sets it as what is displayed
     func setPoints(){
-        var accumulatedPoints = DataManager.shared.readPoints()
+        let accumulatedPoints = DataManager.shared.readPoints()
         pointsLabel.text = "\(accumulatedPoints)"
     }
     
@@ -65,15 +64,4 @@ class displayingPointsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

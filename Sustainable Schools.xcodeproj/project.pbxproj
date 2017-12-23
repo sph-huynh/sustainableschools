@@ -13,16 +13,16 @@
 		235700591EB872380054A521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235700581EB872380054A521 /* Assets.xcassets */; };
 		235700671EB872380054A521 /* Sustainable_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700661EB872380054A521 /* Sustainable_SchoolsTests.swift */; };
 		235700721EB872390054A521 /* Sustainable_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */; };
-		2380A1701EBF6DEB00CC45F3 /* GlossSustainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */; };
 		2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380A1711EBF6E2800CC45F3 /* QNA.swift */; };
 		23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F38A061EBF3DCD0089E243 /* Gloss.framework */; };
-		281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AB1EC6FAA6007DB106 /* Difficulty.swift */; };
-		281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281292AD1EC6FAD7007DB106 /* Quiz.swift */; };
 		281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */; };
 		283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96AE1EEEF36100B5345F /* sdgReference.swift */; };
 		283B96B31EEF7BA300B5345F /* leadershipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */; };
 		283B96B51EEF973100B5345F /* leadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */; };
 		283B96C01EF15E0600B5345F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96BF1EF15E0600B5345F /* User.swift */; };
+		2854AF291FED05FE00CC1F0B /* Leadership.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2854AF281FED05FE00CC1F0B /* Leadership.storyboard */; };
+		2854AF2B1FED060B00CC1F0B /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2854AF2A1FED060B00CC1F0B /* Registration.storyboard */; };
+		2854AF2D1FED067000CC1F0B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2854AF2C1FED067000CC1F0B /* Settings.storyboard */; };
 		28558B5D1EED2AA700198FD5 /* ScrollingTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */; };
 		28558B5F1EED539E00198FD5 /* energyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */; };
 		28558B611EED844700198FD5 /* detailedSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28558B601EED844700198FD5 /* detailedSDGViewController.swift */; };
@@ -30,6 +30,7 @@
 		285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */; };
 		285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */; };
 		285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E25541ED0641A0091A33D /* ValidationManager.swift */; };
+		28E0F96F1FE765D60093605E /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E0F96E1FE765D60093605E /* Quiz.storyboard */; };
 		28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AA1EC858A500CB547B /* DataManager.swift */; };
 		28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */; };
 		6D5D189DF7DE5E3F631A10ED /* Pods_Sustainable_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */; };
@@ -70,16 +71,16 @@
 		2357006D1EB872390054A521 /* Sustainable SchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sustainable SchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		235700711EB872390054A521 /* Sustainable_SchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainable_SchoolsUITests.swift; sourceTree = "<group>"; };
 		235700731EB872390054A521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossSustainable.swift; sourceTree = "<group>"; };
 		2380A1711EBF6E2800CC45F3 /* QNA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNA.swift; sourceTree = "<group>"; };
 		23F38A061EBF3DCD0089E243 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "Pods/../build/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
-		281292AB1EC6FAA6007DB106 /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
-		281292AD1EC6FAD7007DB106 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		283B96AE1EEEF36100B5345F /* sdgReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdgReference.swift; sourceTree = "<group>"; };
 		283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipCollectionViewCell.swift; sourceTree = "<group>"; };
 		283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipBoardViewController.swift; sourceTree = "<group>"; };
 		283B96BF1EF15E0600B5345F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2854AF281FED05FE00CC1F0B /* Leadership.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leadership.storyboard; sourceTree = "<group>"; };
+		2854AF2A1FED060B00CC1F0B /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		2854AF2C1FED067000CC1F0B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTopicsViewController.swift; sourceTree = "<group>"; };
 		28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = energyHomeViewController.swift; sourceTree = "<group>"; };
 		28558B601EED844700198FD5 /* detailedSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailedSDGViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDGTableViewCell.swift; sourceTree = "<group>"; };
 		285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutSDGViewController.swift; sourceTree = "<group>"; };
 		285E25541ED0641A0091A33D /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		28E0F96E1FE765D60093605E /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		28F9C5AA1EC858A500CB547B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayingPointsViewController.swift; sourceTree = "<group>"; };
 		62F347409C5AAED4626B932D /* Pods_Sustainable_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sustainable_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,10 @@
 		2357004D1EB872370054A521 /* Sustainable Schools */ = {
 			isa = PBXGroup;
 			children = (
+				28E0F96D1FE48FD00093605E /* Quiz */,
+				28E0F96C1FE48FC50093605E /* Leadership */,
+				28E0F96B1FE48FB70093605E /* Registration */,
+				28E0F96A1FE48FAA0093605E /* Settings */,
 				2357004E1EB872370054A521 /* AppDelegate.swift */,
 				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
 				283B96BF1EF15E0600B5345F /* User.swift */,
@@ -174,10 +180,7 @@
 				283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				283B96AE1EEEF36100B5345F /* sdgReference.swift */,
-				2380A16F1EBF6DEB00CC45F3 /* GlossSustainable.swift */,
 				2380A1711EBF6E2800CC45F3 /* QNA.swift */,
-				281292AB1EC6FAA6007DB106 /* Difficulty.swift */,
-				281292AD1EC6FAD7007DB106 /* Quiz.swift */,
 				844AEDF31EC02BBC009B4BDC /* colourscheme.txt */,
 			);
 			path = "Sustainable Schools";
@@ -199,6 +202,38 @@
 				235700731EB872390054A521 /* Info.plist */,
 			);
 			path = "Sustainable SchoolsUITests";
+			sourceTree = "<group>";
+		};
+		28E0F96A1FE48FAA0093605E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2854AF2C1FED067000CC1F0B /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		28E0F96B1FE48FB70093605E /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2854AF2A1FED060B00CC1F0B /* Registration.storyboard */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		28E0F96C1FE48FC50093605E /* Leadership */ = {
+			isa = PBXGroup;
+			children = (
+				2854AF281FED05FE00CC1F0B /* Leadership.storyboard */,
+			);
+			path = Leadership;
+			sourceTree = "<group>";
+		};
+		28E0F96D1FE48FD00093605E /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				28E0F96E1FE765D60093605E /* Quiz.storyboard */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 		319E8D3FB18B2FF00A32448F /* Frameworks */ = {
@@ -290,6 +325,7 @@
 				TargetAttributes = {
 					2357004A1EB872370054A521 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A7HRB93R5Z;
 						ProvisioningStyle = Automatic;
 					};
 					235700611EB872380054A521 = {
@@ -329,10 +365,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E0F96F1FE765D60093605E /* Quiz.storyboard in Resources */,
+				2854AF2B1FED060B00CC1F0B /* Registration.storyboard in Resources */,
 				845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */,
 				235700591EB872380054A521 /* Assets.xcassets in Resources */,
 				84F8FC821EBA404100C3343B /* Podfile in Resources */,
 				844AEDF41EC02BBC009B4BDC /* colourscheme.txt in Resources */,
+				2854AF2D1FED067000CC1F0B /* Settings.storyboard in Resources */,
+				2854AF291FED05FE00CC1F0B /* Leadership.storyboard in Resources */,
 				235700541EB872370054A521 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,13 +460,10 @@
 				281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */,
 				2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */,
 				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,
-				281292AC1EC6FAA6007DB106 /* Difficulty.swift in Sources */,
 				845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */,
 				285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */,
-				2380A1701EBF6DEB00CC45F3 /* GlossSustainable.swift in Sources */,
 				845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */,
 				28558B631EEEB48800198FD5 /* landHomeViewController.swift in Sources */,
-				281292AE1EC6FAD7007DB106 /* Quiz.swift in Sources */,
 				283B96C01EF15E0600B5345F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +611,7 @@
 			baseConfigurationReference = BA531DDA836A7D789E3C4399 /* Pods-Sustainable Schools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A7HRB93R5Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Gloss",
@@ -591,6 +629,7 @@
 			baseConfigurationReference = E914DA7E6463FF214E36603C /* Pods-Sustainable Schools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A7HRB93R5Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Gloss",

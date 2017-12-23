@@ -21,8 +21,6 @@ class DataManager {
     // so that we can use the Data Manager through out the application
     static let shared = DataManager()
     
-
-    
     
     //variables to store points temp for functions
     var newTotalPoints: Int = 0
@@ -37,8 +35,8 @@ class DataManager {
         // we get the data from the url we made a path to
         let url = URL(string: "https://github.com/sph-huynh/sustainable-schools-quiz/raw/master/TempJSONStuff.json")
 
-        let data = try! Data(contentsOf: url!)
-        completion(data)
+        let data = try? Data(contentsOf: url!)
+        completion(data!)
     }
     
     // updates the database with the new points scored by user
