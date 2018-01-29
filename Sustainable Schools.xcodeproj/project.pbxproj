@@ -16,6 +16,7 @@
 		2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380A1711EBF6E2800CC45F3 /* QNA.swift */; };
 		23F38A071EBF3DCD0089E243 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F38A061EBF3DCD0089E243 /* Gloss.framework */; };
 		281F3B0A1ED7B8BE0014742D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */; };
+		283605312018103A00D56C05 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 283605302018103A00D56C05 /* awsconfiguration.json */; };
 		283B96AF1EEEF36100B5345F /* sdgReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96AE1EEEF36100B5345F /* sdgReference.swift */; };
 		283B96B31EEF7BA300B5345F /* leadershipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */; };
 		283B96B51EEF973100B5345F /* leadershipBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */; };
@@ -30,6 +31,7 @@
 		285AA4131EDD8E8200D26583 /* SDGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */; };
 		285AA4191EDE93AE00D26583 /* aboutSDGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */; };
 		285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E25541ED0641A0091A33D /* ValidationManager.swift */; };
+		286EC1BF1FF120DD00AA25FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286EC1BE1FF120DD00AA25FC /* Constants.swift */; };
 		28E0F96F1FE765D60093605E /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E0F96E1FE765D60093605E /* Quiz.storyboard */; };
 		28F9C5AB1EC858A500CB547B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AA1EC858A500CB547B /* DataManager.swift */; };
 		28F9C5AF1EC8C2D400CB547B /* displayingPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */; };
@@ -74,6 +76,7 @@
 		2380A1711EBF6E2800CC45F3 /* QNA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNA.swift; sourceTree = "<group>"; };
 		23F38A061EBF3DCD0089E243 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = "Pods/../build/Debug-iphoneos/Gloss/Gloss.framework"; sourceTree = "<group>"; };
 		281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		283605302018103A00D56C05 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		283B96AE1EEEF36100B5345F /* sdgReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sdgReference.swift; sourceTree = "<group>"; };
 		283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipCollectionViewCell.swift; sourceTree = "<group>"; };
 		283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadershipBoardViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDGTableViewCell.swift; sourceTree = "<group>"; };
 		285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutSDGViewController.swift; sourceTree = "<group>"; };
 		285E25541ED0641A0091A33D /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		286EC1BE1FF120DD00AA25FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		28E0F96E1FE765D60093605E /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		28F9C5AA1EC858A500CB547B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayingPointsViewController.swift; sourceTree = "<group>"; };
@@ -155,29 +159,18 @@
 		2357004D1EB872370054A521 /* Sustainable Schools */ = {
 			isa = PBXGroup;
 			children = (
+				283605302018103A00D56C05 /* awsconfiguration.json */,
+				286EC1C11FF8BCC300AA25FC /* App */,
 				28E0F96D1FE48FD00093605E /* Quiz */,
 				28E0F96C1FE48FC50093605E /* Leadership */,
 				28E0F96B1FE48FB70093605E /* Registration */,
 				28E0F96A1FE48FAA0093605E /* Settings */,
-				2357004E1EB872370054A521 /* AppDelegate.swift */,
-				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
-				283B96BF1EF15E0600B5345F /* User.swift */,
-				285E25541ED0641A0091A33D /* ValidationManager.swift */,
+				286EC1C01FF8BCAE00AA25FC /* Managers */,
 				2357005D1EB872380054A521 /* Info.plist */,
 				235700501EB872370054A521 /* HomepageViewController.swift */,
-				281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */,
 				235700521EB872370054A521 /* Main.storyboard */,
 				28558B5C1EED2AA700198FD5 /* ScrollingTopicsViewController.swift */,
 				845D407A1EBB0E6D00BC15AD /* TopicsHomeViewController.swift */,
-				845D40781EBB0DBC00BC15AD /* QuizViewController.swift */,
-				28558B621EEEB48800198FD5 /* landHomeViewController.swift */,
-				28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */,
-				28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */,
-				285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */,
-				285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */,
-				28558B601EED844700198FD5 /* detailedSDGViewController.swift */,
-				283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */,
-				283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */,
 				235700581EB872380054A521 /* Assets.xcassets */,
 				283B96AE1EEEF36100B5345F /* sdgReference.swift */,
 				2380A1711EBF6E2800CC45F3 /* QNA.swift */,
@@ -204,10 +197,32 @@
 			path = "Sustainable SchoolsUITests";
 			sourceTree = "<group>";
 		};
+		286EC1C01FF8BCAE00AA25FC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				28F9C5AA1EC858A500CB547B /* DataManager.swift */,
+				285E25541ED0641A0091A33D /* ValidationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		286EC1C11FF8BCC300AA25FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				286EC1BE1FF120DD00AA25FC /* Constants.swift */,
+				2357004E1EB872370054A521 /* AppDelegate.swift */,
+				283B96BF1EF15E0600B5345F /* User.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		28E0F96A1FE48FAA0093605E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				2854AF2C1FED067000CC1F0B /* Settings.storyboard */,
+				285AA4181EDE93AE00D26583 /* aboutSDGViewController.swift */,
+				285AA4121EDD8E8200D26583 /* SDGTableViewCell.swift */,
+				28558B601EED844700198FD5 /* detailedSDGViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -216,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2854AF2A1FED060B00CC1F0B /* Registration.storyboard */,
+				281F3B091ED7B8BE0014742D /* RegistrationViewController.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -224,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				2854AF281FED05FE00CC1F0B /* Leadership.storyboard */,
+				283B96B41EEF973100B5345F /* leadershipBoardViewController.swift */,
+				283B96B21EEF7BA300B5345F /* leadershipCollectionViewCell.swift */,
 			);
 			path = Leadership;
 			sourceTree = "<group>";
@@ -232,6 +250,10 @@
 			isa = PBXGroup;
 			children = (
 				28E0F96E1FE765D60093605E /* Quiz.storyboard */,
+				845D40781EBB0DBC00BC15AD /* QuizViewController.swift */,
+				28558B621EEEB48800198FD5 /* landHomeViewController.swift */,
+				28558B5E1EED539E00198FD5 /* energyHomeViewController.swift */,
+				28F9C5AE1EC8C2D400CB547B /* displayingPointsViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -365,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283605312018103A00D56C05 /* awsconfiguration.json in Resources */,
 				28E0F96F1FE765D60093605E /* Quiz.storyboard in Resources */,
 				2854AF2B1FED060B00CC1F0B /* Registration.storyboard in Resources */,
 				845D407D1EBDBCEC00BC15AD /* GoogleService-Info.plist in Resources */,
@@ -415,13 +438,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sustainable Schools-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E160EDAA501BD72BA33F2E4D /* [CP] Embed Pods Frameworks */ = {
@@ -430,9 +456,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sustainable Schools/Pods-Sustainable Schools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,6 +504,7 @@
 				2380A1721EBF6E2800CC45F3 /* QNA.swift in Sources */,
 				2357004F1EB872370054A521 /* AppDelegate.swift in Sources */,
 				845D40791EBB0DBC00BC15AD /* QuizViewController.swift in Sources */,
+				286EC1BF1FF120DD00AA25FC /* Constants.swift in Sources */,
 				285E25551ED0641A0091A33D /* ValidationManager.swift in Sources */,
 				845D407B1EBB0E6D00BC15AD /* TopicsHomeViewController.swift in Sources */,
 				28558B631EEEB48800198FD5 /* landHomeViewController.swift in Sources */,
@@ -621,6 +665,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-Schools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -639,6 +684,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fit3027monash.Sustainable-Schools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -1,4 +1,11 @@
 PODS:
+  - AWSAuthCore (2.6.11):
+    - AWSCore (= 2.6.11)
+  - AWSCore (2.6.11)
+  - AWSDynamoDB (2.6.11):
+    - AWSCore (= 2.6.11)
+  - AWSMobileClient (2.6.11):
+    - AWSAuthCore (= 2.6.11)
   - Firebase (3.17.0):
     - Firebase/Core (= 3.17.0)
   - Firebase/Core (3.17.0):
@@ -33,6 +40,8 @@ PODS:
   - Spring (1.0.3)
 
 DEPENDENCIES:
+  - AWSDynamoDB (~> 2.6)
+  - AWSMobileClient (~> 2.6)
   - Firebase (~> 3.17)
   - FirebaseAnalytics (~> 3.9)
   - FirebaseAuth (~> 3.1)
@@ -41,6 +50,10 @@ DEPENDENCIES:
   - Spring (~> 1.0.3)
 
 SPEC CHECKSUMS:
+  AWSAuthCore: 400f64223dc7509bf2c2b320c25f03c9281e2aac
+  AWSCore: a461695bf302a32a366768bf36056be3a2c87d8d
+  AWSDynamoDB: b77bdd2b91ca4787803b7f06c8efbf7725e81a8f
+  AWSMobileClient: 6ba0612943c6dee6b7a5bdf288296c6a8dfffb13
   Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
@@ -52,6 +65,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: eb85bf1bec2652f8b0f58bd15e77ea54f347095c
+PODFILE CHECKSUM: 62f7b4eff86761774d83c0b19e6b937cf0d21bf7
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

@@ -67,13 +67,12 @@ class HomepageViewController: UIViewController {
     // if error print error in input
     @IBAction func authUser(){
         guard case let email = emailLabel.text, let password = passwordLabel.text else{
-            print("Input was not valid")
             return
         }
         // checking that the input fields aren't empty
         if emailLabel.text == "" || passwordLabel.text == "" {
             // alert nothing has been entered
-            errorLabel.text = "You didn't enter anything."
+            errorLabel.text = Constants.Messages.Error.noInput
             self.errorLabel.isHidden = false
         }
         else {
@@ -91,9 +90,8 @@ class HomepageViewController: UIViewController {
                 }
                 else {
                     // otherwise they will see an error
-                    self.errorLabel.text = "Incorrect password or username."
+                    self.errorLabel.text = Constants.Messages.Error.invalidEmailOrPassword
                     self.errorLabel.isHidden = false
-                    print("incorrect password or username")
                 }
             }
         }
@@ -127,14 +125,10 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // delay label by 1 seconds
         showLabels()
         // animate the logo as soon as the app loads
         chainAnimation()
-        
-
-        
     }
     
 
@@ -143,7 +137,5 @@ class HomepageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

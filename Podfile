@@ -11,4 +11,6 @@ target 'Sustainable Schools' do
     pod 'FirebaseDatabase', '~> 3.1'
     pod 'Gloss', '~> 1.2'
     pod 'Spring', '~> 1.0.3'
+    pod 'AWSDynamoDB', '~> 2.6'
+    pod 'AWSMobileClient', '~> 2.6'    
 end
